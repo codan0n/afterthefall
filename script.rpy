@@ -40,102 +40,14 @@ define sadie = Character("Sadie")
 define man = Character("Man")
 define madamespectre = Character("Madame Spectre")
 
-###delete this entire section, just use xzoom -1
-# It is necessary to do this for each sprite to have a left-facing and right-facing version
-image angus neutral flip = im.Flip("angus/angus neutral.png", horizontal=True)
-image angus neutralnh flip = im.Flip("angus/angus neutralnh.png", horizontal=True)
-image bea apron neutral flip = im.Flip("bea/bea apron neutral.png", horizontal=True)
-image bea apron surprise flip = im.Flip("bea/bea apron surprise.png", horizontal=True)
-image bea apron flip = im.Flip("bea/bea apron.png", horizontal=True)
-image bea closedmouth flip = im.Flip("bea/bea closedmouth.png", horizontal=True)
-image bea closedsurprise flip = im.Flip("bea/bea closedsurprise.png", horizontal=True)
-image bea neutral flip = im.Flip("bea/bea neutral.png", horizontal=True)
-image bea smile flip = im.Flip("bea/bea smile.png", horizontal=True)
-image bea surprise flip = im.Flip("bea/bea surprise.png", horizontal=True)
-image candy neutral flip = im.Flip("candy/candy neutral.png", horizontal=True)
-image cole neutral flip = im.Flip("cole/cole neutral.png", horizontal=True)
-image coon neutral flip = im.Flip("coon/coon neutral.png", horizontal=True)
-image danny neutral flip = im.Flip("danny/danny neutral.png", horizontal=True)
-image germ neutral flip = im.Flip("germ/germ neutral.png", horizontal=True)
-image germ neutralns flip = im.Flip("germ/germ neutralns.png", horizontal=True)
-image gregg apron flip = im.Flip("gregg/gregg apron.png", horizontal=True)
-image gregg cups flip = im.Flip("gregg/gregg cups.png", horizontal=True)
-image gregg neutral flip = im.Flip("gregg/gregg neutral.png", horizontal=True)
-image gregg sad1 flip = im.Flip("gregg/gregg sad1.png", horizontal=True)
-image gregg sad2 flip = im.Flip("gregg/gregg sad2.png", horizontal=True)
-image gregg sad3 flip = im.Flip("gregg/gregg sad3.png", horizontal=True)
-image harley neutral flip = im.Flip("harley/harley neutral.png", horizontal=True)
-image lori anxious flip = im.Flip("lori/lori anxious.png", horizontal=True)
-image lori anxious2 flip = im.Flip("lori/lori anxious2.png", horizontal=True)
-image lori anxious3 flip = im.Flip("lori/lori anxious3.png", horizontal=True)
-image lori breath flip = im.Flip("lori/lori breath.png", horizontal=True)
-image lori cheeky flip = im.Flip("lori/lori cheeky.png", horizontal=True)
-image lori frustrated1 flip = im.Flip("lori/lori frustrated1.png", horizontal=True)
-image lori frustrated2 flip = im.Flip("lori/lori frustrated2.png", horizontal=True)
-image lori frustratedcross1 flip = im.Flip("lori/lori frustratedcross1.png", horizontal=True)
-image lori frustratedcross2 flip = im.Flip("lori/lori frustratedcross2.png", horizontal=True)
-image lori happy flip = im.Flip("lori/lori happy.png", horizontal=True)
-image lori nervous flip = im.Flip("lori/lori nervous.png", horizontal=True)
-image lori nervous2 flip = im.Flip("lori/lori nervous2.png", horizontal=True)
-image lori neutral flip = im.Flip("lori/lori neutral.png", horizontal=True)
-image lori neutralns flip = im.Flip("lori/lori neutralns.png", horizontal=True)
-image lori sad flip = im.Flip("lori/lori sad.png", horizontal=True)
-image lori sad2 flip = im.Flip("lori/lori sad2.png", horizontal=True)
-image lori shrug flip = im.Flip("lori/lori shrug.png", horizontal=True)
-image lori wink flip = im.Flip("lori/lori wink.png", horizontal=True)
-image mae angry flip = im.Flip("mae/mae angry.png", horizontal=True)
-image mae blush flip = im.Flip("mae/mae blush.png", horizontal=True)
-image mae blush2 flip = im.Flip("mae/mae blush2.png", horizontal=True)
-image mae brag flip = im.Flip("mae/mae brag.png", horizontal=True)
-image mae cheers flip = im.Flip("mae/mae cheers.png", horizontal=True)
-image mae cry flip = im.Flip("mae/mae cry.png", horizontal=True)
-image mae curious flip = im.Flip("mae/mae curious.png", horizontal=True)
-image mae curious2 flip = im.Flip("mae/mae curious2.png", horizontal=True)
-image mae disappoint flip = im.Flip("mae/mae disappoint.png", horizontal=True)
-image mae disappoint2 flip = im.Flip("mae/mae disappoint2.png", horizontal=True)
-image mae disappoint3 flip = im.Flip("mae/mae disappoint3.png", horizontal=True)
-image mae freakout flip = im.Flip("mae/mae freakout.png", horizontal=True)
-image mae freakoutbook flip = im.Flip("mae/mae freakoutbook.png", horizontal=True)
-image mae grump flip = im.Flip("mae/mae grump.png", horizontal=True)
-image mae grumpbook flip = im.Flip("mae/mae grumpbook.png", horizontal=True)
-image mae happy flip = im.Flip("mae/mae happy.png", horizontal=True)
-image mae happybook flip = im.Flip("mae/mae happy.png", horizontal=True)
-image mae laugh flip = im.Flip("mae/mae laugh.png", horizontal=True)
-image mae laughbook flip = im.Flip("mae/mae laughbook.png", horizontal=True)
-image mae neutral flip = im.Flip("mae/mae neutral.png", horizontal=True)
-image mae neutralbook flip = im.Flip("mae/mae neutralbook.png", horizontal=True)
-image mae panic flip = im.Flip("mae/mae panic.png", horizontal=True)
-image mae sad flip = im.Flip("mae/mae sad.png", horizontal=True)
-image mae sad1 flip = im.Flip("mae/mae sad1.png", horizontal=True)
-image mae sad2 flip = im.Flip("mae/mae sad2.png", horizontal=True)
-image mae sadbook flip = im.Flip("mae/mae sadbook.png", horizontal=True)
-image mae skeptical flip = im.Flip("mae/mae skeptical.png", horizontal=True)
-image mae skepticbook flip = im.Flip("mae/mae skepticbook.png", horizontal=True)
-image mae smug flip = im.Flip("mae/mae smug.png", horizontal=True)
-image mae smug2 flip = im.Flip("mae/mae smug2.png", horizontal=True)
-image mae tears flip = im.Flip("mae/mae tears.png", horizontal=True)
-image mae think flip = im.Flip("mae/mae think.png", horizontal=True)
-image mae tired flip = im.Flip("mae/mae tired.png", horizontal=True)
-image mae tiredbook flip = im.Flip("mae/mae tiredbook.png", horizontal=True)
-image marcie neutral flip = im.Flip("marcie/marcie neutral.png", horizontal=True)
-image selma neutral flip = im.Flip("selma/selma neutral.png", horizontal=True)
-image stan neutral flip = im.Flip("stan/stan neutral.png", horizontal=True)
-image trish neutral flip = im.Flip("trish/trish neutral.png", horizontal=True)
-
-# experimental way to position tall sprites so they fit on the screen better
-# doesn't work too well
-define tallright = Position(xpos=0.9, xanchor=0.9, ypos=100, yanchor=100)
-
 
 label start:
 
     # variables and definitions
 
-    $ currentDate = "December 7"
+    $ currentDate = "December 1"
     $ currentDay = 1
     $ gender = ""
-    $ renpy.music.set_volume(.7, 0, channel='music')
-    $ renpy.sound.set_volume(.7, 0, channel='sound')
 
     # keeps track of how much the characters like the player (AP = affinity points)
     $ maeAP = 0
@@ -146,16 +58,7 @@ label start:
     $ selmaAP = 0
     $ germAP = 0
 
-    # adjusts heights of each character. Probably needs tweaking.
-    define loriheight = 2.2
-    define angusheight = 0.67
-    define beaheight = 0.3
-    define maeheight = 2.2
-    define selmaheight = .02
-    define greggheight = .5
-    define germheight = 1.7
-
-    # these were only used in the dream sequence on the bus. Was originally going to be used more but ended up being too complicated. Cynical still gets used later for Bea though I think.
+    # personality values. they correspond to defining traits of each character and act as a secondary way to appeal to them. unlocks some dialogue options.
     #lori
     $ timid = 0
 
@@ -209,7 +112,12 @@ label start:
 
     # note: if you want to quickly test a scene, put "jump [sceneName]" right below this line
 
-    # Start day 1
+
+
+    ####################
+    
+    # Start day 1 (technically 2nd day in possum springs, you arrived the night of nov 29)
+    #november 30 2022 (2017 nitw release date + 5 years) (wednesday)
 
     scene bg black with fade
 
@@ -219,21 +127,34 @@ label start:
 
     play sound "sound/storebell.mp3"
 
-    "A bell on the door chimes as you walk into a cozy little cafe, the only one in Possum Springs in fact."
+    "Finally, you made it."
+    "A bell on the door chimes as you walk into a cozy little cafe."
+    "The sign on the door read:\nPosspresso\nEST. 2020"
+    "The smell of roasted coffee beans guided you from a block away."
+    "You brush the snow off your jacket and take a moment to bask in the warmth."
+    "While fairly clean and new looking, the place has a rustic country charm to it."
+    #finally a modern cafe in possum springs!
+    #"It's the only one in Possum Springs if that map you got from the bus station is to be believed."
     #running joke about how every door in possum springs has a bell, even people's residences surprisingly ("it's just for the holidays. it's festive!")
+    "Hardwood flooring, homely wallpaper, a chalkboard menu, the works."
     "Crude paintings adorn the walls, no doubt bought on the cheap from local artists."
-    "Oddly enough, a large wooden picnic table occupies the center of the room."
+    "There's even a large picnic table occupies the center of the room."
     "How did they even fit that through the door, you wonder?"
     "Behind the counter, a young bird lady with brick red feathers smiles and waves at you."
 
-    show trish neutral at right with dissolve
+    show trish neutral at center with dissolve
 
     trishunknown "Hi there! I'll be with you in just a minute!"
+    
+    hide trish with dissolve
 
     "She's busy helping another customer at the moment, giving you time to look over the menu."
+    "There's a variety of breakfast-y food and drinks to choose from as well as some sweets."
 
-    show selma neutral flip at left with dissolve:
+    show trish neutral at right
+    show selma neutral flip at left:
         yalign selmaheight
+    with dissolve
 
     selmaunknown "Hmm, I'm feelin' a salted caramel mocha today."
 
@@ -244,12 +165,14 @@ label start:
     trishunknown "Hahaha will that be all for you, Selmers?"
 
     selma "Throw in a cinnamon roll too please."
+    
+    trishunknown "Alright, that'll be... seven dollars and eighty five cents!"
 
-    trishunknown "Alright, that'll be... six dollars and sixy six cents!"
+    #trishunknown "Alright, that'll be... six dollars and sixy six cents!"
     
-    selma "What a lucky number..."
+    #selma "What a lucky number..."
     
-    trishunknown "Hahaha I know, right? Hopefully it's not like a bad omen or something!"
+    #trishunknown "Hahaha I know, right? Hopefully it's not like a bad omen or something!"
 
     "The bear pulls a crumpled $10 bill out of her pocket and slides it over."
 
@@ -258,6 +181,8 @@ label start:
     trishunknown "Thank you very much!"
 
     hide selma with dissolve
+    
+    show trish at center with move
 
     "The bear steps aside and the barista looks over to you."
 
@@ -267,37 +192,32 @@ label start:
 
     menu:
         "{cps=0}I'll have uh...{/cps}"
+        "What she had":
+            $ selmaAP = selmaAP + 1
+            $ chosendrink = "mocha"
+            "You order the same thing Selmers got, with the addition of a strawberry waffle to fill your belly."
+        
         "Posspresso Special":
+        #surprise me
             $ bold = bold + 1
             $ chosendrink = "posspressospecial"
-            "You order the Posspresso Special and an everything bagel with cream cheese to go along with it."
+            "You order the Posspresso Special. There's no description for it, but you wanted to try something new and local."
+            "You also get an everything bagel with cream cheese to go along with it."
 
-            trish "Oki doki!"
-
-        "Espresso":
+        "Americano":
             $ cynical = cynical + 1
-            $ chosendrink = "espresso"
-            "You order an espresso and a blueberry bagel with honey butter spread to go along with it."
-            "Gotta have something to balance out the bitterness."
-
-            trish "Oki doki!"
+            $ chosendrink = "americano"
+            "You order an americano and a blueberry bagel with honey butter spread to go along with it."
+            "Gotta have something sweet to balance out the bitterness."
 
         "You're not sure...":
             $ timid = timid + 1
             $ chosendrink = "cappuccino"
             "You can't really decide. The barista suggests a cappuccino. You can't really argue but you order a chocolate chip waffle to go along with it."
 
-            trish "Oki doki!"
+    trish "Oki doki!"
 
-        "What she had":
-            $ selmaAP = selmaAP + 1
-            $ chosendrink = "mocha"
-            "You order the same thing Selmers got, with the addition of a strawberry waffle."
-
-            trish "Oki doki!"
-
-
-    "The barista asks a few questions about how you want your drink, then taps the tablet a few times and reads out your total."
+    "The barista taps the tablet a few times and reads out your total."
     "Seeing that you've got your debit card ready, she turns the machine around over to you. You swipe your card and hit confirm."
     "It asks if you would like to give a tip."
     
@@ -317,7 +237,7 @@ label start:
     trish "And can I get a name for you?"
 
     $ povnameValid = False
-    $ player = Character("[povname]")
+    $ player = Character("[name]")
     jump namescript1
     label namescript1:
 
@@ -329,16 +249,28 @@ label start:
             if povname.upper() == "MAE":
                 "Choose another name."
                 povnameValid = False
+            if povname.upper() == "MARGARET":
+                "Choose another name."
+                povnameValid = False
             if povname.upper() == "BEA":
                 "Choose another name."
                 povnameValid = False
+            if povname.upper() == "BEATRICE":
+                "Choose another name."
+                povnameValid = False
             if povname.upper() == "GREGG":
+                "Choose another name."
+                povnameValid = False
+            if povname.upper() == "GREG":
                 "Choose another name."
                 povnameValid = False
             if povname.upper() == "ANGUS":
                 "Choose another name."
                 povnameValid = False
             if povname.upper() == "GERM":
+                "Choose another name."
+                povnameValid = False
+            if povname.upper() == "JEREMY":
                 "Choose another name."
                 povnameValid = False
             if povname.upper() == "LORI":
@@ -350,53 +282,76 @@ label start:
             if povname.upper() == "SELMERS":
                 "Choose another name."
                 povnameValid = False
+            if povname.upper() == "STAN":
+                "Choose another name."
+                povnameValid = False
+            if povname.upper() == "CANDY":
+                "Choose another name."
+                povnameValid = False
+            if povname.upper() == "TRISH":
+                "Choose another name."
+                povnameValid = False
+            if povname.upper() == "MARCIE":
+                "Choose another name."
+                povnameValid = False
             if not povname:
+                #default name in case you don't type anything
                 povname = "Avery"
                 povnameValid = True
 
         if povnameValid == True:
-            "Your name is [povname]?"
+            "Your name is [name]?"
         else:
             "Choose another name."
             jump namescript1
-            "Your name is [povname]?"
+            "Your name is [name]?"
 
     menu:
-        "{cps=0}Your name is [povname]?{/cps}"
+        "{cps=0}Your name is [name]?{/cps}"
         "That's right":
             player "That's right!"
         "That's wrong":
             jump namescript1
 
-    # dumb variable names. Basically you can refer to the player's name by using [povname], [newname], or [playername]
-    $ newname = povname
-    $ playername = newname
-
     trish "Alright, I'll have that ready for y'all in just a minute!"
 
     hide trish with dissolve
 
-    "That bear girl had already gone to find a table, where she's pulled a laptop from her bag and plugged it into a nearby socket."
-    "You quietly find a table for yourself."
-    "How did you wind up here again? You can't seem to remember."
-    "Come on, there was something really important you were gonna do today, what was it?"
-    "You decide to retrace your steps leading up to you coming to the cafe. Maybe that will jog your memory."
+    "That bear girl already found a table and was busy plugging a laptop into a nearby power socket."
+    "You quietly find a place to sit by a window, looking out at the blinding white landscape."
+    "The past few days have been really chaotic. It's nice to slow down for a moment and relax. How did you wind up here again?"
+    #"Come on, there was something really important you were gonna do today, what was it?"
+    #"You decide to retrace your steps leading up to you coming to the cafe. Maybe that will jog your memory."
     
     #make this trip just about getting wifi but you decide to get groceries while you're out after checking your map app and seeing what's nearby
-    
+
     "Let's see... You woke up this morning freezing."
-    "You had thought you turned on the heater before bed but your new home was colder than the inner circle of hell when you got up."
+    "Winter decided to come early this year. You heard there was a blizzard on its way and true enough it's been snowing nonstop since you arrived in Possum Springs last night."
+    "You thought you turned on the heater before bed but your new home was colder than the innermost circle of hell when you got up."
     "The first thing you did was take a hot shower."
 
     scene bg bathroomfoggymirror with fade
     play music "music/Distant.mp3" fadein 1.0
 
-    "Steam cascades throughout the room after a lengthy shower, fogging up the mirror."
+    "Steam cascades throughout the room after a lengthy shower, fogging up the mirror. You wipe some of it off and admire your glistening..."
 
     # scene bg bathroomclearmirror with dissolve
 
-    "After getting dressed you take a look at yourself in the now clear reflection."
-    #"Your appearance is less of a wreck than yesterday. That's an improvement at least."
+    #"After getting dressed you wipe the mirror clean, only getting a brief glance at yourself before it fogs up again."
+    
+    menu:
+        "{cps=0}Steam cascades throughout the room after a lengthy shower, fogging up the mirror. You wipe some of it off and admire your glistening...{/cps}"
+        "Scales":
+            $ animaltype = "reptile"
+            "...scales. Because you're a reptile, of course."
+        "Fur":
+            $ animaltype = "mammal"
+            "...fur. Because you're a mammal, of course."
+        "Feathers":
+            $ animaltype = "bird"
+            "...feathers. Because you're a bird, of course."
+            
+    "You wipe away the moisture with a towel and take a closer look in the mirror."
     "How would you describe yourself?"
 
     menu:
@@ -416,7 +371,7 @@ label start:
             $ hishertheir = "her"
             $ hisherstheirs = "hers"
             $ himherthem = "her"
-            "You lean on the feminine side of course."
+            "Naturally , you lean on the feminine side."
         "A gender neutral wreck":
             $ gender = "neutral"
             $ guygirlperson = "person"
@@ -426,71 +381,99 @@ label start:
             $ himherthem = "them"
             "It's hard to tell where you lie on the gender scale. Just the way you like it."
 
-    "Whew, glad we got that identity crisis out of the way."
+    "Whew, glad you got that identity crisis out of the way."
 
     play music "music/Breeze.mp3" fadein 1.0
 
-    "You check your phone out of habit, despite Possum Springs giving you no signal."
-    "You can't live like this, you need some wifi ASAP."
-    "You paid the internet company before you moved in but the access point requires a password."
-    "You just need to find wherever the heck the router in this massive house is and the password should be written on it."
-    "This place is like a labrynth to you. You just moved in the night prior and haven't had a chance to explore it."
-    "Using the wifi strength indicator on your phone like a radar, you eventually stumble upon the room containing the source of the signal."
+    "You check your phone out of habit, despite not getting any signal in this god forsaken town."
+    "You called an internet company ahead of time to get things set up for you before you moved in but the wifi is locked."
+    #"You can't live like this, you need wifi ASAP."
+    #"You paid the internet company before you moved in but the access point requires a password."
+    "The router should have the password should be written on it, wherever it is."
+    #"This unfamiliar house is like a labrynth to you."
+    #"Using the wifi strength indicator on your phone like a radar, you eventually stumble upon the room containing the source of the signal."
 
-    scene bg home_office_day with dissolve
-
-    "That's odd, the lamp is already on."
-    "The soft glow illuminates the tidy room and all its furnishings."
-    #"You had called the utilities companies ahead of time to get things ready for your arrival, but apparently nobody took the time to turn off this one light."
-    "Books and binders are crammed in the multitude of shelves throughout the room and framed diplomas and awards line the wall behind the desk, all caked in a thick layer of dust."
-    "You're lucky this house you've inherited hasn't been broken into and vandalized in all the time it was sitting empty."
-    "Interestingly there's a safe built into one of the walls. You wonder what that's all about but there's no way you're getting it open without the combination."
-    #maybe gregg can crack it
-    "You follow the wires coming out the back of the computer on the desk, which leads you straight to the router."
-    "Jackpot!"
-    "You look all over the box but the default password has faded from the label."
-    "Cheap piece of shit ink."
-    "You desperately look around the room for any sticky notes with passwords to no avail."
-    "Even the computer is locked."
-    "Dammit, why can't phones just come with ethernet ports? You could plug yours in directly and satisfy your internet addiction if people weren't so obsessed with having thin phones."
-    "You step away and sigh."
-    "Now what are you gonna do?"
-    "Your inheritance hasn't hit your bank account yet so buying a new computer or router is out of the question. Especially when you have groceries as a priority."
-    "Your stomach rumbles."
-    "You better find something to eat soon. Even a small town like Possum Springs must have a place to get breakfast, right? Hopefully some decent coffee too."
-    "... And a restaurant is bound to have public wifi."
-    "That's all the motivation you need to put on some shoes and head out the door and begin the hunt for food and internet."
-    "And that's how you ended up here."
+    scene bg home_interior_day with dissolve
     
-    #download ebooks and videos at cafe
+    "After some searching, you find it in a dark corner in the living room."
+    "You blow the dust off and try to read the code to no avail. It's too faded to make out."
+    "Damn, now what?"
+    "Your stomach rumbles, reminding you that you haven't eaten in nearly 24 hours."
+    "Screw this, you need to find a good meal before you wither away."
+    "Even a small town like Possum Springs must have a place to get breakfast, right? Hopefully some decent coffee too."
+    "That, and a restaurant is bound to have public wifi."
+    "The map of Possum Springs you snagged from the bus station yesterday should point you in the right direction."
+    "You put on a jacket and shoes and venture out into the unknown."
+    #"That's all the motivation you need to put on some shoes and head out the door and begin the hunt for food and internet."
+    
+    
+    
+    
+    
+
+    #"That's odd, the lamp is already on."
+    #"The soft glow illuminates the tidy room and all its furnishings."
+    #"You had called the utilities companies ahead of time to get things ready for your arrival, but apparently nobody took the time to turn off this one light."
+    #"A thick layer of dust cakes the various books and binders on the shelf but the desk area remains relatively clean."
+    #hint that there's a mark where a book used to lie on the table
+    #"Surprisingly this house hasn't been ransacked and vandalized in all the years it was sitting unoccupied, at least not from what you can tell."
+    #"You're lucky this house you've inherited hasn't been broken into and vandalized in all the time it was sitting empty."
+    #"At the very least the safe appears to be... safe. "
+    #"No sign that anybody tried to break into that safe, so whatever it contains is probably... safe."
+    #"Interestingly there's a safe built into one of the walls. You wonder what that's all about but there's no way you're getting it open without the combination."
+    #maybe gregg can crack it
+    #"You'll have to try and crack it later, right now you're more interested in cracking the wifi password."
+    #gregg can crack the safe?
+    #"You follow the wires coming out of the computer under the desk, which leads you straight to the router."
+    #"Jackpot!"
+    #"You look all over the box but the default password has faded from the label."
+    #"Damn cheap piece of shit ink."
+    #"You desperately look around the room for any sticky notes with passwords scrawled on them to no avail."
+    #"Even the computer is locked behind a password when you try turning it on."
+    #"Why can't phones just come with ethernet ports? You could plug yours in directly and satisfy your internet addiction if people weren't so obsessed with having thin phones."
+    #"If only your phone had an ethernet port."
+    #"You step away and sigh."
+    #"Now what are you gonna do?"
+    #"Your inheritance hasn't hit your bank account yet so buying a new computer or router is out of the question."
+    #"Especially when you haven't even bought groceries."
+    #"Your stomach rumbles."
+    #"You better find something to eat soon. Even a small town like Possum Springs must have a place to get breakfast, right? Hopefully some decent coffee too."
+    #"That, and a restaurant is bound to have public wifi."
+    #"That map of Possum Springs you snagged from the bus station yesterday should point you in the right direction."
+    #"You put on a jacket and shoes and ventured out in search of food and internet."
+    #"That's all the motivation you need to put on some shoes and head out the door and begin the hunt for food and internet."
+    
+    #scene bg black with fade
+    
+    #"...And that's how you ended up here."
     
     trish "Selmers!"
 
     scene bg cafe with fade
 
     play music "music/americano_loop.mp3" fadein 1.0
-
-    "You're pulled out of your flashback by the barista's voice."
+    
+    "The barista's voice pulls you out of your flashback, conveniently right as it was about to end anyway."
     #"Now you remember! You were on your way to buy groceries and you stopped by this cafe on the way for breakfast!"
-    "The bear finishes typing something before going up to the counter to collect her drink."
+    "The bear finishes typing something on her laptop before going up to the counter to collect her drink."
 
-    show selma neutral flip at left with dissolve:
-        yalign selmaheight
+    #show selma neutral flip at left with dissolve:
+    #    yalign selmaheight
 
-    selma "Thanks!"
+    #selma "Thanks!"
 
-    "You can't help but take a glance at what she ordered. It looks and smells really good."
+    "You can't resist taking a glance at what she ordered. It looks as good as it smells."
     "It's in a glass mug so you can see the thick chocolaty treat with a layer of froth topped by a generous helping of whipped cream with caramel sauce drizzled upon it."
-    "You eagerly wait for your name to be called out."
+    "You eagerly wait for your own drink to be ready."
 
-    hide selma with dissolve
+    #hide selma with dissolve
 
     "..."
-    trish "[povname]!"
+    trish "[name]!"
 
     if chosendrink == "posspressospecial":
-        "You fetch your bagel and steaming hot coffee from the counter and head back to your seat by the wall. Your drink is in a glass mug as well."
-        "It's a very dark concoction with a layer of light foam, topped with dark chocolate shavings."
+        "You fetch your bagel and steaming hot coffee from the counter and head back to your seat by the wall."
+        "The mug contains a dark concoction with a layer of light foam, topped with dark chocolate shavings."
         "You blow on it then take a sip."
         "..."
         #"This is the most bitter thing you've ever tasted."
@@ -498,62 +481,100 @@ label start:
         "The flavor is earthy and potent with a burnt chocolate aftertaste."
         "It's an exceptionally strong drink that leaves you wanting more of it."
         "You can't resist taking another satisfying sip before moving on to your bagel."
-        "Nothing special here, just an ordinary bagel topped with seeds and herbs with ample cream cheese stuffed between its halves."
-    elif chosendrink == "espresso":
+        "Nothing special here, just an ordinary bagel topped with seeds and herbs and ample cream cheese stuffed between its halves."
+    
+    elif chosendrink == "americano":
         "You fetch your bagel and steaming hot coffee from the counter and head back to your seat by the wall."
-        "Your drink is in a glass mug as well and inside is a light brown liquid with a layer of milky foam on top."
+        "The mug contains a dark-as-your-soul brew with a few bubbles on the surface."
         "You blow on it then take a sip."
         "..."
         "So bitter. So good."
-        "Nothing says \"I hate myself\" more than drinking straight espresso."
+        "Nothing says \"I hate myself\" more than drinking straight espresso with nothing but a little extra water to make it tolerable."
         #"It's incredibly smooth and gently massages your taste buds with a light, warming flavor."
         "You can't resist taking another satisfying sip before moving on to your bagel."
-        "It's full of juicy blueberries and the honey butter spread oozes pure deliciousness into your mouth."
+        "It's full of juicy blueberries and the honey butter spread oozes pure sweetness."
 
     elif chosendrink == "cappuccino":
         "You fetch your waffle and steaming hot coffee from the counter and head back to your seat by the wall."
-        "Your drink is in a glass mug as well. It's a light brown on the bottom, that turns into a milky white in the middle and there's a wide layer of foam on top."
+        "The mug contains a gradient of different flavors. A creamy espresso mixture on the bottom that turns into a milky white the further up you go, topped with a layer of foam."
         "You blow on it then take a sip."
         "..."
         "It gives you two distinct flavors of steamed milk and espresso. One is light and the other is strong, neither overpowering the other."
         "Can't go wrong with a classic drink like this, even if it is kinda plain."
         "You can't resist taking another satisfying sip before moving on to your waffle."
-        "You slice off a chunk and pop it into your mouth."
+        #"You cut a slice and pop it into your mouth."
         "The sweet chocolate chips combined with the melted butter send your taste buds to heaven with a first class ticket."
+    
     elif chosendrink == "mocha":
         "You fetch your waffle and steaming hot coffee from the counter and head back to your seat by the wall."
-        "Your drink is in a glass mug as well, giving you a nice view of your sweet and salty concoction from up close."
-        "You blow on it then take a sip."
+        "The glass mug shows a light brown mixture with a layer of chocolate on the bottom. Up top is a layer of whipped cream, with a drizzle of caramel and sea salt"
+        "You lick away some of the cream then take a sip of the actual drink."
         "..."
         "The salt contrasts with the sugary taste of chocolate and caramel, which balance the bitterness of espresso."
         "All the flavors combine into an exquisite beverage that gives you everything you could want in a drink."
         "You can't resist taking another satisfying sip before moving on to your waffle."
-        "You slice off a chunk and pop it into your mouth."
-        "Juicy strawberries are baked right into the dough, and much like your drink, the combination with butter serves to give your taste buds the ultimate experience."
+        #"You slice off a chunk and pop it into your mouth."
+        "Juicy strawberries are baked right into it, and much like your drink, the combination with butter serves to give your taste buds the ultimate experience."
 
     "Meanwhile, the bear on the other side of the room taps away on her keyboard, her claws making quite a racket."
-    "You can hear a lot of frustrated backspacing after she types a long block of text. You wonder what she's working on."
-    "Code? A blog post? A school project?"
-    "As curious as you are, you don't want to bother a stranger who's focused on their work."
+    "You can hear a lot of frustrated backspacing after she types a long block of text."
+    "You know that feel all too well."
+    "You pull out your phone and get up to date on all your internet needs between bites and sips."
+    "It may be a while before you get internet again, so you should download something to keep yourself busy later on."
+    
+    menu:
+        "Download movies":
+            $ loriAP = loriAP + 1 #because she's known for liking movies
+            $ greggAP = greggAP + 1 #because choosing movies over books is something gregg would relate to
+            "This will give you something to relax to. You just wish you didn't have to watch them on a 5 inch screen."
+            "You spend some time curating which movies you're interested in and finding working links."
+            
+        
+        "Download books":
+            $ mature = mature + 1
+            $ selmaAP = selmaAP + 1
+            "Books will last longer than movies and give you something to think about, though it is more work to read."
+            "You spend some time curating which books you're interested in and finding working links."
+            
+        "Download music":
+            $ beaAP = beaAP + 1
+            $ maeAP = maeAP + 1
+            "You'd rather not suffer in silence. Even if you've got nothing else to do you can always rock out to something."
+            "You spend some time curating which albums you're interested in and finding working links."
+    
+    "Before you know it, it's already afternoon. You better hit the road soon."
+    "You look up a route to the nearest grocery store and memorize it before you're cut off from the internet."
+    "It seems the bear is still furiously typing away, concentrated on whatever she's writing."
+    "You wonder how long she'll stay here."
+    
+    #"Code? A blog post? A school project?"
+    #"As curious as you are, you don't want to bother a stranger who's focused on their work."
     #"You consider asking her, but she seems focused on whatever she's working on and you don't want to intrude."
-    "Instead you quietly finish your breakfast then prepare to hit the road."
-    "You download a few e-books and videos to watch later, then look up the nearest grocery store."
-    "You've got a long walk ahead of you..."
+    #"Instead you quietly finish your breakfast then prepare to hit the road."
+    #"You download a few e-books and videos to watch later, then look up a route to the nearest grocery store."
+    #"You've got a long walk ahead of you..."
     "As you're heading out the door, the barista chirps."
+    
+    show trish at center with dissolve
 
     trish "Thanks for coming in! Have a nice day!"
 
     player "Thanks, you too!"
+    
+    hide trish with dissolve
+    
+    "Feeling energized from the coffee, you set out on the next leg of your journey."
 
     stop music fadeout 2.0
 
     scene bg woods_day
 
     #"Now that you've had your morning coffee, you're in a position to get things done."
-    "Now that your belly is filled and your veins are pulsating with caffeine, you're in a position to get things done."
-    "The nearest grocery store is a Ham Panther on the other side of the highway to the east of town."
+    #"Now that your belly is filled and your veins are pulsating with caffeine, you're in a position to get things done."
+    "Next stop: Ham Panther. It's on the other side of the highway to the east of town."
     #"It's almost noon already judging by the position of the sun. Best hurry if you want to make it home before dark."
-    "Best hurry if you want to make it home before dark. Longest Night is in just a few weeks so you don't have much daylight to burn."
+    "Best hurry if you want to make it home before dark. Longest Night is coming up soon, which means you don't have a lot of daylight to work with."
+    #Longest Night is in just a few weeks so you don't have much daylight to burn."
     
     
     scene bg ham_panther with fade
@@ -567,14 +588,14 @@ label start:
     "Oatmeal, bread, rice..."
     "Should you pick up milk as well?"
     "Eh, why not? You don't have to worry about it spoiling on the walk back home since it's more likely to freeze."
-    "Now for the million dollar question, almond milk or normal person milk?"
+    "Now for the million dollar question, almond milk or normal milk?"
     
     #almond milk or cow milk, determines your preference for vegetarianism and affects your interaction with stan. if vegetarian he's a bit pushy about getting you to buy something but you just end up getting the vegetable sushi.
     
     menu:
         "Almost milk":
             $ sympathetic = sympathetic + 1
-            "You'd think watered down blended almonds would be cheaper than raising a cow and extracting its milk but somehow it's always the more expensive option."
+            "You'd think packaging the runoff water from washing almonds would be cheaper than raising a cow but somehow it's always the more expensive option."
             "Oh well, at least you've grown accustomed to the taste and it doesn't upset your tummy."
             "You pass by the deli counter, not really planning on getting anything from it but the jolly old man behind the counter calls out to you."
             
@@ -590,14 +611,14 @@ label start:
             
             player "Not really... I'm not super into meat I guess."
             
-            stan "Not into meat? Well I reckon you're in the wrong aisle, the garden is on the other side of the store har har har!"
+            stan "Not into meat? Well I reckon you're in the wrong aisle, the garden section is on the other side of the store har har har!"
             stan "Really though, we do have a selection of tofu and vegetable sushi if that's more your style."
             
-            player "Sushi huh. Who would have thought there'd be sushi in a small town like this."
+            player "Sushi huh? Who would have thought there'd be sushi in a small town like this."
             
             stan "Well... don't tell my supervisor I said this but you're better off being a vegetarian if you're eyeing the sushi here."
             stan "I wouldn't trust the definition of \"fresh\" they use for the fish here."
-            stan "But the cucumber, carrot and avacado wrapped in rice one should still be edible!"
+            stan "But the ones that are just veggies and avacado wrapped in rice should still be edible!"
             
             player "Good to know..."
             
@@ -608,16 +629,15 @@ label start:
 
             player "Sure thing. Have a nice day."
             
-            stan "Likewise!"
+            stan "You do the same!"
 
             hide stan with dissolve
             
         "Moo cow milk":
             "Where else are you supposed to get your calcium? You need strong bones for... well you just need them, okay?"
-    
             "Ok, what's next?"
             "You grab a few more things then swing by the deli where an old cat in an apron and paper hat stands behind the counter."
-            "He catches you looking at the meats on display and bellows out a jolly greeting."
+            "He catches you looking at the meats on display and bellows out a jolly greeting that startles you."
 
             #supposed to be in deli uniform, no sprite available for now :(
             show stan neutral at right:
@@ -626,14 +646,13 @@ label start:
 
             stan "Howdy! Let me know if you need anything and I'd be happy to assist you."
 
-            "You give him a nod of understanding then go back to deliberating which meat to get."
-            #"Chicken seems like a safe bet."
+            "You give him a nod of acknowledgement then go back to deliberating which meat to get."
 
             player "Hi there..."
 
             "You glance at his nametag."
 
-            player "...Stan. Can I get a pound of..."
+            player "...Stan. Can I get some..."
             
             "You pick out a few meats to stock your freezer with so you won't have to make frequent trips back here."
 
@@ -658,7 +677,7 @@ label start:
     "A chipper fox greets you when you wander up to a register."
     #"A fox with amber orange fur mans the register you wandered up to."
     #"He sports a dark grey turtleneck sweater underneath his apron, along with a chipper attitude."
-    "The name tag pinned to the apron reads \"Gregg\", with a tiny, crude portrait next to it."
+    "The name tag pinned to the apron reads \"Gregg\", with a tiny, crude portrait of himself drawn next to it."
 
     player "Hey."
 
@@ -686,11 +705,11 @@ label start:
     gregg "Nobody ever just like, comes here to live."
     gregg "Have you tried the pierogies at the diner yet? They're *amazing!~*"
 
-    player "Not yet, I just arrived yesterday. I'm trying to get my pantry filled up first."
+    player "I just arrived yesterday. I'm trying to get my pantry filled up first."
 
     gregg "Gotchya. Takin' it one day at a time. I respect that."
 
-    player "Heh, thanks. I just hope I make it back before dark."
+    player "Heh, thanks. I just hope I make it back before dark. I don't have a car so I had to walk all the way out here."
 
     "Gregg takes a glance outside through the automatic sliding doors with a contemplative expression."
 
@@ -738,14 +757,18 @@ label start:
 
             gregg "I don't think I caught your name earlier. I'm Gregg!"
 
-            player "Nice to meet you Gregg! I'm [newname]."
+            player "Nice to meet you Gregg! I'm [name]."
 
-            gregg "You ready to roll, [newname]? Come on, my bike's over here."
+            gregg "You ready to roll, [name]? Come on, my bike's over here."
+            
+            show gregg neutral at offscreenleft with move
 
             # have gregg slide off screen then reappear
 
             "He shows you to a bike rack. You're guessing his is the one with a motor installed in front of the back wheel."
             #"It also has a seat sticking out on the back and pegs to rest your feet."
+            
+            show gregg neutral at center with dissolve
 
             gregg "Ta-da! Pretty sweet, huh?"
             
@@ -760,17 +783,20 @@ label start:
             gregg "Yeah, that should work. Go ahead and hop on!"
 
             "Gregg jumps into his seat and pats the one behind him. You carefully climb on, holding onto his shoulders."
-            "Before you've gotten comfortable in this unusual setup, he revs up the motor and the bike lurches forward."
+            "Before you've gotten comfortable in this unusual setup, he revs up the motor and the bike lurches forward toward town."
 
             gregg "WOOOOOOOOOOOOOO!!!!"
 
-            play music "music/revvedup_v2loop.mp3" fadein 1.0
+            #play music "music/revvedup_v2loop.mp3" fadein 1.0
+            
 
-            "He swivels the bike around sharply and goes down a small ramp into the parking lot where he builds up speed before making a wide turn onto the grass next to the highway."
+            #"He swivels the bike around sharply and goes down a small ramp into the parking lot where he builds up speed before making a wide turn onto the grass next to the highway."
 
-            stop music fadeout 2.0
+            #stop music fadeout 2.0
 
             scene bg playerhouseexterior with fade
+            
+            "The sun sank below the horizon quicker than you expected, making it difficult for you to recall how to get home in the darkness but you did eventually make it."
 
             show gregg neutral flip at left with dissolve:
                 yalign greggheight
@@ -823,47 +849,46 @@ label start:
 
             gregg "Where's the fun in that?"
 
-            "He helps you remove your bags from the bike's handlebars and you give him a grateful smile. He grins back at you as he hops onto the bike and revs the engine."
+            "He helps you remove your bags from the bike's handlebars. He grins at you as he hops onto the bike and revs the engine."
 
             gregg "Take care!"
 
             hide gregg with dissolve
 
-            "With a casual salute, he circles around back on to the trail and you swear you can hear him hollering like he's on a rollercoaster as he rides down the hilly driveway."
+            "With a casual salute, he circles around back to the road and you swear you can hear him hollering like he's on a rollercoaster as he rides down the hills."
 
-            scene bg home_interior_night with dissolve
+            #scene bg home_interior_night with dissolve
 
-            "With that out of the way, you carry your groceries inside and put them away."
-            "Whew, another long day comes to a close. It's a good time to change into your pajamas and relax for a bit."
+            "Now, time to go inside, put your groceries away, make something to eat, and go to bed."
 
-            play sound "sound/changing clothes.mp3"
+            #play sound "sound/changing clothes.mp3"
 
             ###if you got sushi, just eat that. else snack on something
 
-            "You can't be bothered to cook tonight, despite your stomach's protests, but you do stop by the pantry on your way to the living room to grab a snack."
-            "Now you can curl up on the living room couch and watch the videos you downloaded on your phone in peace, occasionally munching on your favorite treat."
-            "You kinda wish you had bothered to pay for cable now that internet is in such limited supply so you could at least put some background noise on the television."
+            #"You can't be bothered to cook tonight, despite your stomach's protests, but you do stop by the pantry on your way to the living room to grab a snack."
+            #"Now you can curl up on the living room couch and watch the videos you downloaded on your phone in peace, occasionally munching on your favorite treat."
+            #"You kinda wish you had bothered to pay for cable now that internet is in such limited supply so you could at least put some background noise on the television."
             #"You didn't bother spending money on cable now that the internet has replaced any need or general desire for it."
-            "Oh well. First world problems you guess."
-            "Before long the sun finishes setting, plunging you into a darkness broken only by the glow of your phone."
-            "Your phone is about out of juice so you begrudgingly retire to your bedroom, put it on the charger, and settle into bed."
-            "But just before sleep overtakes you, low rumblings make their approach and an abrupt train horn drags you back to consciousness."
-            "Ugh, it just keeps getting louder and louder for what seems like eternity."
-            "Finally it passes."
-            "Not long afterward, *another* train screeches past your house."
-            "Frustrated, you shove your face into your pillow and begin counting sheep."
+            #"Oh well. First world problems you guess."
+            #"Before long the sun finishes setting, plunging you into a darkness broken only by the glow of your phone."
+            #"Your phone is about out of juice so you begrudgingly retire to your bedroom, put it on the charger, and settle into bed."
+            #"But just before sleep overtakes you, low rumblings make their approach and an abrupt train horn drags you back to consciousness."
+            #"Ugh, it just keeps getting louder and louder for what seems like eternity."
+            #"Finally it passes."
+            #"Not long afterward, *another* train screeches past your house."
+            #"Frustrated, you shove your face into your pillow and begin counting sheep."
 
-            "1...2...3..."
+            #"1...2...3..."
 
-            "..."
+            #"..."
 
-            "...156...157...158..."
+            #"...156...157...158..."
 
-            "..."
+            #"..."
 
-            "..."
+            #"..."
 
-            "..."
+            #"..."
 
             scene bg black with fade
 
@@ -879,7 +904,7 @@ label start:
 
             "He shrugs."
 
-            gregg "Your choice, man. Just be careful you don't like, wander into a bear's den on the way back."
+            gregg "Your choice, man. Just be careful you don't like, wander into a wild bear's den on the way back."
 
             player "Haha I won't."
 
@@ -894,32 +919,32 @@ label start:
 
             scene bg home_interior_night with fade
 
-            "Of course it's night and bitingly cold by the time you reach your house."
+            "Of course it's night and bitterly cold by the time you reach your house."
             "You drag yourself inside then unload your groceries in the kitchen, using the empty plastic bags to discard the wrappers from things you snacked on along the way."
             "You promptly retire to your bedroom, put your phone on the charger, and settle into bed."
-            "But just before sleep overtakes you, low rumblings make their approach and an abrupt train horn drags you back to consciousness."
-            "Ugh, it just keeps getting louder and louder for what seems like eternity."
-            "Finally it passes."
-            "But not long afterward, *another* train screeches past your house."
-            "Frustrated, you shove your face into your pillow and begin counting sheep."
+            #"But just before sleep overtakes you, low rumblings make their approach and an abrupt train horn drags you back to consciousness."
+            #"Ugh, it just keeps getting louder and louder for what seems like eternity."
+            #"Finally it passes."
+            #"But not long afterward, *another* train screeches past your house."
+            #"Frustrated, you shove your face into your pillow and begin counting sheep."
 
-            "1...2...3..."
+            #"1...2...3..."
 
-            "..."
+            #"..."
 
-            "...156...157...158..."
+            #"...156...157...158..."
 
-            "..."
+            #"..."
 
-            "..."
+            #"..."
 
-            "..."
+            #"..."
 
             scene bg black with fade
     
-        # Day 3
-        $ currentDay = 3
-        $ currentDate = "December 9"
+        # Day 2, thursday
+        $ currentDay = 2
+        $ currentDate = "December 2"
 
         play sound "sound/birds.mp3"
         "After a restless sleep, you awaken to the sound of birds chirping outside."
@@ -954,29 +979,17 @@ label start:
 
         scene bg bathroom with fade
 
-        "Steam from your recent shower fogs up the mirror. You wipe some of it off and admire your glistening..."
-
-        menu:
-            "{cps=0}Steam from your recent shower fogs up the mirror. You wipe some of it off and admire your glistening...{/cps}"
-            "Scales":
-                $ animaltype = "reptile"
-                "...scales. Because you're a reptile, of course."
-            "Fur":
-                $ animaltype = "mammal"
-                "...fur. Because you're a mammal, of course."
-            "Feathers":
-                $ animaltype = "bird"
-                "...feathers. Because you're a bird, of course."
+        
 
         "You dry yourself off and put on some clothes, deliberating what to do today."
         #"Do you want to stay in or go out?"
-        "You've done a lot of walking lately so you're inclined to stay here and relax."
-        "Besides, you haven't even had a chance to explore your new home yet. You should at least familiarize yourself with the general layout before you start wandering around town."
+        #"You've done a lot of walking lately so you're inclined to stay here and relax."
+        "You haven't really explored your new home yet. You should at least familiarize yourself with the general layout before you start wandering around town."
         "You grab your phone and head into the halls."
 
         scene bg home_office_day with fade
 
-        "You're tour of the house concludes when you find yourself back in the office."
+        #"Your tour of the house concludes when you find yourself back in the office."
         "Your tour of the building took you through different rooms filled with art, furniture, and books."
         "Nothing out of the ordinary for a well-off boomer. You noted your father had a taste for antiques."
         "But what stood out to you the most was what must have been your father's bedroom."
@@ -987,22 +1000,27 @@ label start:
         "You sit down in the leather chair and slowly spin around."
         "It's actually really comfortable. You guess you'd splurge on a nice chair too if you were gonna sit in it for long periods of time."
         "In your idle spinning, you must have accidentally bumped the mouse, because you hear the computer suddenly turn on."
+        "You try a few common passwords but have no luck getting in."
+        "You'll need to figure out a way to get past the login screen sometime."
         "You wander what could possibly be on the hard drive."
         "It's probably just going to be full of vacation photos and spreadsheets. A cryptocurrency wallet or two if you're lucky."
+        "But you don't wanna wipe the drive until you've taken a look."
 
         # pause
 
-        "As the operating system boots up, you notice a photo frame next to the monitor."
+        "As you shut the computer down, you notice a photo frame next to the monitor."
         "Inside there's a faded picture of you as a kid. You're holding up a fish you caught and your father is kneeling beside you with a proud look on his face."
         "You vaguely remember when that photo was taken. It was in early spring, when all the leaves were bright green."
-        "You got up early and spent the whole day fishing, just you and your dad. Then when the sun went down you sat on the bank and fed the fish with the remainder of your bait."
+        "You got up early and spent the whole day fishing, just you and your dad. Then when the sun started going down you sat on the bank and fed the fish with the remainder of your bait."
         "Simpler times, those were. Your parents were still together back then."
         "You feel a lump in your throat, but you push it down because adults aren't supposed to cry."
-        "With a heavy sigh, you look back at the monitor."
-        "Dang, the disk is saying it's corrupt. It's starting a recovery procedure now."
-        "The estimated finish time is given in... days?!"
-        "Just how big is the hard drive?"
-        "Ugh, you'll deal with this later. You leave the machine running and prepare to head out."
+        #"With a heavy sigh, you look back at the monitor."
+        #"You half-heartedly try a few random passwords until it locks you out."
+        #might change back to the corrupt hard drive in recovery mode thing, but have to go back and rewrite the first time the player boots it up
+        #"Dang, the disk is saying it's corrupt. It's starting a recovery procedure now."
+        #"The estimated finish time is given in... days?!"
+        #"Just how big is the hard drive?"
+        #"Ugh, you'll deal with this later. You leave the machine running and prepare to head out."
         "There's just one more room left to check out."
 
         stop music fadeout 1.0
@@ -1015,23 +1033,28 @@ label start:
         "It's pretty large for a shed. It's more like a garage, really."
         "It's cold and echoey and smells like gasoline in here."
         "Judging by the debris and tools strewn about, it hasn't been cleaned in a while. Nobody even bothered to sweep the leaves from the floor."
-        "A blue tarp covers something in the corner of the room. You ponder what could possibly be underneath."
-        "A pile of skeletons, used for a demon-summoning ritual perhaps?"
-        "Or maybe it's a stockpile of cocaine. Never know when you might need a couple hundred pounds of that stuff."
-        "More than likely though, it's gotta be a lawnmower."
+        "A tarp covers something in the corner of the room. Probably a lawnmower"
+        #"A pile of skeletons, used for a demon-summoning ritual perhaps?"
+        #"Or maybe it's a stockpile of cocaine. Never know when you might need a couple hundred pounds of that stuff."
         "Nothing makes an old man happier than mowing the lawn at the crack of dawn on weekends."
         "Bracing yourself for disappointment, you grab a corner of the tarp and take a peek."
-        "Whoa. Is that what you think it is?"
+        "No way."
         "Your hand reaches out to touch it. The cold metal stings your fingertips."
-        "You pull aside the rest of the tarp, revealing a beautifully crafted motorcycle."
-        "Shiny chrome contrasts with the leathery black upholstery."
-        "It's design is a classic with no extra frills."
-        "Thank god, now you can ride around town instead of having to walk everywhere *and* you can do so stylishly!"
+        "You pull aside the rest of the tarp, revealing an impressive motorcycle."
+        "Its design harkens back to the motorcycles of the 70s and 80s."
+        "Shiny chrome contrasts with the leathery black upholstery. You just need a pair of aviators and you can become a biker."
+        "You take back what you thought about your dad being a lame boomer, he was in fact a cool boomer."
+        "Now you can ride around town instead of having to walk everywhere *and* you can do so stylishly!"
         "You can't wait to feel the wind on your face when you take her for a spin."
         "A quick search yields a key hidden in a nearby toolbox. The original is probably long gone, wherever your dad went."
         "You try not to think about that while you insert the key and turn it."
         "The engine makes a weird noise for a second and then nothing."
         "You try again."
+        "Fuck."
+        "You spend a few hours tinkering with it trying anything and everything but you're hindered by a lack of tools."
+        #you break the tool you needed?
+        
+        
         "Still nothing. Out of fuel maybe?"
         "You pop off the cap and look inside the gas tank, using the light on your phone to see into the darkness."
         "Empty."
@@ -1059,15 +1082,14 @@ label start:
         "Old brick buildings line the streets as you approach your destination."
         "Some of them look lived in, others look like they're about to crumble."
         "Some look like both."
-        "A short walk later, you come up to the Ol' Pickaxe. Going by the faded inscription on the second floor, this used to be a market house owned by someone named Kremman."
-        "It seems odd to you that the current owner wouldn't just paint over the old sign, but you guess people around here like to cling to history."
+        "A short walk later, you come up to the Ol' Pickaxe."
         "You ascend the couple of steps leading to the front door and head inside."
 
         scene bg pickaxe with dissolve
 
         play music "music/picknaxe_loop.mp3" fadein 1.0
 
-        "It's your typical hardware store, nothing too fancy. Mostly basic tools you won't find at a dollar store along with a small collection of niche parts."
+        "It's your typical hardware store, nothing too fancy. Mostly basic tools you won't find at a dollar store along with a small collection of less common parts."
         "Snow shovels seem to be selling quick these days."
         "Behind the counter stands a bluish green crocodile giving off gothic vibes."
         "Her eyes sluggishly drift to look in your direction."
@@ -1115,8 +1137,8 @@ label start:
 
         show mae neutral flip at left with dissolve
 
-        "Wait a minute, you recognize her as the same cat who picked up the mouse girl at the bus station the other day!"
-        "You didn't notice it at the time, but one of her ears is torn and she has subtle red highlights in her fur."
+        #"Wait a minute, you recognize her as the same cat who picked up the mouse girl at the bus station the other day!"
+        #"You didn't notice it at the time, but one of her ears is torn and she has subtle red highlights in her fur."
         "She frantically looks around the store before coming up to you."
 
         mae "Hey, do you know if Bea here right now?"
@@ -1135,7 +1157,371 @@ label start:
 
         mae "Do I know you from somewhere?"
 
-        player "Sort of? I think you were at the bus station as I was getting off."
+        player "I don't think so?"
+        
+        mae "I thought I saw you at the bus station the other day."
+        
+        n "The memory comes flooding back to you."
+        
+        #(flashback to day 0, nov 30 tuesday)
+        #lori is back from school early due to weather
+        
+        scene bg bus_interior with fade
+        play sound "sound/bus_onboard.mp3" fadein 1.0
+        play music "music/deathterrors_v2loop.mp3" fadein 1.0
+
+        "You wake up to the sound of some unusual music coming from nearby."
+        "It takes you a while to realize where you are and recall why you're here."
+        "You're on a bus to Possum Springs, a small town your father lived in after your parents split up."
+        "That was ages ago and you'd rarely seen him since."
+        "In fact, nobody's seen him in the past four years. He just vanished one day without a trace."
+        "Normally it takes seven years for a missing person to be legally declared dead but apparently your father was not the most patient man."
+        "He had written in his will that if he disappeared for just four to go ahead and hand all his belongings down to you."
+        "His cash assets would be distributed to you over time though. Guess he didn't want you spending his fortune all in one place."
+        "He did however leave behind a house for you to move into immediately."
+        "Your previous living conditions were not ideal to say the least, so you jumped at the chance to move anywhere else, even if it was in some nowhere town."
+        "You check the time on your phone. It's only 6:15. You'd never know that by looking outside though. It's pitch black out already."
+        "Well, Longest Night is drawing near after all."
+        "Thankfully you hadn't missed your stop."
+        "There's quite a few more people on board now. They must have come on while you were asleep."
+        "Apparently one of them likes loud music."
+        "You can see a pair of ears sticking up over a seat with wires trailing down from them. That must be whoever's earphones making that noise."
+        "At least they have the decency not to blast it through their phone speakers."
+
+        menu:
+            "{cps=0}What will you do?{/cps}"
+            "Ask her what she's listening to.":
+                $ inquisitive = inquisitive + 1
+                $ loriAP = loriAP + 1
+                $ loriInteractionBold == True
+
+                "It actually sounds like something you'd listen to so she must be pretty cool. You decide to strike up a conversation before she slips away, never to be seen again."
+                "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
+                "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
+                "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
+                "Strange, she doesn't look the type to draw stuff like that."
+
+                show lori neutral at right with dissolve:
+                    yalign loriheight
+
+                "She doesn't seem to have noticed you yet so you clear your throat, a bit louder than you need to."
+
+                player "*Ahem*"
+
+                show lori breath
+
+                "The mouse glances up from her journal and nearly jumps out of her seat."
+                "In a flash, she clutches her notebook and scrambles away from you until her back is pressed against the window."
+                "The poor thing's rapidly breathing in and out as she watches you with fear in her eyes."
+                "You hold your hands up to show you meant no harm."
+
+                player "Whoa, didn't mean to startle you."
+
+                "Easing back into her seat, she takes her earphones out and makes a concentrated effort to slow her breathing."
+
+                loriunknown "Oh goodness, you scared me! Hah hah... hah..."
+
+                "You chuckle lightheartedly."
+
+                player "I guess that makes us even. Pretty cool music by the way."
+
+                show lori neutral
+
+                "The girl looks confused for a moment then realizes her earphones still playing and are audible from a distance."
+
+                loriunknown "Oh gosh, you could hear that? I'm so sorry!"
+
+                stop music fadeout 2.0
+
+                "She mashes the volume down button on her phone in a panicked, embarrassed fashion."
+
+                loriunknown "*Huff huff*"
+
+                player "No, it's fine. Actually I wanted to get the name of it before one of us got off the bus."
+
+                "You confidently smile as you reassure her. She looks at you like you're crazy for a second then smiles back, scooting closer to you."
+
+                loriunknown "Well uh, it's called Deathterrors. The album, that is. It's by Kerosinners."
+
+                player "Nice. I'll check it out once I get to my place."
+
+                "She seems excited to talk more about it, but the bus driver cuts your conversation short as he announces you'll be arriving in Possum Springs momentarily."
+
+                loriunknown "Oop, that's my stop!"
+
+                player "Really? It's mine too!"
+
+                loriunknown "No way! No one else ever gets off at Possum Springs!"
+
+                player "Yeah, I'm moving in today."
+
+                loriunknown "Cool! Maybe I'll see you around town later... Whoops!"
+
+                "She reaches down to grab her pen that had just rolled off her notebook, but you get to it first and hand it back."
+
+                loriunknown "Hah, thanks! Guess I better pack up before our stop, huh?"
+
+                player "Yeah, that might be a good idea haha."
+
+                hide lori with dissolve
+
+                "While she gathers her things and stuffs them in her backpack, you take a look outside."
+                "The forest has opened up into a hilly countryside. Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness."
+                "A short time later, the bus pulls up to an abandoned-looking station and stops by an empty bench."
+                "The whole area has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks nearly every vertical surface."
+                "It looks like a ghost town."
+                "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
+                "You let the mouse girl stand up and start walking toward the exit first, then check your pockets to make sure you got everything and head out yourself."
+
+                stop sound fadeout 1.0
+
+                #this is supposed to be an exterior background but we didn't have one available :/
+                scene bg busstation with dissolve
+
+                $ renpy.sound.set_volume(.3, 0, channel='sound')
+                play sound "sound/crickets.mp3" fadein 1.0
+
+                "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
+                "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
+                "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
+                "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
+
+                # brief pause
+
+                "Jeez, how long is the driver gonna make you wait?"
+                "He takes his sweet time before finally waddling out and unlocking the storage door."
+                "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
+
+                show lori neutral at right with dissolve:
+                    yalign loriheight
+
+                loriunknown "See you around!"
+
+                "You look up to see the mouse waving goodbye to you with her free hand as she totes her suitcase to a car that had just pulled up to the curb."
+                "You take a break from pulling your bags out to wave back."
+
+                player "See ya!"
+
+                "You're rewarded with a wide grin before she runs into the arms of the black-furred cat who had just stepped out of the vehicle, giggling and embracing her fondly."
+
+                # hug scene
+                show mae neutral flip at left with dissolve:
+                    yalign maeheight
+
+                maeunknown "Lori!"
+
+                lori "Mae!"
+
+                mae "Welcome back to Possum Springs!"
+
+                lori "Haha it's good to be back!"
+
+                mae "Glad to see you again! Here, lemme get those for you."
+
+                "The cat takes Lori's luggage and hoists it into the trunk of her car, but the mouse chooses to hold onto her backpack."
+
+                lori "Hang on, I wanna keep my notebook close by."
+
+                mae "Gotchya. Ready to go?"
+
+                lori "Yeah!"
+
+                hide lori
+                hide mae
+                with dissolve
+
+                "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+                "The car revs to life and begins to drive away as you drag your things from the bus."
+                "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
+                "The bus driver wordlessly closes the compartment and locks it, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
+
+
+            "Ask her to turn it down.":
+                $ loriAP = loriAP - 1
+                $ bold = bold + 1
+                $ loriInteractionRude == True
+
+                "You don't wanna hear any more of that creepy music, and you're sure everyone else on the bus would appreciate some peace and quiet."
+                "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
+                "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
+                "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
+                "What kind of person draws stuff like this?"
+
+                show lori neutral at right with dissolve:
+                    yalign loriheight
+
+                player "Excuse me."
+
+                $ cynical = cynical + 1
+
+                show lori anxious3:
+                    yalign loriheight
+
+                "She jumps a little when she notices you, knocking her pen to the floor."
+                "She hastily picks it back up then takes out her earphones. Her movement is kinda jittery and she's breathing heavily."
+
+                show lori breath
+
+                loriunknown "Um, hey? Huff huff... Did you need something?"
+
+                "You point to her earphones lying on her journal."
+
+                player "Would you mind turning that down?"
+
+                "She glances down at her earphones then back up to you with a panicked, embarrassed expression."
+
+                loriunknown "Oh gosh, you could hear that? I'm so sorry, hang on!"
+
+                stop music fadeout 2.0
+
+                "She mashes the volume down button on her phone."
+
+                loriunknown "Huff huff... Huff huff..."
+
+                player "Appreciate it."
+
+                hide lori with dissolve
+
+                "With that out of the way, you decide to look out the window and admire the countryside."
+                "Hills, a train track, a factory, and more hills. So this is it, huh? It's quite... plain."
+                "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
+                "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
+                "It looks like a ghost town."
+                "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
+                "The mouse girl hurriedly stands up and starts walking toward the exit, looking a bit distressed."
+                "Is she angry because you asked her to turn down her music?"
+                "Regardless, you check your pockets to make sure you got everything and head out yourself."
+
+                stop sound fadeout 1.0
+
+                scene bg busstation with dissolve
+
+                $ renpy.sound.set_volume(.3, 0, channel='sound')
+                play sound "sound/crickets.mp3" fadein 1.0
+
+                "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
+                "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
+                "It's just you and that girl waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
+                "She avoids eye contact with you."
+
+                # brief pause
+
+                "Jeez, how long is the driver gonna make you wait?"
+                "He takes his sweet time before finally waddling out and unlocking the storage door."
+                "Gesturing for the mouse to go first, you patiently wait for her to retrieve her bags, then reach in to dig out your own stuff."
+                "Out of the corner of your eye, you can see her walk up to a car as it pulls up to the curb."
+                "A black-furred cat steps out to happily greet her with a nice big hug."
+
+                show lori neutral at right:
+                    yalign loriheight
+                show mae neutral flip at left
+                with dissolve
+
+                maeunknown "Lori!"
+
+                lori "Mae!"
+
+                mae "Welcome back to Possum Springs!"
+
+                lori "Haha it's good to be back!"
+
+                mae "Glad to see you again! Here, lemme get those for you."
+
+                "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
+
+                lori "Hang on, wanna keep my notebook close."
+
+                mae "Gotchya. Ready to go?"
+
+                lori "Yeah!"
+
+                hide lori
+                hide mae
+                with dissolve
+
+                "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+                "The car revs to life and begins to drive away as you drag your things from the bus."
+                "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
+                "The bus driver comes and locks the compartment, then wordlessly returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
+
+
+            "Move away from her.":
+                $ loriInteractionNull = True
+                $ cynical = cynical + 1
+
+                "You don't wanna bother her. You'll be off this bus soon anyway."
+                "You move over to a seat further away from her and take a look out the window, losing yourself in thought."
+                "The forest has opened up into a hilly countryside."
+                "Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness. So this is it huh? It seem so... plain."
+                "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
+                "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
+                "It looks like a ghost town."
+                "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
+                "The mouse girl stands up and walks toward the exit before you do. You wonder if she lives here."
+                "Seems she's the only one besides yourself getting off at this stop. You check your pockets to make sure you got everything and head out yourself."
+
+                stop music fadeout 2.0
+                stop sound fadeout 1.0
+
+                scene bg busstation with dissolve
+
+                $ renpy.sound.set_volume(.3, 0, channel='sound')
+                play sound "sound/crickets.mp3" fadein 1.0
+
+                "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
+                "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
+                "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
+                "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
+                "She still has her earphones in, and you can overhear all the cries and moans and screams that she doesn't seem to mind at all."
+
+                # brief pause
+
+                "Jeez, how long is the driver gonna make you wait?"
+                "He takes his sweet time before finally waddling out and unlocking the storage door."
+                "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
+                "Out of the corner of your eye, you can see her remove her earphones then excitedly run up to a car as it pulls up to the curb."
+                "A black-furred cat steps out to happily greet the mouse and give her a nice big hug."
+
+                show lori neutral at right:
+                    yalign loriheight
+                show mae neutral flip at left:
+                    yalign maeheight
+                with dissolve
+
+                maeunknown "Lori!"
+
+                lori "Mae!"
+
+                "Welcome back to Possum Springs!"
+
+                lori "Haha it's good to be back!"
+
+                mae "Glad to see you again! Here, lemme get those for you."
+
+                "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
+
+                lori "Hang on, wanna keep my notebook close."
+
+                mae "Gotchya. Ready to go?"
+
+                lori "Yeah!"
+
+                "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+
+                hide mae
+                hide lori
+                with dissolve
+
+                "The car revs to life and begins to drive away as you drag your things from the bus."
+                "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
+                "The bus driver comes and wordlessly locks the compartment, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
+
+        # restore default music volume
+        $ renpy.music.set_volume(0.7, 0, channel='music')
+
+        scene bg black with fade
+
+        "From there you remember walking through the woods to get to your new home."
 
         show mae neutral flip at left
 
@@ -1143,7 +1529,7 @@ label start:
 
         mae "Oh yeah! I remember seeing you! It's not every day someone new arrives in Possum Springs!"
 
-        player "I just moved here. My name's [newname]."
+        player "I just moved here. My name's [name]."
 
         mae "Mae. Mae Borowski. Nice to meet you!"
 
@@ -1169,7 +1555,7 @@ label start:
         #have mae run off the screen instead
         hide mae with dissolve
 
-        "She runs out of the store just as the owner comes back."
+        "She runs out of the store just as the crocodile comes back."
 
         show bea apron at right with dissolve:
             yalign beaheight
@@ -1313,7 +1699,7 @@ label start:
 
             angus "Oh you."
 
-            player "Nice to meet you, Angus. I'm [newname]."
+            player "Nice to meet you, Angus. I'm [name]."
 
             angus "It's a pleasure to meet you as well."
 
@@ -1352,22 +1738,22 @@ label start:
 
             "He holds out his paw and you take hold of it. He's got a firm, eager handshake."
 
-            player "[newname]."
+            player "[name]."
 
             if newname.upper() == "SCOTT":
-                gregg "[newname], huh? When we lived in Bright Harbor our neighbor was a Scott. I think he was an animator or something."
+                gregg "[name], huh? When we lived in Bright Harbor our neighbor was a Scott. I think he was an animator or something."
             if newname.upper() == "ALEC":
-                gregg "[newname], huh? We knew an Alec when we lived in Bright Harbor. I think he was a musician or something."
+                gregg "[name], huh? We knew an Alec when we lived in Bright Harbor. I think he was a musician or something."
             if newname.upper() == "BETH":
-                gregg "[newname], huh? There was a Beth we ran into a few times when we lived in Bright Harbor. I think she was making an indie game or something."
+                gregg "[name], huh? There was a Beth we ran into a few times when we lived in Bright Harbor. I think she was making an indie game or something."
             if newname.upper() == "BETHANY":
-                gregg "[newname], huh? There was a Bethany we ran into a few times when we lived in Bright Harbor. I think she was making an indie game or something."
+                gregg "[name], huh? There was a Bethany we ran into a few times when we lived in Bright Harbor. I think she was making an indie game or something."
 
             angus "I'm Angus. It's a pleasure to meet you."
 
             player "Nice to meet you as well!"
 
-            "It seems everyone knows each other in this town. Like everyone's in one big family."
+            "It seems everyone knows each other in this town. Like everyone is one big family."
             "It's kinda cute."
 
             "Everyone's attention shifts to the toaster oven when the timer dings."
@@ -1466,7 +1852,8 @@ label start:
         scene bg home_interior_night with fade
 
         "The sun had gone down by the time you made it home."
-        "You lazed around and browsed the internet on your phone for a while until you were hungry enough to start dinner, then you continued to laze around until it was time for bed."
+        "You lazed around and watched a few videos on your phone for a while until you were hungry enough to start dinner, then you continued to laze around until it was time for bed."
+        #try tinkering with the bike, go to bed early since gregg is showing up in the morning
 
 
         scene bg bedroom with fade
@@ -1481,427 +1868,14 @@ label start:
         scene bg black with fade
         
         
+        stop music fadeout 1.0
     
     
+
+    # Day 3, friday
+    $ currentDay = 3
+    $ currentDate = "December 3"
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    #go to library to download OS .iso from computer there
-    #get angus to help you?
-    
-    
-    #"You read the password printed on the bottom and type it into your phone. A few seconds later it finishes authenticating and you're connected."
-    #"You mindlessly satisfy your brain's need for media consumption until your body reminds you of your need to eat."
-    #"Predictably, nothing in the pantry is edible as everything inside it had expired years ago."
-    #"Guess you'll be making a trip to the grocery store today."
-
-    stop music fadeout 1.0
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    ###move this flashback to right after you meet mae
-    "Let's see... you got on the bus yesterday afternoon and then..."
-
-    scene bg bus_interior with fade
-    play sound "sound/bus_onboard.mp3" fadein 1.0
-    play music "music/deathterrors_v2loop.mp3" fadein 1.0
-
-    "You wake up to the sound of some unusual music coming from nearby."
-    "It takes you a while to realize where you are and recall why you're here."
-    "You're on a bus to Possum Springs, a small town your father lived in after your parents split up."
-    "That was ages ago and you'd rarely seen him since."
-    "In fact, nobody's seen him in the past four years. He just vanished one day without a trace."
-    "Normally it takes seven years for a missing person to be legally declared dead but apparently your father was not the most patient man."
-    "He had written in his will that if he disappeared for just four to go ahead and hand all his belongings down to you."
-    "His cash assets would be distributed to you over time though. Guess he didn't want you spending his fortune all in one place."
-    "He did however leave behind a house for you to move into immediately."
-    "Your previous living conditions were not ideal to say the least, so you jumped at the chance to move anywhere else, even if it was in some nowhere town."
-    "You check the time on your phone. It's only 6:15. You'd never know that by looking outside though. It's pitch black out already."
-    "Well, Longest Night is drawing near after all."
-    "Thankfully you hadn't missed your stop."
-    "There's quite a few more people on board now. They must have come on while you were asleep."
-    "Apparently one of them likes loud music."
-    "You can see a pair of ears sticking up over a seat with wires trailing down from them. That must be whoever's earphones making that noise."
-    "At least they have the decency not to blast it through their phone speakers."
-
-    menu:
-        "{cps=0}What will you do?{/cps}"
-        "Ask her what she's listening to.":
-            $ inquisitive = inquisitive + 1
-            $ loriAP = loriAP + 1
-            $ loriInteractionBold == True
-
-            "It actually sounds like something you'd listen to so she must be pretty cool. You decide to strike up a conversation before she slips away, never to be seen again."
-            "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
-            "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
-            "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
-            "Strange, she doesn't look the type to draw stuff like that."
-
-            show lori neutral at right with dissolve:
-                yalign loriheight
-
-            "She doesn't seem to have noticed you yet so you clear your throat, a bit louder than you need to."
-
-            player "*Ahem*"
-
-            show lori breath
-
-            "The mouse glances up from her journal and nearly jumps out of her seat."
-            "In a flash, she clutches her notebook and scrambles away from you until her back is pressed against the window."
-            "The poor thing's rapidly breathing in and out as she watches you with fear in her eyes."
-            "You hold your hands up to show you meant no harm."
-
-            player "Whoa, didn't mean to startle you."
-
-            "Easing back into her seat, she takes her earphones out and makes a concentrated effort to slow her breathing."
-
-            loriunknown "Oh goodness, you scared me! Hah hah... hah..."
-
-            "You chuckle lightheartedly."
-
-            player "I guess that makes us even. Pretty cool music by the way."
-
-            show lori neutral
-
-            "The girl looks confused for a moment then realizes her earphones still playing and are audible from a distance."
-
-            loriunknown "Oh gosh, you could hear that? I'm so sorry!"
-
-            stop music fadeout 2.0
-
-            "She mashes the volume down button on her phone in a panicked, embarrassed fashion."
-
-            loriunknown "*Huff huff*"
-
-            player "No, it's fine. Actually I wanted to get the name of it before one of us got off the bus."
-
-            "You confidently smile as you reassure her. She looks at you like you're crazy for a second then smiles back, scooting closer to you."
-
-            loriunknown "Well uh, it's called Deathterrors. The album, that is. It's by Kerosinners."
-
-            player "Nice. I'll check it out once I get to my place."
-
-            "She seems excited to talk more about it, but the bus driver cuts your conversation short as he announces you'll be arriving in Possum Springs momentarily."
-
-            loriunknown "Oop, that's my stop!"
-
-            player "Really? It's mine too!"
-
-            loriunknown "No way! No one else ever gets off at Possum Springs!"
-
-            player "Yeah, I'm moving in today."
-
-            loriunknown "Cool! Maybe I'll see you around town later... Whoops!"
-
-            "She reaches down to grab her pen that had just rolled off her notebook, but you get to it first and hand it back."
-
-            loriunknown "Hah, thanks! Guess I better pack up before our stop, huh?"
-
-            player "Yeah, that might be a good idea haha."
-
-            hide lori with dissolve
-
-            "While she gathers her things and stuffs them in her backpack, you take a look outside."
-            "The forest has opened up into a hilly countryside. Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness."
-            "A short time later, the bus pulls up to an abandoned-looking station and stops by an empty bench."
-            "The whole area has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks nearly every vertical surface."
-            "It looks like a ghost town."
-            "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
-            "You let the mouse girl stand up and start walking toward the exit first, then check your pockets to make sure you got everything and head out yourself."
-
-            stop sound fadeout 1.0
-
-            #this is supposed to be an exterior background but we didn't have one available :/
-            scene bg busstation with dissolve
-
-            $ renpy.sound.set_volume(.3, 0, channel='sound')
-            play sound "sound/crickets.mp3" fadein 1.0
-
-            "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
-            "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
-            "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
-            "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
-
-            # brief pause
-
-            "Jeez, how long is the driver gonna make you wait?"
-            "He takes his sweet time before finally waddling out and unlocking the storage door."
-            "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
-
-            show lori neutral at right with dissolve:
-                yalign loriheight
-
-            loriunknown "See you around!"
-
-            "You look up to see the mouse waving goodbye to you with her free hand as she totes her suitcase to a car that had just pulled up to the curb."
-            "You take a break from pulling your bags out to wave back."
-
-            player "See ya!"
-
-            "You're rewarded with a wide grin before she runs into the arms of the black-furred cat who had just stepped out of the vehicle, giggling and embracing her fondly."
-
-            # hug scene
-            show mae neutral flip at left with dissolve:
-                yalign maeheight
-
-            maeunknown "Lori!"
-
-            lori "Mae!"
-
-            mae "Welcome back to Possum Springs!"
-
-            lori "Haha it's good to be back!"
-
-            mae "Glad to see you again! Here, lemme get those for you."
-
-            "The cat takes Lori's luggage and hoists it into the trunk of her car, but the mouse chooses to hold onto her backpack."
-
-            lori "Hang on, I wanna keep my notebook close by."
-
-            mae "Gotchya. Ready to go?"
-
-            lori "Yeah!"
-
-            hide lori
-            hide mae
-            with dissolve
-
-            "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
-            "The car revs to life and begins to drive away as you drag your things from the bus."
-            "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
-            "The bus driver wordlessly closes the compartment and locks it, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
-
-
-        "Ask her to turn it down.":
-            $ loriAP = loriAP - 1
-            $ bold = bold + 1
-            $ loriInteractionRude == True
-
-            "You don't wanna hear any more of that creepy music, and you're sure everyone else on the bus would appreciate some peace and quiet."
-            "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
-            "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
-            "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
-            "What kind of person draws stuff like this?"
-
-            show lori neutral at right with dissolve:
-                yalign loriheight
-
-            player "Excuse me."
-
-            $ cynical = cynical + 1
-
-            show lori anxious3:
-                yalign loriheight
-
-            "She jumps a little when she notices you, knocking her pen to the floor."
-            "She hastily picks it back up then takes out her earphones. Her movement is kinda jittery and she's breathing heavily."
-
-            show lori breath
-
-            loriunknown "Um, hey? Huff huff... Did you need something?"
-
-            "You point to her earphones lying on her journal."
-
-            player "Would you mind turning that down?"
-
-            "She glances down at her earphones then back up to you with a panicked, embarrassed expression."
-
-            loriunknown "Oh gosh, you could hear that? I'm so sorry, hang on!"
-
-            stop music fadeout 2.0
-
-            "She mashes the volume down button on her phone."
-
-            loriunknown "Huff huff... Huff huff..."
-
-            player "Appreciate it."
-
-            hide lori with dissolve
-
-            "With that out of the way, you decide to look out the window and admire the countryside."
-            "Hills, a train track, a factory, and more hills. So this is it, huh? It's quite... plain."
-            "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
-            "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
-            "It looks like a ghost town."
-            "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
-            "The mouse girl hurriedly stands up and starts walking toward the exit, looking a bit distressed."
-            "Is she angry because you asked her to turn down her music?"
-            "Regardless, you check your pockets to make sure you got everything and head out yourself."
-
-            stop sound fadeout 1.0
-
-            scene bg busstation with dissolve
-
-            $ renpy.sound.set_volume(.3, 0, channel='sound')
-            play sound "sound/crickets.mp3" fadein 1.0
-
-            "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
-            "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
-            "It's just you and that girl waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
-            "She avoids eye contact with you."
-
-            # brief pause
-
-            "Jeez, how long is the driver gonna make you wait?"
-            "He takes his sweet time before finally waddling out and unlocking the storage door."
-            "Gesturing for the mouse to go first, you patiently wait for her to retrieve her bags, then reach in to dig out your own stuff."
-            "Out of the corner of your eye, you can see her walk up to a car as it pulls up to the curb."
-            "A black-furred cat steps out to happily greet her with a nice big hug."
-
-            show lori neutral at right:
-                yalign loriheight
-            show mae neutral flip at left
-            with dissolve
-
-            maeunknown "Lori!"
-
-            lori "Mae!"
-
-            mae "Welcome back to Possum Springs!"
-
-            lori "Haha it's good to be back!"
-
-            mae "Glad to see you again! Here, lemme get those for you."
-
-            "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
-
-            lori "Hang on, wanna keep my notebook close."
-
-            mae "Gotchya. Ready to go?"
-
-            lori "Yeah!"
-
-            hide lori
-            hide mae
-            with dissolve
-
-            "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
-            "The car revs to life and begins to drive away as you drag your things from the bus."
-            "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
-            "The bus driver comes and locks the compartment, then wordlessly returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
-
-
-        "Move away from her.":
-            $ loriInteractionNull = True
-            $ cynical = cynical + 1
-
-            "You don't wanna bother her. You'll be off this bus soon anyway."
-            "You move over to a seat further away from her and take a look out the window, losing yourself in thought."
-            "The forest has opened up into a hilly countryside."
-            "Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness. So this is it huh? It seem so... plain."
-            "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
-            "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
-            "It looks like a ghost town."
-            "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
-            "The mouse girl stands up and walks toward the exit before you do. You wonder if she lives here."
-            "Seems she's the only one besides yourself getting off at this stop. You check your pockets to make sure you got everything and head out yourself."
-
-            stop music fadeout 2.0
-            stop sound fadeout 1.0
-
-            scene bg busstation with dissolve
-
-            $ renpy.sound.set_volume(.3, 0, channel='sound')
-            play sound "sound/crickets.mp3" fadein 1.0
-
-            "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
-            "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
-            "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
-            "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
-            "She still has her earphones in, and you can overhear all the cries and moans and screams that she doesn't seem to mind at all."
-
-            # brief pause
-
-            "Jeez, how long is the driver gonna make you wait?"
-            "He takes his sweet time before finally waddling out and unlocking the storage door."
-            "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
-            "Out of the corner of your eye, you can see her remove her earphones then excitedly run up to a car as it pulls up to the curb."
-            "A black-furred cat steps out to happily greet the mouse and give her a nice big hug."
-
-            show lori neutral at right:
-                yalign loriheight
-            show mae neutral flip at left:
-                yalign maeheight
-            with dissolve
-
-            maeunknown "Lori!"
-
-            lori "Mae!"
-
-            "Welcome back to Possum Springs!"
-
-            lori "Haha it's good to be back!"
-
-            mae "Glad to see you again! Here, lemme get those for you."
-
-            "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
-
-            lori "Hang on, wanna keep my notebook close."
-
-            mae "Gotchya. Ready to go?"
-
-            lori "Yeah!"
-
-            "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
-
-            hide mae
-            hide lori
-            with dissolve
-
-            "The car revs to life and begins to drive away as you drag your things from the bus."
-            "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
-            "The bus driver comes and wordlessly locks the compartment, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
-
-    # restore default music volume
-    $ renpy.music.set_volume(0.7, 0, channel='music')
-
-    scene bg black with fade
-
-    "From there you remember walking through the woods to get to your house."
-    "It was cold as hell but furnished well and the blankets in the guest bedroom were enough to keep you warm."
-
-
-    
-
-    
-
-    
-
-    
-
-    # Day 4
-    $ currentDay = 4
-    $ currentDate = "December 10"
 
     play sound "sound/motorbike arriving.mp3"
     #scene fading in
@@ -1922,7 +1896,7 @@ label start:
     show gregg neutral flip at left with dissolve:
         yalign greggheight
 
-    gregg "Morning, [newname]! I brought all my tools and a bunch of parts."
+    gregg "Morning, [name]! I brought all my tools and a bunch of parts."
 
     player "Uh, morning Gregg. I didn't expect you so early."
 
@@ -2318,14 +2292,14 @@ label start:
     show germ neutral at right
     with dissolve
 
-    angus "Hello, [newname]! Gregg hasn't let you inside yet?"
+    angus "Hello, [name]! Gregg hasn't let you inside yet?"
 
     player "Hey Angus. Nah, I haven't seen him. The place looks empty."
 
     angus "Hmm. He's probably watching TV in the dark and couldn't hear you."
-    angus "This is Germ by the way. Germ, this is [newname]."
+    angus "This is Germ by the way. Germ, this is [name]."
 
-    germ "Hi [newname]! I hope you like video games! I brought some with me."
+    germ "Hi [name]! I hope you like video games! I brought some with me."
 
     "He adjusts his bag to emphasize his point."
 
@@ -2392,11 +2366,11 @@ label start:
 
     "He quickly regains his composure, acting like nothing had just happened."
 
-    gregg "[newname]! Germ! What's up?"
+    gregg "[name]! Germ! What's up?"
 
-    angus "I found Germ wandering around on the way back from the pizza joint, and [newname] was just sitting out front."
+    angus "I found Germ wandering around on the way back from the pizza joint, and [name] was just sitting out front."
 
-    gregg "Oops, that's my fault. I shoulda been waiting out there for ya, [newname]."
+    gregg "Oops, that's my fault. I shoulda been waiting out there for ya, [name]."
     gregg "Please accept Angus's pizza as an apology on my behalf."
 
     player "Apology accepted."
@@ -2412,7 +2386,7 @@ label start:
 
     germ "Thanks."
 
-    angus "[newname], you can just set your backpack down wherever, you know."
+    angus "[name], you can just set your backpack down wherever, you know."
 
     player "Oh right, Gregg left his tools at my place so I brought 'em over."
 
@@ -2473,7 +2447,7 @@ label start:
         xalign .7
     with dissolve
 
-    gregg "Angus and I had to sell our consoles when we moved, [newname]. We were very sad."
+    gregg "Angus and I had to sell our consoles when we moved, [name]. We were very sad."
 
     angus "I mostly play on PC."
 
@@ -2511,7 +2485,7 @@ label start:
 
     germ "What game should we play?"
 
-    gregg "You decide, [newname]."
+    gregg "You decide, [name]."
 
     menu:
         "The platformer fighting game.":
@@ -2652,7 +2626,7 @@ label start:
 
         gregg "What happened? Who lost?"
 
-        angus "[newname] got eaten!"
+        angus "[name] got eaten!"
 
         gregg "OOOOOH! GERM IS THE MASTER OF LUCK!"
         gregg "AWOOOOOOOOOO!"
@@ -2750,9 +2724,9 @@ label start:
 
     scene bg black with fade
 
-    # Day 5
-    $ currentDay = 5
-    $ currentDate = "December 11"
+    # Day 4, saturday
+    $ currentDay = 4
+    $ currentDate = "December 4"
 
     play music "music/home_again.mp3" fadein 1.0
     scene bg home_interior_day with fade
@@ -2819,9 +2793,9 @@ label start:
     selma "That's what most folk call me."
     selma "I remember you from Posspresso but I didn't get your name."
 
-    player "[newname]."
+    player "[name]."
 
-    selma "Nice to officially meet you, [newname]."
+    selma "Nice to officially meet you, [name]."
     selma "Welcome to the Possum Springs Public Library. Is there anything I can do for you?"
 
     "You take one last look at the book in your hand then slide it over the counter."
@@ -2968,7 +2942,7 @@ label start:
         lori "So are you visiting Possum Springs or something?"
 
         player "I just moved in actually."
-        player "My name's [newname]."
+        player "My name's [name]."
 
         lori "Lori."
 
@@ -3069,7 +3043,7 @@ label start:
         lori "Awesome!"
         lori "Before I forget, what's your name?"
 
-        player "[newname]."
+        player "[name]."
 
         lori "Lori."
 
@@ -3087,9 +3061,9 @@ label start:
 
         lori "Not really. Possum Springs is like, really small. We would have run into each other sooner or later."
 
-        player "Seems like it! I don't believe I caught your name earlier. I'm [newname]."
+        player "Seems like it! I don't believe I caught your name earlier. I'm [name]."
 
-        lori "Nice to meet you again, [newname]! I'm Lori!"
+        lori "Nice to meet you again, [name]! I'm Lori!"
 
         player "I still haven't gotten around to listening to that album yet but it's on my to do list. Been adjusting after moving in."
 
@@ -3322,7 +3296,7 @@ label start:
         xalign 1.02
     with dissolve
 
-    lori "[newname]! You made it!"
+    lori "[name]! You made it!"
 
     "You look to the source of the voice. You didn't even notice the mouse girl sitting at one of the tables. She stands up and runs toward you."
 
@@ -3332,7 +3306,7 @@ label start:
 
     "You're still confused from discovering Gregg and Angus are in a band with Mae and the hardware store girl."
 
-    lori "Guys, this is [newname]! [newname], that's Gregg, Angus, Mae, and Bea!"
+    lori "Guys, this is [name]! [name], that's Gregg, Angus, Mae, and Bea!"
 
     "She points to each of them as she lists their names."
 
@@ -3367,11 +3341,11 @@ label start:
         xalign .12
     with moveinleft
 
-    angus "It's cool. [newname] is cool."
+    angus "It's cool. [name] is cool."
 
-    lori "Sorry for inviting [newname] without knowing if it was ok... I thought it was going to be a bigger party..."
+    lori "Sorry for inviting [name] without knowing if it was ok... I thought it was going to be a bigger party..."
 
-    gregg "No, it's fine. Tell ya what, we'll go out to eat after putting things away here. You hungry, [newname]?"
+    gregg "No, it's fine. Tell ya what, we'll go out to eat after putting things away here. You hungry, [name]?"
 
     player "I could eat."
 
@@ -3694,7 +3668,7 @@ label start:
         yalign beaheight
         xalign 1.18
 
-    bea "So [newname], I heard you moved here recently? What are you doing in Possum Springs?"
+    bea "So [name], I heard you moved here recently? What are you doing in Possum Springs?"
 
     player "Eh, just wanted to get away from home, ya know? Move out and be independent and all that stuff."
     player "I have to say, I'm enjoying Possum Springs a lot more than I thought I would."
@@ -3739,7 +3713,7 @@ label start:
 
     gregg "I could try putting in a good word for you at Ham Panther. I don't think they're hiring right now though."
 
-    angus "I've got my hands full just trying to pay myself at the bakery so..."
+    angus "I've got my paws full just trying to pay myself at the bakery so..."
 
     gregg "Maybe Mae could get you something at the arts council if you're into that."
 
@@ -3769,7 +3743,7 @@ label start:
     "Even though your meal isn't very good, you still have a pleasant time with your new friends."
     "Towards the end of the night, Bea gets a box for her leftovers and the waitress drops off the meal she ordered for her father."
     "When it comes time to pay the bill, Gregg insists that he cover for you but you politely decline, knowing you can spare the cash more comfortably."
-    "Ironically, Angus is the one to put down his debit card for both him and Gregg, though you suspect they share a bank account."
+    "Ironically, Angus is the one to put down his debit card for both himself and Gregg."
     "Bea pays for her own, and Mae asks the waitress to put hers and Lori's meals on one bill."
 
     show mae blush
@@ -3826,10 +3800,9 @@ label start:
 
     scene bg black with fade
 
-    # Day 6, sunday
-    $ currentDay = 6
-    $ currentDate = "December 12"
 
+label church1:
+    # day 5, sunday, dec 5
     scene bg home_interior_day with fade
 
     "Your first week in Possum Springs has come to a close."
@@ -3849,11 +3822,10 @@ label start:
 
     jump churchScene1
 
-
-label day7:
-    # day 7, monday
-    $ currentDay = 7
-    $ currentDate = "December 13"
+label jobs1:
+    # day 6, monday
+    $ currentDay = 6
+    $ currentDate = "December 6"
     scene bg home_interior_day with fade
 
     "Another day, a new adventure awaits."
@@ -3864,15 +3836,46 @@ label day7:
         "{cps=0}Where do you want to go?{/cps}"
         "Ol' Pickaxe" if workingWithBeaCompleted == False:
             jump workingWithBea
-        "Bakery" if angusTownCompleted == False:
-            jump angusTown
-        "Ham Panther" if greggTownCompleted == False:
-            jump greggTown
+        "Help Lori with film project" if loriHelpCompleted == False:
+            jump loriFilm
+        "Check out the arts council" if maeArtsCompleted == False:
+            jump maeArts
+            
+      
+label day7:
+    #day 7, tuesday, dec 7
+    #
 
-label day8:
-    # day 8, tuesday
-    $ currentDay = 8
-    $ currentDate = "December 14"
+    #add a random event where you hang out with germ. maybe you see him hauling animal feed across town in a stolen shopping cart, making him look homeless
+            
+            
+            
+label jobs2:
+    # day 8, wednesday, dec 8
+    "Another day, a new adventure awaits."
+    "Or something like that."
+    "Either way, you make yourself presentable and prepare to go out."
+
+    menu:
+        "{cps=0}Where do you want to go?{/cps}"
+        "Ol' Pickaxe" if workingWithBeaCompleted == False:
+            jump workingWithBea
+        "Help Lori with film project" if loriHelpCompleted == False:
+            jump loriFilm
+        "Check out the arts council" if maeArtsCompleted == False:
+            jump maeArts
+            
+            
+            
+            
+            
+
+    
+
+label day9:
+    # day 9, thursday
+    $ currentDay = 9
+    $ currentDate = "December 9"
 
     scene bg home_interior_day with fade
 
@@ -3891,10 +3894,10 @@ label day8:
         "Historical Society":
             jump loriGreggHistorical
 
-    label day9:
-    # day 9, wednesday
-    $ currentDay = 9
-    $ currentDate = "December 15"
+    label day10:
+    # day 10, friday
+    $ currentDay = 10
+    $ currentDate = "December 10"
 
     scene bg home_interior_day with fade
 
@@ -3906,19 +3909,54 @@ label day8:
         "{cps=0}Where do you want to go?{/cps}"
         "Ol' Pickaxe":
             jump beaAntiqueShop
-        "Bear Essentials Bakery":
-            #write a small bit about heading toward the bakery but getting lost/distracted
-            jump selmaAngusSpa
-        "Possum Springs Outskirts":
+        "Bakery":
+            #visit bakery but are surprised by lack of coffee. learn that they have a deal with posspresso where they don't sell coffee and possprsso doesn't sell certain baked goods. angus mentions his favorite drink there and you offer to get him one in exchange for your confection. at the cafe you find selma, and you can give her your treat as apology for missing the library event
+        "Explore town":
             jump maeLoriSleepover
+
+label anotherday:
+#another germ scene, he slips on ice, you help him home, visit his animal shelter
+
 
     label day10:
         # day 10, thursday
         $ currentDay = 10
         $ currentDate = "December 16"
+        
+        "Another day, a new adventure awaits."
+    "Or something like that."
+    "Either way, you make yourself presentable and prepare to go out."
 
     menu:
-        "Play DnD with Gregg and Angus":
+        "{cps=0}Where do you want to go?{/cps}"
+        "Ol' Pickaxe":
+            jump beaAntiqueShop
+        "bakery":
+            #visit bakery but are surprised by lack of coffee. learn that they have a deal with posspresso where they don't sell coffee and possprsso doesn't sell certain baked goods. angus mentions his favorite drink there and you offer to get him one in exchange for your confection. at the cafe you find selma, and you can give her your treat as apology for missing the library event
+        "Explore town":
+            jump maeLoriSleepover
+            
+
+
+label day:
+    #farmer's market?
+    #group hangout at ??? with ???
+    #germ is invited but couldn't make it
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+label nextday:
+
+    menu:
+        "Play video games with Gregg and Angus":
             jump dragonsDungeons1
         "Train Tracks" if loriFilmCompleted == False:
             jump loriFilm
@@ -3963,7 +4001,7 @@ label day8:
                 show bea apron at right with dissolve:
                     yalign beaheight
 
-                bea "Hey [newname]. Me and Selma are going out to the Arts Council tonight for some poetry. You wanna come?"
+                bea "Hey [name]. Me and Selma are going out to the Arts Council tonight for some poetry. You wanna come?"
 
                 player "Sure!"
 
@@ -4019,7 +4057,7 @@ label day8:
         show bea apron at right with dissolve:
             yalign beaheight
 
-        bea "Hey [newname]. Me and Selma are going out to the Arts Council tonight for some poetry. You wanna come?"
+        bea "Hey [name]. Me and Selma are going out to the Arts Council tonight for some poetry. You wanna come?"
 
         player "Sure!"
 
