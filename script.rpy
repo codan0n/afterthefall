@@ -60,7 +60,7 @@ label start:
 
     # personality values. they correspond to defining traits of each character and act as a secondary way to appeal to them. unlocks some dialogue options.
     #lori
-    $ timid = 0
+    $ introverted = 0
 
     #gregg
     $ bold = 0
@@ -211,7 +211,7 @@ label start:
             "Gotta have something sweet to balance out the bitterness."
 
         "You're not sure...":
-            $ timid = timid + 1
+            $ introverted = introverted + 1
             $ chosendrink = "cappuccino"
             "You can't really decide. The barista suggests a cappuccino. You can't really argue but you order a chocolate chip waffle to go along with it."
 
@@ -317,7 +317,7 @@ label start:
 
     hide trish with dissolve
 
-    "That bear girl already found a table and was busy plugging a laptop into a nearby power socket."
+    "That bear girl already found a table and was busy plugging a laptop into a nearby power outlet."
     "You quietly find a place to sit by a window, looking out at the blinding white landscape."
     "The past few days have been really chaotic. It's nice to slow down for a moment and relax. How did you wind up here again?"
     #"Come on, there was something really important you were gonna do today, what was it?"
@@ -518,14 +518,15 @@ label start:
 
     "Meanwhile, the bear on the other side of the room taps away on her keyboard, her claws making quite a racket."
     "You can hear a lot of frustrated backspacing after she types a long block of text."
-    "You know that feel all too well."
+    
+    #"You know that feel all too well."
     "You pull out your phone and get up to date on all your internet needs between bites and sips."
     "It may be a while before you get internet again, so you should download something to keep yourself busy later on."
     
     menu:
         "Download movies":
             $ loriAP = loriAP + 1 #because she's known for liking movies
-            $ greggAP = greggAP + 1 #because choosing movies over books is something gregg would relate to
+            #$ greggAP = greggAP + 1 #because choosing movies over books is something gregg would relate to
             "This will give you something to relax to. You just wish you didn't have to watch them on a 5 inch screen."
             "You spend some time curating which movies you're interested in and finding working links."
             
@@ -538,11 +539,11 @@ label start:
             
         "Download music":
             $ beaAP = beaAP + 1
-            $ maeAP = maeAP + 1
+            #$ maeAP = maeAP + 1
             "You'd rather not suffer in silence. Even if you've got nothing else to do you can always rock out to something."
             "You spend some time curating which albums you're interested in and finding working links."
     
-    "Before you know it, it's already afternoon. You better hit the road soon."
+    "Before you know it, it's already afternoon. It will get dark soon so you better hit the road."
     "You look up a route to the nearest grocery store and memorize it before you're cut off from the internet."
     "It seems the bear is still furiously typing away, concentrated on whatever she's writing."
     "You wonder how long she'll stay here."
@@ -563,7 +564,8 @@ label start:
     
     hide trish with dissolve
     
-    "Feeling energized from the coffee, you set out on the next leg of your journey."
+    #"Feeling energized from the coffee, you set out on the next leg of your journey."
+    "Now that your belly is filled and your veins are pulsating with caffeine, you're ready to set out on the next leg of your journey."
 
     stop music fadeout 2.0
 
@@ -573,7 +575,7 @@ label start:
     #"Now that your belly is filled and your veins are pulsating with caffeine, you're in a position to get things done."
     "Next stop: Ham Panther. It's on the other side of the highway to the east of town."
     #"It's almost noon already judging by the position of the sun. Best hurry if you want to make it home before dark."
-    "Best hurry if you want to make it home before dark. Longest Night is coming up soon, which means you don't have a lot of daylight to work with."
+    #"Best hurry if you want to make it home before dark. Longest Night is coming up soon, which means you don't have a lot of daylight to work with."
     #Longest Night is in just a few weeks so you don't have much daylight to burn."
     
     
@@ -581,18 +583,17 @@ label start:
 
     play music "music/itsadrag_loop.mp3" fadein 1.0
 
-    "Now here's a familiar place. The soulless, sterile, yet gross corporate chain grocery store."
-    "Ham Panthers are basically the same everywhere. And man are they everywhere."
-    "Except a couple miles closer to your house apparently."
+    "Now here's a familiar place. The soulless, sterile, yet gross corporate chain grocery store, Ham Panther."
+    #"Ham Panthers are basically the same everywhere. And man are they everywhere."
+    #"Except a couple miles closer to your house apparently."
     "You're just shopping for the basics so you grab a basket and get to work."
     "Oatmeal, bread, rice..."
     "Should you pick up milk as well?"
     "Eh, why not? You don't have to worry about it spoiling on the walk back home since it's more likely to freeze."
     "Now for the million dollar question, almond milk or normal milk?"
     
-    #almond milk or cow milk, determines your preference for vegetarianism and affects your interaction with stan. if vegetarian he's a bit pushy about getting you to buy something but you just end up getting the vegetable sushi.
-    
     menu:
+        "{cps=0}Now for the million dollar question, almond milk or normal milk?{/cps}"
         "Almost milk":
             $ sympathetic = sympathetic + 1
             "You'd think packaging the runoff water from washing almonds would be cheaper than raising a cow but somehow it's always the more expensive option."
@@ -618,7 +619,7 @@ label start:
             
             stan "Well... don't tell my supervisor I said this but you're better off being a vegetarian if you're eyeing the sushi here."
             stan "I wouldn't trust the definition of \"fresh\" they use for the fish here."
-            stan "But the ones that are just veggies and avacado wrapped in rice should still be edible!"
+            stan "But the ones that are just veggies wrapped in rice should still be edible!"
             
             player "Good to know..."
             
@@ -635,7 +636,7 @@ label start:
             
         "Moo cow milk":
             "Where else are you supposed to get your calcium? You need strong bones for... well you just need them, okay?"
-            "Ok, what's next?"
+            "Alright, what's next?"
             "You grab a few more things then swing by the deli where an old cat in an apron and paper hat stands behind the counter."
             "He catches you looking at the meats on display and bellows out a jolly greeting that startles you."
 
@@ -644,7 +645,8 @@ label start:
                 yalign .5
             with dissolve
 
-            stan "Howdy! Let me know if you need anything and I'd be happy to assist you."
+            stan "Howdy!"
+            stan "Let me know if you need anything and I'd be happy to assist you."
 
             "You give him a nod of acknowledgement then go back to deliberating which meat to get."
 
@@ -679,7 +681,7 @@ label start:
     #"He sports a dark grey turtleneck sweater underneath his apron, along with a chipper attitude."
     "The name tag pinned to the apron reads \"Gregg\", with a tiny, crude portrait of himself drawn next to it."
 
-    player "Hey."
+    #player "Hey."
 
     "You start unloading the contents of your basket onto the conveyor belt. The cashier rings them up with ease, not even looking at what he's scanning."
 
@@ -699,17 +701,17 @@ label start:
 
     player "Oh uh, I just moved into Possum Springs actually."
 
-    "The cashier stops scanning your groceries and freezes in place."
+    "The cashier stops scanning your groceries and his eyes go wide."
 
     gregg "What, really?!"
     gregg "Nobody ever just like, comes here to live."
-    gregg "Have you tried the pierogies at the diner yet? They're *amazing!~*"
+    gregg "Have you tried the pierogies at the diner yet? They're *amazing!*~"
 
     player "I just arrived yesterday. I'm trying to get my pantry filled up first."
 
-    gregg "Gotchya. Takin' it one day at a time. I respect that."
+    gregg "Gotchya. Takin' it one day at a time."
 
-    player "Heh, thanks. I just hope I make it back before dark. I don't have a car so I had to walk all the way out here."
+    player "I just hope I make it back before dark. I don't have a car so I had to walk all the way out here."
 
     "Gregg takes a glance outside through the automatic sliding doors with a contemplative expression."
 
@@ -728,25 +730,26 @@ label start:
 
             player "Well... ok. I guess I can get in a stranger's car just this once."
 
-            gregg "Oh I don't have a car or anything, I ride a motor bike."
+            gregg "Oh I don't have a car or anything, I just ride a motor bike."
 
             player "Cool, so I can jump off if you try to kidnap me or something."
 
             gregg "That's the spirit!"
 
-            "He quickly finishes scanning and bagging your groceries, practically bouncing off the walls with excitement. Must have been a slow day for him."
+            "He quickly finishes scanning and bagging your groceries, practically bouncing off the walls with excitement."
+            #Must have been a slow day for him.
 
             gregg "Alright, meet me out front in a minute. I have to go clock out."
 
-            "The fox runs off without a care in the world before your receipt is even done printing."
-
             hide gregg with dissolve
 
-            "You give him a delayed thumbs up he doesn't even see then head outside with your bags."
+            "The fox runs off without a care in the world before your receipt is even done printing."
+            "You grab your bags and go loiter outside until he shows up."
+            #"You give him a delayed thumbs up he doesn't even see then head outside with your bags."
 
             stop music fadeout 2.0
 
-            "Gregg pops out shortly afterward, zipping up a black leather jacket suitable for a biker."
+            "Gregg pops out a few minutes later, zipping up a black leather jacket suitable for a biker."
 
             show gregg neutral at center with dissolve:
                 yalign greggheight
@@ -765,25 +768,40 @@ label start:
 
             # have gregg slide off screen then reappear
 
-            "He shows you to a bike rack. You're guessing his is the one with a motor installed in front of the back wheel."
+            "He shows you to a bike rack. You're guessing his is the one with a motor installed... and held together with duct tape."
             #"It also has a seat sticking out on the back and pegs to rest your feet."
             
             show gregg neutral at center with dissolve
 
             gregg "Ta-da! Pretty sweet, huh?"
             
-            player "It's..."
+            menu:
+                gregg "{cps=0}Ta-da! Pretty sweet, huh?{/cps}"
+                "Uhh...":
+                    player "It's..."
+                                        
+                    gregg "I know, not exactly what you think when you hear motorbike."
+                    gregg "I don't even know if it's street legal but that never stopped me before!"
+                
+                "Is it safe..?":
+                   player "I mean will it even hold the both of us?"
+                   
+                   gregg "Definitely!"
+                   gregg "Just let me know if you smell smoke though, k?"
+                   gregg "I'm pretty sure I fixed that problem cause I got tired of the motor lighting my pants on fire but you know how finnicky these things can be."
+                "Yeah it's cool.":
+                    player "Yeah it's cool. You mod it yourself?"
+                    
+                    gregg "Yup! I love tinkering with motors and stuff!"
             
-            gregg "I know, not exactly what you think when you hear motorbike."
-            gregg "I don't even know if it's street legal but that never stopped me before!"
             gregg "Here, lemme take your bags."
 
-            "Gregg picks up your bags and slips them onto the handlebars, giving them a few turns left and right to test the stability with the added weight."
+            "Gregg picks up your bags and slips them onto the handlebars"
 
-            gregg "Yeah, that should work. Go ahead and hop on!"
+            #gregg "Yeah, that should work. Go ahead and hop on!"
 
             "Gregg jumps into his seat and pats the one behind him. You carefully climb on, holding onto his shoulders."
-            "Before you've gotten comfortable in this unusual setup, he revs up the motor and the bike lurches forward toward town."
+            "Before you've gotten comfortable in this unusual setup, he revs up the engine and the bike lurches forward toward town."
 
             gregg "WOOOOOOOOOOOOOO!!!!"
 
@@ -796,7 +814,8 @@ label start:
 
             scene bg playerhouseexterior with fade
             
-            "The sun sank below the horizon quicker than you expected, making it difficult for you to recall how to get home in the darkness but you did eventually make it."
+            "The sun sank below the horizon quicker than you expected, but you managed to make it back in one piece."
+            #, making it difficult for you to recall how to get home in the darkness but you did eventually make it."
 
             show gregg neutral flip at left with dissolve:
                 yalign greggheight
@@ -810,13 +829,13 @@ label start:
 
             player "It was until recently."
 
-            gregg "Anybody else living here with you?"
+            gregg "You're not squatting are you?"
 
-            player "Nope, just me."
+            player "Haha no, it's mine."
 
             gregg "How can you afford a place like this? Are you a drug dealer?"
 
-            player "It's an inheritance."
+            player "Nah, I inherited it."
             
             gregg "From a drug dealer?"
             
@@ -826,13 +845,18 @@ label start:
             #gregg "Oh."
             #gregg "That's uh, not what I was expecting."
             gregg "Oh."
+            gregg "That's uh, not what I was expecting."
             gregg "Sorry..."
-
-            "You both stand around uncomfortably for a few seconds, then you change the topic."
+            
+            menu:
+                "It's fine":
+                    player "Don't sweat it."
+                "...":
+                    "You both stand around uncomfortably for a few seconds, then you change the topic."
 
             player "Anyway, thanks for driving me down here!"
 
-            gregg "No problem dude! I would say \"anytime\" but I'm not a taxi service. Not unless it pays well enough for me to quit Ham Panther."
+            gregg "Yeah, no problem dude! I would say \"anytime\" but I'm not a taxi service. Not unless it pays well enough for me to quit Ham Panther."
 
             "You laugh but his expression indicates he was serious."
 
@@ -855,7 +879,8 @@ label start:
 
             hide gregg with dissolve
 
-            "With a casual salute, he circles around back to the road and you swear you can hear him hollering like he's on a rollercoaster as he rides down the hills."
+            "With a casual salute, he circles around back to the road.
+            "You swear you can hear him hollering like he's on a rollercoaster as he rides down the hills."
 
             #scene bg home_interior_night with dissolve
 
@@ -893,7 +918,7 @@ label start:
             scene bg black with fade
 
         "No, don't want to be a bother.":
-            $ timid = timid + 1
+            $ introverted = introverted + 1
             $ wentWithGregg = False
 
             player "Nah, I can make it on my own."
@@ -907,6 +932,20 @@ label start:
             gregg "Your choice, man. Just be careful you don't like, wander into a wild bear's den on the way back."
 
             player "Haha I won't."
+            
+            gregg "Where ya stayin'?"
+            
+            player "Pardon?"
+            
+            gregg "You got family here or you renting some place or what?"
+            
+            player "Oh, I moved here because... I inherited a house. From my late father."
+            
+            gregg "Oh damn."
+            gregg "Sorry to hear that."
+            gregg "The dead dad part, not the getting a free house part."
+            
+            player "Yeah..."
 
             "He quietly finishes scanning and bagging your groceries while you get your debit card ready."
             "With a swipe and a press of a button, you pay for your groceries and Gregg hands you your receipt."
@@ -951,10 +990,11 @@ label start:
         #"Even underneath this thick blanket, you feel frostbitten."
         #"What the hell, is the heater working properly?"
         #"Ugh, guess you have to get up and check."
-        "Drawing in a deep breath, you stretch your limbs and loosen up a few stiff muscles."
-        "Your bones crackle and you let out a contented sigh when your spine finally pops into place."
-        "Ahh... that felt good."
-        "You crawl out from under the covers and pull back the curtains draping the window to let some light in."
+        #"Drawing in a deep breath, you stretch your limbs and loosen up a few stiff muscles."
+        #"Your bones crackle and you let out a contented sigh when your spine finally pops into place."
+        #"Ahh... that felt good."
+        #"You crawl out from under the covers and pull back the curtains draping the window to let some light in."
+        "You crawl out from under the covers and make your way to the kitchen to make breakfast."
 
         play sound "sound/curtains.mp3"
         #transition to background of view from window
@@ -974,46 +1014,45 @@ label start:
         #scene bg home_interior_day with fade
 
         #"...Not much, but you can at least make a bowl of oatmeal."
-        "You watch the snow fall through the window as you eat your boring breakfast, wishing you had bought ingredients to make hot cocoa at the store yesterday."
-        "Leaving the dishes in the sink to wash later, you take a trip to the bathroom to get ready for the day."
+        "Wrapped in a blanket, you watch the snow fall outside as you eat. You make a note to buy hot cocoa mix next time you're at the store for maximum comfiness."
+        "You never noticed before, but there's a shed on this property you can see from this window."
+        #"Leaving the dishes in the sink to wash later, you take a trip to the bathroom to get ready for the day."
 
-        scene bg bathroom with fade
-
+        #scene bg bathroom with fade
         
-
-        "You dry yourself off and put on some clothes, deliberating what to do today."
+        #"You dry yourself off and put on some clothes, deliberating what to do today."
         #"Do you want to stay in or go out?"
         #"You've done a lot of walking lately so you're inclined to stay here and relax."
-        "You haven't really explored your new home yet. You should at least familiarize yourself with the general layout before you start wandering around town."
-        "You grab your phone and head into the halls."
+        #"You haven't really explored your new home yet. You should at least familiarize yourself with the general layout before you start wandering around town."
+        "Curiosity gets the better of you and, after eating, you put on a coat and head out to investigate it."
 
         scene bg home_office_day with fade
 
         #"Your tour of the house concludes when you find yourself back in the office."
-        "Your tour of the building took you through different rooms filled with art, furniture, and books."
-        "Nothing out of the ordinary for a well-off boomer. You noted your father had a taste for antiques."
-        "But what stood out to you the most was what must have been your father's bedroom."
-        "Just thinking about it sends a chill up your spine and you're not sure why."
-        "The room smelled like old stale clothes, and neither of the two windows provided much light. There was nothing in there except a king sized bed, a nightstand, and a wardrobe."
-        "It didn't feel right to mess with anything so you shut the door and made a note to leave it be, like a tomb."
-        "Wandering over to the desk, you take a gander at the shelves stuffed with binders and books. They seem to be work related."
-        "You sit down in the leather chair and slowly spin around."
-        "It's actually really comfortable. You guess you'd splurge on a nice chair too if you were gonna sit in it for long periods of time."
-        "In your idle spinning, you must have accidentally bumped the mouse, because you hear the computer suddenly turn on."
-        "You try a few common passwords but have no luck getting in."
-        "You'll need to figure out a way to get past the login screen sometime."
-        "You wander what could possibly be on the hard drive."
-        "It's probably just going to be full of vacation photos and spreadsheets. A cryptocurrency wallet or two if you're lucky."
-        "But you don't wanna wipe the drive until you've taken a look."
+        #"Your tour of the building took you through different rooms filled with art, furniture, and books."
+        #"Nothing out of the ordinary for a well-off boomer. You noted your father had a taste for antiques."
+        #"But what stood out to you the most was what must have been your father's bedroom."
+        #"Just thinking about it sends a chill up your spine and you're not sure why."
+        #"The room smelled like old stale clothes, and neither of the two windows provided much light. There was nothing in there except a king sized bed, a nightstand, and a wardrobe."
+        #"It didn't feel right to mess with anything so you shut the door and made a note to leave it be, like a tomb."
+        #"Wandering over to the desk, you take a gander at the shelves stuffed with binders and books. They seem to be work related."
+        #"You sit down in the leather chair and slowly spin around."
+        #"It's actually really comfortable. You guess you'd splurge on a nice chair too if you were gonna sit in it for long periods of time."
+        #"In your idle spinning, you must have accidentally bumped the mouse, because you hear the computer suddenly turn on."
+        #"You try a few common passwords but have no luck getting in."
+        #"You'll need to figure out a way to get past the login screen sometime."
+        #"You wander what could possibly be on the hard drive."
+        #"It's probably just going to be full of vacation photos and spreadsheets. A cryptocurrency wallet or two if you're lucky."
+        3"But you don't wanna wipe the drive until you've taken a look."
 
         # pause
 
-        "As you shut the computer down, you notice a photo frame next to the monitor."
-        "Inside there's a faded picture of you as a kid. You're holding up a fish you caught and your father is kneeling beside you with a proud look on his face."
-        "You vaguely remember when that photo was taken. It was in early spring, when all the leaves were bright green."
-        "You got up early and spent the whole day fishing, just you and your dad. Then when the sun started going down you sat on the bank and fed the fish with the remainder of your bait."
-        "Simpler times, those were. Your parents were still together back then."
-        "You feel a lump in your throat, but you push it down because adults aren't supposed to cry."
+        #"As you shut the computer down, you notice a photo frame next to the monitor."
+        #"Inside there's a faded picture of you as a kid. You're holding up a fish you caught and your father is kneeling beside you with a proud look on his face."
+        #"You vaguely remember when that photo was taken. It was in early spring, when all the leaves were bright green."
+        #"You got up early and spent the whole day fishing, just you and your dad. Then when the sun started going down you sat on the bank and fed the fish with the remainder of your bait."
+        #"Simpler times, those were. Your parents were still together back then."
+        #"You feel a lump in your throat, but you push it down because adults aren't supposed to cry."
         #"With a heavy sigh, you look back at the monitor."
         #"You half-heartedly try a few random passwords until it locks you out."
         #might change back to the corrupt hard drive in recovery mode thing, but have to go back and rewrite the first time the player boots it up
@@ -1021,59 +1060,64 @@ label start:
         #"The estimated finish time is given in... days?!"
         #"Just how big is the hard drive?"
         #"Ugh, you'll deal with this later. You leave the machine running and prepare to head out."
-        "There's just one more room left to check out."
+        #"There's just one more room left to check out."
 
-        stop music fadeout 1.0
+        #stop music fadeout 1.0
 
         scene bg basement1 with fade
 
         play music "music/woulditmatter_loop.mp3" fadein 1.0
-
-        "You'd noticed a shed in the backyard when you looked outside this morning so you put on your jacket and ventured out to it."
+        
         "It's pretty large for a shed. It's more like a garage, really."
-        "It's cold and echoey and smells like gasoline in here."
-        "Judging by the debris and tools strewn about, it hasn't been cleaned in a while. Nobody even bothered to sweep the leaves from the floor."
-        "A tarp covers something in the corner of the room. Probably a lawnmower"
+        "It's cold and echoey and smells like gasoline in here. Old leaves crunch under your feet as you explore and dodge cobwebs."
+        #"Judging by the debris and tools strewn about, it hasn't been cleaned in a while. Nobody even bothered to sweep the leaves from the floor."
+        "In the darkness you make out a tarp covering something big."
+        "Probably a lawnmower"
         #"A pile of skeletons, used for a demon-summoning ritual perhaps?"
         #"Or maybe it's a stockpile of cocaine. Never know when you might need a couple hundred pounds of that stuff."
         "Nothing makes an old man happier than mowing the lawn at the crack of dawn on weekends."
         "Bracing yourself for disappointment, you grab a corner of the tarp and take a peek."
+        "..."
         "No way."
         "Your hand reaches out to touch it. The cold metal stings your fingertips."
-        "You pull aside the rest of the tarp, revealing an impressive motorcycle."
-        "Its design harkens back to the motorcycles of the 70s and 80s."
+        "You pull aside the rest of the tarp, revealing a gorgeous classy motorcycle."
         "Shiny chrome contrasts with the leathery black upholstery. You just need a pair of aviators and you can become a biker."
         "You take back what you thought about your dad being a lame boomer, he was in fact a cool boomer."
         "Now you can ride around town instead of having to walk everywhere *and* you can do so stylishly!"
-        "You can't wait to feel the wind on your face when you take her for a spin."
-        "A quick search yields a key hidden in a nearby toolbox. The original is probably long gone, wherever your dad went."
-        "You try not to think about that while you insert the key and turn it."
-        "The engine makes a weird noise for a second and then nothing."
-        "You try again."
+        #"You can't wait to feel the wind on your face when you take her for a spin."
+        "You look around for a spare key. The original is probably long gone, wherever your dad ended up."
+        "Luckily you found it relatively quickly. It was just inside the nearby toolbox, which has been left open for who knows how long. Thankfully nobody stole it."
+        "The engine makes a weird noise when you insert the key."
+        "You try again and it makes another pathetic dying noise."
         "Fuck."
-        "You spend a few hours tinkering with it trying anything and everything but you're hindered by a lack of tools."
+        "Welp, time to roll up your sleeves and mess around with an engine you've never seen before and no access to documentation."
+        "You spend a few hours tinkering with it trying everything you can think of but you're hindered by a lack of tools."
+        "The one wrench size you need is missing from the tool box. You searched everywhere for it, even inside the house, but it's nowhere to be found."
         #you break the tool you needed?
+        "You recall seeing a hardware store on the map that's within walking distance. Surely they'd have what you need, right?"
+        "They damn well better if you're going through all this trouble."
+        "You grab your wallet and a pair of mittens before setting out toward town, trudging through the snow."
         
         
-        "Still nothing. Out of fuel maybe?"
-        "You pop off the cap and look inside the gas tank, using the light on your phone to see into the darkness."
-        "Empty."
-        "A nearby gas can remedies this issue, but the engine still refuses to start."
-        "Hmm."
-        "You look around for the repair manual, remembering you saw something like it on the workbench."
-        "You skim through it and get the gist on how to check the engine and oil and troubleshoot common problems."
-        "Oil seems ok, but you're not sure if sitting around for so long has done it any favors."
-        "You grab a few tools, get on the floor, and get to work opening her up."
-        "Ugh, it's grimy as Hell down here."
-        "It just gets worse the more you work on it."
-        "As you pry off a covering, a gear comes loose and falls to the ground, shattering into pieces."
-        "That's not good."
-        "Was that what was wrong with it? You look around for any spare gears but fail to find any."
-        "Well damn, there's no way you can fix it now."
-        "With a frustrated sigh, you wipe your hands on a towel before checking your phone to look up any nearby auto shops."
-        "As fate would have it, the nearest one is even further out than Ham Panther."
-        "One of the related results however is a local hardware store in town, not that much further away than the cafe. Maybe they have what you need?"
-        "You return to the house to grab your wallet before setting out toward town."
+        #"Still nothing. Out of fuel maybe?"
+        #"You pop off the cap and look inside the gas tank, using the light on your phone to see into the darkness."
+        #"Empty."
+        #"A nearby gas can remedies this issue, but the engine still refuses to start."
+        #"Hmm."
+        #"You look around for the repair manual, remembering you saw something like it on the workbench."
+        #"You skim through it and get the gist on how to check the engine and oil and troubleshoot common problems."
+        #"Oil seems ok, but you're not sure if sitting around for so long has done it any favors."
+        #"You grab a few tools, get on the floor, and get to work opening her up."
+        #"Ugh, it's grimy as Hell down here."
+        #"It just gets worse the more you work on it."
+        #"As you pry off a covering, a gear comes loose and falls to the ground, shattering into pieces."
+        #"That's not good."
+        #"Was that what was wrong with it? You look around for any spare gears but fail to find any."
+        #"Well damn, there's no way you can fix it now."
+        #"With a frustrated sigh, you wipe your hands on a towel before checking your phone to look up any nearby auto shops."
+        #"As fate would have it, the nearest one is even further out than Ham Panther."
+        #"One of the related results however is a local hardware store in town, not that much further away than the cafe. Maybe they have what you need?"
+        
 
         stop music fadeout 2.0
 
@@ -1082,60 +1126,105 @@ label start:
         "Old brick buildings line the streets as you approach your destination."
         "Some of them look lived in, others look like they're about to crumble."
         "Some look like both."
-        "A short walk later, you come up to the Ol' Pickaxe."
+        "Ah here it is, the Ol' Pickaxe."
         "You ascend the couple of steps leading to the front door and head inside."
 
         scene bg pickaxe with dissolve
 
         play music "music/picknaxe_loop.mp3" fadein 1.0
 
-        "It's your typical hardware store, nothing too fancy. Mostly basic tools you won't find at a dollar store along with a small collection of less common parts."
-        "Snow shovels seem to be selling quick these days."
-        "Behind the counter stands a bluish green crocodile giving off gothic vibes."
-        "Her eyes sluggishly drift to look in your direction."
+        "Lots of boxes and miscellaneous items are strewn about like they're in the middle of reorganizing their inventory."
+        "An assortment of nails, screws, tapes, paints, and most importantly tools are on display. It's surprisingly well stocked for a little country bumpkin town."
+        "You guess the folk around here rely on building and repairing their own stuff more than people in the city do."
+        #"Then again, country folk are more likely to use these sorts of things for repairs and home improvement. You weren't even allowed to put thumbtacks in the walls in your apartment in the city but here"
+        "Snow shovels sure seem to be selling quick these days."
+        #"The goth crocodile behind the counter just finished selling one to a customer and yawns before welcoming you."
+        "The goth crocodile behind the counter just finished selling one to a customer."
+        "Her tired eyes sluggishly drift to look in your direction."        
+        
+        
+        #"Behind the counter stands a bluish green crocodile giving off gothic vibes."
+        #"Her tired eyes sluggishly drift to look in your direction."
 
         show bea apron at right with dissolve:
             yalign beaheight
 
-        beaunknown "Welcome to the Ol' Pickaxe. Let me know if I can help you find any- *yawn* -...thing."
+        beaunknown "Welcome to the Ol' Pickaxe. Let me know if I can help you find any- *yawn*"
+        beaunknown "-...thing."
 
-        player "I don't suppose you have any spare motorcycle parts here, would you?"
+        player "You don't happen to have any 10mm allen wrenches, do you?"
+        
+        beaunknown "Check the wrench kits. Over thataway."
+        
+        "She points a finger to the other side of the store."
 
-        beaunknown "Uhh, you'd really wanna go out to the auto shop outside of town for that... What exactly are you looking for?"
+        player "I'd rather not have to buy a full set. Don't you have single wrenches for sale?"
+        
+        beaunknown "Yeah, they're over where the kits are."
 
-        "You pull the shattered pieces of the gear out of your pocket and show it to the clerk."
-
-        player "I'm not really sure what this is called... It fell out when I was trying to fix the engine."
-
-        "You can feel her silently judging you as she looks over the part."
-
-        beaunknown "How did you manage to break a metal gear like this?"
-
-        player "I think it was the cold that did it."
-
-        beaunknown "Well I'm pretty sure we don't have any gears this size in stock. I'd have to special order one but you're better off ordering one online."
-
-        player "Oh..."
-
-        "The croc sighs and pulls out an electronic cigarette. It lights up as she takes a puff from it."
-
-        beaunknown "Tell ya what. I'll check the backroom and see if there's anything that *might* help."
-
-        player "Thanks!"
-
-        "You give her a bright smile."
-
-        beaunknown "Mh-hm."
-
-        "She yawns and shuffles over to the back of the store."
-
+        "She shrugs."
+        
+        beaunknown "Dunno if the one you want is in stock though."
+        
+        player "Thanks..."
+        
         hide bea with dissolve
+        
+        "You go off to where she pointed to have a look."
+        "There's a whole shelf with nothing but wrenches dangling off hooks for you to peruse."
+        "Let's see, 8mm, 8.5mm, 9mm, 9.6mm, 9.9mm, 9.99mm, 10.01mm... hey!"
+        "All of them are in stock except the one you need!"
+        "You catch a glimpse of the cashier girl dragging a large bag of road salt between aisles and decide to approach her."
+        
+        show bea with dissolve
 
-        "While she's away, you pass the time by taking a look around the shop."
-        "Lots of boxes and miscellaneous items are strewn about like they're in the middle of reorganizing their inventory."
-        "You're studying the oddly large keys behind the counter when the front door opens and a short cat bursts in."
+        player "Excuse me. You don't have the wrench I need in stock."
+        
+        bea "Oh. Sorry about that."
+        
+        "She continues dragging the bag towards the pile near the front of the store."
+        "You clear your throat."
+        
+        menu:
+            "When would you get a new shipment?":
+                player "When do you think you'll get a new shipment. I need this wrench as soon as possible."
+                
+                bea "Yesterday, but I'm not about to move all those boxes and open the one that might have your wrench today when I've already got a huge backlog of work to do."
+                
+                player "Oh..."
+                
+                bea "Not unless you get me a coffee."
+                
+                player "What?"
+                
+                "She yawns again and leans agains a shelf."
+                
+                bea "Didn't get much sleep last night. If you go next door to the bakery and buy me a coffee, then *maybe* I can be persuaded to prioritize your request."
+                
+                "You don't really have a choice if you want to fix your bike ASAP."
+                
+                player "Deal."
+                player "What kind of coffee do you like?"
+                
+                bea "Something dark. Like my soul or something, I don't care."
+                
+                hide bea with dissolve
+                
+                "She drops the bag onto the stack with the others then shuffles to the back of the store, presumably to grab another one."
+            "What's your return policy?":
+                #bea "I know what you're planning. You're gonna buy the kit, use it to tighten one bolt then return it."
+                #she might have you buy her a coffee, and she'll let you borrow a wrench from the kit
+        
+        "As you're about to leave the store, a short cat in an orange sweater bursts in."
 
-        show mae neutral flip at left with dissolve
+
+        #"The croc sighs and pulls out an electronic cigarette. It lights up as she takes a puff from it."
+
+        #hide bea with dissolve
+
+        #"While she's away, you pass the time by taking a look around the shop."
+
+        show mae neutral at left with dissolve
 
         #"Wait a minute, you recognize her as the same cat who picked up the mouse girl at the bus station the other day!"
         #"You didn't notice it at the time, but one of her ears is torn and she has subtle red highlights in her fur."
@@ -1147,11 +1236,11 @@ label start:
 
         mae "More like owner but yes."
 
-        player "She went to check the back room real quick."
+        player "She went into the back room."
 
         mae "Ok cool thanks."
 
-        show mae skeptical flip at left
+        show mae skeptical at left
 
         "She narrows her eyes at you."
 
@@ -1161,32 +1250,55 @@ label start:
         
         mae "I thought I saw you at the bus station the other day."
         
-        n "The memory comes flooding back to you."
+        n "You think back to a few days ago when you first arrived in Possum Springs."
+        #n "The memory comes flooding back to you."
         
-        #(flashback to day 0, nov 30 tuesday)
+        #(flashback to day 0, nov 29/30 tuesday)
         #lori is back from school early due to weather
         
         scene bg bus_interior with fade
         play sound "sound/bus_onboard.mp3" fadein 1.0
         play music "music/deathterrors_v2loop.mp3" fadein 1.0
+        
+        "You were startled awake by a high pitched shriek."
+        "The bus was eerily empty, save for the driver and the pair of ears sticking up from the seat in front of you."
+        "Taking a peek over it, there's a mouse slumped back watching a movie on her phone."
+        "Thankfully she has earphones but sounds were still leaking through."
+        #"You sit back, starting to relax"
+        "It's already dark out but the snow illuminates the surrounding hills. This blizzard came out of nowhere."
+        "You tap your phone to check the time. It's only 6:15."
+        "Your phone signal dies as soon as you pass by the 'Welcome to Possum Springs' sign."
+        "Great."
+        "At least you'll arrive at your destination soon."
+        
+        
+        lori drops her pencil, you can return it for her, or she crawls under the seat for it
+        you can ask what lori is watching or what she's drawing
+        
+        
+        #"There's nobody else on the bus."
+        #"It's just you, the mouse and the driver."
+        
+        
+        #wake up, pass by welcome to possum springs sign and suddenly your phone signal goes out. maybe you woke up because your music stream stopped? maybe lori is watching a movie on her phone and a scream was loud enough to wake you. either way you're the last ones on the bus
 
-        "You wake up to the sound of some unusual music coming from nearby."
-        "It takes you a while to realize where you are and recall why you're here."
-        "You're on a bus to Possum Springs, a small town your father lived in after your parents split up."
-        "That was ages ago and you'd rarely seen him since."
-        "In fact, nobody's seen him in the past four years. He just vanished one day without a trace."
-        "Normally it takes seven years for a missing person to be legally declared dead but apparently your father was not the most patient man."
-        "He had written in his will that if he disappeared for just four to go ahead and hand all his belongings down to you."
-        "His cash assets would be distributed to you over time though. Guess he didn't want you spending his fortune all in one place."
-        "He did however leave behind a house for you to move into immediately."
-        "Your previous living conditions were not ideal to say the least, so you jumped at the chance to move anywhere else, even if it was in some nowhere town."
-        "You check the time on your phone. It's only 6:15. You'd never know that by looking outside though. It's pitch black out already."
-        "Well, Longest Night is drawing near after all."
-        "Thankfully you hadn't missed your stop."
-        "There's quite a few more people on board now. They must have come on while you were asleep."
-        "Apparently one of them likes loud music."
-        "You can see a pair of ears sticking up over a seat with wires trailing down from them. That must be whoever's earphones making that noise."
-        "At least they have the decency not to blast it through their phone speakers."
+        #"You wake up to the sound of some unusual music coming from nearby."
+        #"It takes you a while to realize where you are and recall why you're here."
+        #"You're on a bus to Possum Springs, a small town your father lived in after your parents split up."
+        #"That was ages ago and you'd rarely seen him since."
+        #"In fact, nobody's seen him in the past four years. He just vanished one day without a trace."
+        #"Normally it takes seven years for a missing person to be legally declared dead but apparently your father was not the most patient man."
+        #"He had written in his will that if he disappeared for just four to go ahead and hand all his belongings down to you."
+        #"His cash assets would be distributed to you over time though. Guess he didn't want you spending his fortune all in one place."
+        #"He did however leave behind a house for you to move into immediately."
+        #"Your previous living conditions were not ideal to say the least, so you jumped at the chance to move anywhere else, even if it was in some nowhere town."
+        #"You check the time on your phone. It's only 6:15. You'd never know that by looking outside though. It's pitch black out already."
+        #"Well, Longest Night is drawing near after all."
+        #"Thankfully you hadn't missed your stop."
+        #"There's quite a few more people on board now. They must have come on while you were asleep."
+        #"Apparently one of them likes loud music."
+        #"You can see a pair of ears sticking up over a seat with wires trailing down from them. That must be whoever's earphones making that noise."
+        #"At least they have the decency not to blast it through their phone speakers."
 
         menu:
             "{cps=0}What will you do?{/cps}"
