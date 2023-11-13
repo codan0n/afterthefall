@@ -1293,7 +1293,7 @@ label start:
                 
                 "The bus driver clears his throat before sputtering out an announcement."
                 
-                driver "Next stop *cough cough WHEEEEZE* Possum Springs!"
+                driver "Next stop *cough cough WHEEEEZE* ...Possum Springs!"
                 
                 loriunknown "Oop, that's my stop!"
 
@@ -1382,10 +1382,233 @@ label start:
                 #lori thanks you and you ask about her movie and sketches
             "Nudge it towards her":
                 $ introverted = introverted + 1
-                lori thanks you and is surprised someone else is going to possum springs
+                
+                "You see a paw blindly reaching under the seat for the lost pencil."
+                "You decide to nudge it over in her direction."
+                "A moment later her ears pop up over the seat, followed by two curious looking eyes staring back at you."
+                "She holds up the pencil she had dropped and smiles at you."
+                
+                show lori at center with dissolve
+                
+                loriunknown "Thanks."
+                
+                "The bus driver clears his throat before sputtering out an announcement."
+                
+                driver "Next stop *cough cough WHEEEEZE* ...Possum Springs!"
+                
+                loriunknown "Oop, that's my stop!"
+
+                player "Mine as well."
+
+                loriunknown "No way! No one else ever gets off at Possum Springs!"
+
+                player "Yeah, I'm moving in today."
+                
+                loriunknown "It's quite a small and quiet town! Only a couple murders in the past few years!"
+                
+                player "That's uh, reassuring."
+                
+                loriunknown "I lived there my whole life until I started going to film school a couple years ago."
+                
+                player "Ah, that explains the movie and notebook. Studying for a test I'm sure."
+                
+                loriunknown "Something like that!"
+                
+                "She flips to a page and shows you some of her drawings. They're all of creatures and monsters with bloody knives, elongated claws, jagged teeth or some combination of those."
+                
+                loriunknown "I'm working on monster design right now. I mean I kinda always have been but that's something I'm focusing on at the moment."
+                
+                player "Those are some pretty cool sketches."
+                
+                lori "I'm Lori by the way!"
+                
+                player "[name]. Nice meeting you!"
+                
+                "The bus pulls into the station. If the lights weren't on, you'd think it was abandoned."
+                "Grafitti covers the walls and windows, and dead plants sprout from every crack."
+                
+                lori "I have a feeling we'll meet again~"
+                
+                hide lori with dissolve
+                
+                #"Lori stands up and starts walking toward the exit. You check your pockets to make sure you got everything and head out yourself."
+                
+                scene bg bus station with fade
+                
+                #"After grabbing your luggage from "
+                "You enter the bus terminal building, hoping the restroom is cleaner than the exterior. It's surprisingly nice inside."
+                "Your new friend apparently had someone to pick her up and was waiting indoors."
+                
+                show mae at right with dissolve
+                
+                maeunknown "Lori!"
+
+                lori "Mae!"
+
+                mae "Welcome back to Possum Springs!"
+                
+                "The two embrace each other tightly."
+
+                lori "Haha it's good to be back!"
+
+                mae "Glad to see you again!"
+                
+                lori "Thanks for coming to pick me up on such short notice. The school let us out for winter break early 'cause of the blizzard!"
+                
+                mae "Haha it's no trouble at all! You ready to go home?"
+                
+                lori "Yeah!"
+
+                hide lori
+                hide mae
+                with dissolve
+                
+                "Lori gives you a parting wave as she leaves with her cat friend. You watch through the window as she loads her bags into the trunk of a car and they drive away."
+                "The wind picks up, rattling the building and pushing snow down faster than before."
+                "You should have asked if you could bum a ride."
+                
+                #you get your luggage and go inside to use the restroom. inside, mae is waiting for lori
+                
+                
+                #lori "Maybe I'll see you around town later~"
+                               
+                #you're going to possum springs too?
+                #yup! i live here! or at least used to. I'm visiting for winter break
+                #ah i'm just moving there myself
+                #my name's lori
+                #blah blah blah film school, what movie was that
+                
+                #lori mentions to mae sorry for the short notice, they let us out early for winter break due to the blizzard
+                
+                #lori thanks you and you ask about her movie and sketches
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                #lori thanks you and is surprised someone else is going to possum springs
             "Kick it away":
                 $ chaotic = chaotic + 1
-                lori assumes it was an accident, comes crawling under the seat for it
+                
+                "A paw blindly reaches for the pencil. You kick it away, but a moment later a whole mouse comes crawling out from under the seat to retrieve it."
+                
+                show lori at center with dissolve
+                
+                loriunknown "Ohmygosh sorry! *Huff huff* I didn't realize someone was sitting here!"
+                
+                player "Uhh, it's fine?"
+                
+                loriunknown "Hah... I thought I was the last one on the bus."
+                loriunknown "Excuse me..."
+                
+                "She grabs her pencil and awkwardly returns to her own seat."
+                "Suddenly the bus driver clears his throat before sputtering out an announcement."
+                
+                driver "Next stop *cough cough WHEEEEZE* Possum Springs!"
+                
+                "The mouse takes an earbud out."
+                
+                loriunknown "Did he say Possum Springs?"
+                
+                player "Yeah. That's my stop."
+                
+                loriunknown "No way! No one else ever gets off at Possum Springs!"
+                
+                player "Yeah, I'm moving in today. Why does nobody ever go there?"
+                
+                loriunknown "Oh it's just a small and quiet town! Only a couple murders in the past few years!"
+                
+                player "That's uh, reassuring."
+                
+                loriunknown "I lived there my whole life until I started going to film school a couple years ago."
+                
+                player "Ah, that explains the movie and notebook. Studying for a test I'm sure."
+                
+                loriunknown "Something like that!"
+                
+                "She flips to a page and shows you some of her drawings. They're all of creatures and monsters with bloody knives, elongated claws, jagged teeth or some combination of those."
+                
+                loriunknown "I'm working on monster design right now. I mean I kinda always have been but that's something I'm focusing on at the moment."
+                
+                player "Those are some pretty cool sketches."
+                
+                lori "I'm Lori by the way!"
+                
+                player "[name]. Nice meeting you!"
+                
+                "The bus pulls into the station. If the lights weren't on, you'd think it was abandoned."
+                "Grafitti covers the walls and windows, and dead plants sprout from every crack."
+                
+                lori "I gotta go but I'm sure this won't be the last time we run into each other."
+                
+                hide lori with dissolve
+                
+                #"Lori stands up and starts walking toward the exit. You check your pockets to make sure you got everything and head out yourself."
+                
+                scene bg bus station with fade
+                
+                #"After grabbing your luggage from "
+                "You enter the bus terminal building, hoping the restroom is cleaner than the exterior. It's surprisingly nice inside."
+                "Your new friend apparently had someone to pick her up and was waiting indoors."
+                
+                show mae at right with dissolve
+                
+                maeunknown "Lori!"
+
+                lori "Mae!"
+
+                mae "Welcome back to Possum Springs!"
+                
+                "The two embrace each other tightly."
+
+                lori "Haha it's good to be back!"
+
+                mae "Glad to see you again!"
+                
+                lori "Thanks for coming to pick me up on such short notice. The school let us out for winter break early 'cause of the blizzard!"
+                
+                mae "Haha it's no trouble at all! You ready to go home?"
+                
+                lori "Yeah!"
+
+                hide lori
+                hide mae
+                with dissolve
+                
+                "Lori gives you a parting wave as she leaves with her cat friend. You watch through the window as she loads her bags into the trunk of a car and they drive away."
+                "The wind picks up, rattling the building and pushing snow down faster than before."
+                "You should have asked if you could bum a ride."
+                
+                #you get your luggage and go inside to use the restroom. inside, mae is waiting for lori
+                
+                
+                #lori "Maybe I'll see you around town later~"
+                               
+                #you're going to possum springs too?
+                #yup! i live here! or at least used to. I'm visiting for winter break
+                #ah i'm just moving there myself
+                #my name's lori
+                #blah blah blah film school, what movie was that
+                
+                #lori mentions to mae sorry for the short notice, they let us out early for winter break due to the blizzard
+                
+                #lori thanks you and you ask about her movie and sketches
+                
+                                
+                #lori assumes it was an accident, comes crawling under the seat for it
         
         
         #lori drops her pencil, you can return it for her, or she crawls under the seat for it. can maybe kick it away or pull it closer?
@@ -1565,193 +1788,193 @@ label start:
 
 
             #"Ask her to turn it down.":
-                $ loriAP = loriAP - 1
-                $ bold = bold + 1
-                $ loriInteractionRude == True
+            #    $ loriAP = loriAP - 1
+            #    $ bold = bold + 1
+            #    $ loriInteractionRude == True
 
-                "You don't wanna hear any more of that creepy music, and you're sure everyone else on the bus would appreciate some peace and quiet."
-                "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
-                "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
-                "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
-                "What kind of person draws stuff like this?"
+            #    "You don't wanna hear any more of that creepy music, and you're sure everyone else on the bus would appreciate some peace and quiet."
+            #    "Moving up to the empty seat beside her, you can't help but take a peak at what she's writing in her notebook."
+            #    "It's hard to read from this angle but it looks to be a story, with horrific doodles in the margins."
+            #    "Jagged-toothed monsters, devilish demons, intestines spilling out of the innocent..."
+            #    "What kind of person draws stuff like this?"
 
-                show lori neutral at right with dissolve:
-                    yalign loriheight
+            #    show lori neutral at right with dissolve:
+                    #yalign loriheight
 
-                player "Excuse me."
+                #player "Excuse me."
 
-                $ cynical = cynical + 1
+                #$ cynical = cynical + 1
 
-                show lori anxious3:
-                    yalign loriheight
+                #show lori anxious3:
+                #    yalign loriheight
 
-                "She jumps a little when she notices you, knocking her pen to the floor."
-                "She hastily picks it back up then takes out her earphones. Her movement is kinda jittery and she's breathing heavily."
+                #"She jumps a little when she notices you, knocking her pen to the floor."
+                #"She hastily picks it back up then takes out her earphones. Her movement is kinda jittery and she's breathing heavily."
 
-                show lori breath
+                #show lori breath
 
-                loriunknown "Um, hey? Huff huff... Did you need something?"
+                #loriunknown "Um, hey? Huff huff... Did you need something?"
 
-                "You point to her earphones lying on her journal."
+                #"You point to her earphones lying on her journal."
 
-                player "Would you mind turning that down?"
+                #player "Would you mind turning that down?"
 
-                "She glances down at her earphones then back up to you with a panicked, embarrassed expression."
+                #"She glances down at her earphones then back up to you with a panicked, embarrassed expression."
 
-                loriunknown "Oh gosh, you could hear that? I'm so sorry, hang on!"
+                #loriunknown "Oh gosh, you could hear that? I'm so sorry, hang on!"
 
-                stop music fadeout 2.0
+                #stop music fadeout 2.0
 
-                "She mashes the volume down button on her phone."
+                #"She mashes the volume down button on her phone."
 
-                loriunknown "Huff huff... Huff huff..."
+                #loriunknown "Huff huff... Huff huff..."
 
-                player "Appreciate it."
+                #player "Appreciate it."
 
-                hide lori with dissolve
+                #hide lori with dissolve
 
-                "With that out of the way, you decide to look out the window and admire the countryside."
-                "Hills, a train track, a factory, and more hills. So this is it, huh? It's quite... plain."
-                "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
-                "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
-                "It looks like a ghost town."
-                "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
-                "The mouse girl hurriedly stands up and starts walking toward the exit, looking a bit distressed."
-                "Is she angry because you asked her to turn down her music?"
-                "Regardless, you check your pockets to make sure you got everything and head out yourself."
+                #"With that out of the way, you decide to look out the window and admire the countryside."
+                #"Hills, a train track, a factory, and more hills. So this is it, huh? It's quite... plain."
+                #"The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
+                #"The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
+                #"It looks like a ghost town."
+                #"At least some of the lights are on, even if most of them are flickering or have cracked face plates."
+                #"The mouse girl hurriedly stands up and starts walking toward the exit, looking a bit distressed."
+                #"Is she angry because you asked her to turn down her music?"
+                #"Regardless, you check your pockets to make sure you got everything and head out yourself."
 
-                stop sound fadeout 1.0
+                #stop sound fadeout 1.0
 
-                scene bg busstation with dissolve
+                #scene bg busstation with dissolve
 
-                $ renpy.sound.set_volume(.3, 0, channel='sound')
-                play sound "sound/crickets.mp3" fadein 1.0
+                #$ renpy.sound.set_volume(.3, 0, channel='sound')
+                #play sound "sound/crickets.mp3" fadein 1.0
 
-                "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
-                "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
-                "It's just you and that girl waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
-                "She avoids eye contact with you."
-
-                # brief pause
-
-                "Jeez, how long is the driver gonna make you wait?"
-                "He takes his sweet time before finally waddling out and unlocking the storage door."
-                "Gesturing for the mouse to go first, you patiently wait for her to retrieve her bags, then reach in to dig out your own stuff."
-                "Out of the corner of your eye, you can see her walk up to a car as it pulls up to the curb."
-                "A black-furred cat steps out to happily greet her with a nice big hug."
-
-                show lori neutral at right:
-                    yalign loriheight
-                show mae neutral flip at left
-                with dissolve
-
-                maeunknown "Lori!"
-
-                lori "Mae!"
-
-                mae "Welcome back to Possum Springs!"
-
-                lori "Haha it's good to be back!"
-
-                mae "Glad to see you again! Here, lemme get those for you."
-
-                "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
-
-                lori "Hang on, wanna keep my notebook close."
-
-                mae "Gotchya. Ready to go?"
-
-                lori "Yeah!"
-
-                hide lori
-                hide mae
-                with dissolve
-
-                "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
-                "The car revs to life and begins to drive away as you drag your things from the bus."
-                "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
-                "The bus driver comes and locks the compartment, then wordlessly returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
-
-
-            "Move away from her.":
-                $ loriInteractionNull = True
-                $ cynical = cynical + 1
-
-                "You don't wanna bother her. You'll be off this bus soon anyway."
-                "You move over to a seat further away from her and take a look out the window, losing yourself in thought."
-                "The forest has opened up into a hilly countryside."
-                "Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness. So this is it huh? It seem so... plain."
-                "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
-                "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
-                "It looks like a ghost town."
-                "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
-                "The mouse girl stands up and walks toward the exit before you do. You wonder if she lives here."
-                "Seems she's the only one besides yourself getting off at this stop. You check your pockets to make sure you got everything and head out yourself."
-
-                stop music fadeout 2.0
-                stop sound fadeout 1.0
-
-                scene bg busstation with dissolve
-
-                $ renpy.sound.set_volume(.3, 0, channel='sound')
-                play sound "sound/crickets.mp3" fadein 1.0
-
-                "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
-                "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
-                "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
-                "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
-                "She still has her earphones in, and you can overhear all the cries and moans and screams that she doesn't seem to mind at all."
+                #"The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
+                #"You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
+                #"It's just you and that girl waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
+                #"She avoids eye contact with you."
 
                 # brief pause
 
-                "Jeez, how long is the driver gonna make you wait?"
-                "He takes his sweet time before finally waddling out and unlocking the storage door."
-                "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
-                "Out of the corner of your eye, you can see her remove her earphones then excitedly run up to a car as it pulls up to the curb."
-                "A black-furred cat steps out to happily greet the mouse and give her a nice big hug."
+                #"Jeez, how long is the driver gonna make you wait?"
+                #"He takes his sweet time before finally waddling out and unlocking the storage door."
+                #"Gesturing for the mouse to go first, you patiently wait for her to retrieve her bags, then reach in to dig out your own stuff."
+                #"Out of the corner of your eye, you can see her walk up to a car as it pulls up to the curb."
+                #"A black-furred cat steps out to happily greet her with a nice big hug."
 
-                show lori neutral at right:
-                    yalign loriheight
-                show mae neutral flip at left:
-                    yalign maeheight
-                with dissolve
+                #show lori neutral at right:
+                #    yalign loriheight
+                #show mae neutral flip at left
+                #with dissolve
 
-                maeunknown "Lori!"
+                #maeunknown "Lori!"
 
-                lori "Mae!"
+                #lori "Mae!"
 
-                "Welcome back to Possum Springs!"
+                #mae "Welcome back to Possum Springs!"
 
-                lori "Haha it's good to be back!"
+                #lori "Haha it's good to be back!"
 
-                mae "Glad to see you again! Here, lemme get those for you."
+                #mae "Glad to see you again! Here, lemme get those for you."
 
-                "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
+                #"The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
 
-                lori "Hang on, wanna keep my notebook close."
+                #lori "Hang on, wanna keep my notebook close."
 
-                mae "Gotchya. Ready to go?"
+                #mae "Gotchya. Ready to go?"
 
-                lori "Yeah!"
+                #lori "Yeah!"
 
-                "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+                #hide lori
+                #hide mae
+                #with dissolve
 
-                hide mae
-                hide lori
-                with dissolve
+                #"Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+                #"The car revs to life and begins to drive away as you drag your things from the bus."
+                #"One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
+                #"The bus driver comes and locks the compartment, then wordlessly returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
 
-                "The car revs to life and begins to drive away as you drag your things from the bus."
-                "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
-                "The bus driver comes and wordlessly locks the compartment, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
+
+            #"Move away from her.":
+            #    $ loriInteractionNull = True
+            #    $ cynical = cynical + 1
+
+            #    "You don't wanna bother her. You'll be off this bus soon anyway."
+            #    "You move over to a seat further away from her and take a look out the window, losing yourself in thought."
+            #    "The forest has opened up into a hilly countryside."
+            #    "Aside from the train track and an old factory, there's hardly anything noteworthy out there. Just miles and miles of emptiness. So this is it huh? It seem so... plain."
+            #    "The driver announces you'll be arriving in Possum Springs shortly, and a few minutes later you pull up to an empty bench near an abandoned-looking station."
+            #    "The whole place has fallen into disrepair. Plants sprout from the multitude of cracks in the walls and sidewalk, and graffiti marks most vertical surfaces."
+            #    "It looks like a ghost town."
+            #    "At least some of the lights are on, even if most of them are flickering or have cracked face plates."
+            #    "The mouse girl stands up and walks toward the exit before you do. You wonder if she lives here."
+            #    "Seems she's the only one besides yourself getting off at this stop. You check your pockets to make sure you got everything and head out yourself."
+
+            #    stop music fadeout 2.0
+            #    stop sound fadeout 1.0
+
+            #    scene bg busstation with dissolve
+
+            #    $ renpy.sound.set_volume(.3, 0, channel='sound')
+            #    play sound "sound/crickets.mp3" fadein 1.0
+
+            #    "The air outside is chillier than expected, in contrast to the surprisingly warm interior of the bus."
+            #    "You can see your breath forming thick clouds that rapidly rise into the overcast sky as you shuffle over to the storage compartment, shivering."
+            #    "It's just you and her waiting out here under a streetlight, both with your hands in your pockets and hunched over to cope with the cold."
+            #    "Your eyes meet at one point and you exchange friendly smiles and subtle nods."
+            #    "She still has her earphones in, and you can overhear all the cries and moans and screams that she doesn't seem to mind at all."
+
+                # brief pause
+
+            #    "Jeez, how long is the driver gonna make you wait?"
+            #    "He takes his sweet time before finally waddling out and unlocking the storage door."
+            #    "Gesturing for her to go first, you patiently wait for the girl to retrieve her bags, then reach in to dig out your own stuff."
+            #    "Out of the corner of your eye, you can see her remove her earphones then excitedly run up to a car as it pulls up to the curb."
+            #    "A black-furred cat steps out to happily greet the mouse and give her a nice big hug."
+
+            #    show lori neutral at right:
+            #        yalign loriheight
+            #    show mae neutral flip at left:
+            #        yalign maeheight
+            #    with dissolve
+
+            #    maeunknown "Lori!"
+
+            #    lori "Mae!"
+
+            #    "Welcome back to Possum Springs!"
+
+            #    lori "Haha it's good to be back!"
+
+            #    mae "Glad to see you again! Here, lemme get those for you."
+
+            #    "The cat takes hold of Lori's luggage and hoists it into the trunk of her car, but the mouse opts to keep her backpack with her."
+
+            #    lori "Hang on, wanna keep my notebook close."
+
+            #    mae "Gotchya. Ready to go?"
+
+            #    lori "Yeah!"
+
+            #    "Lori hops into the passenger seat while her friend closes the trunk and goes back around to the driver side."
+
+            #    hide mae
+            #    hide lori
+            #    with dissolve
+
+            #    "The car revs to life and begins to drive away as you drag your things from the bus."
+            #    "One heavy backpack and two suitcases filled to the brim. All of your belongings in one place."
+            #    "The bus driver comes and wordlessly locks the compartment, then returns to his helm of his vessel. With a final roar, the engine hauls its passengers to their next destination."
 
         # restore default music volume
-        $ renpy.music.set_volume(0.7, 0, channel='music')
+        #$ renpy.music.set_volume(0.7, 0, channel='music')
 
-        scene bg black with fade
+        scene bg olpickax with fade
 
-        "From there you remember walking through the woods to get to your new home."
+        #"From there you remember walking through the woods to get to your new home."
 
-        show mae neutral flip at left
+        show mae neutral at left
 
         "A look of realization dawns on her."
 
