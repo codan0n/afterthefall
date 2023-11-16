@@ -1539,9 +1539,13 @@ label start:
                 bea "Relax, I'm just kidding."
                 bea "Thanks for the coffee though, I needed it. Here's your wrench. Be sure to bring it back once you're done with it."
             "Err, yeah totally!":
+                $ beaAP = beaAP +1
+                
                 player "Err, yeah totally!"
                 
                 bea "How sweet of you."
+                
+                "She digs the [confectionChoice] out of the bag and nibbles on it."
                 
                 player "Can I have that wrench now?"
                 
@@ -1561,36 +1565,7 @@ label start:
         
         hide bea with dissolve
         
-        
-        
-        
-        
-        
-        
-        
-
-        #scene bg park with dissolve
-
-        #"Taking your bag, you leave the store and decide to rest at the park lodged in between the bakery and hardware store."
-        #"You brush aside the snow that has accumulated on one of the stone benches next to some sort of monument."
-        #"Names are carved into a pillar, which houses a statue depicting a soldier carrying a rifle with a bayonet."
-        #"They must have been locals who served in some war a century or so ago."
-        #"You read a few names as you mindlessly open up your bag and pull out your [confectionChoice], but you don't recognize anyone on there."
-        #"You munch on your snack in peace until a particularly curious squirrel hops onto the far edge of the bench, staring at you."
-        #"The animals in this town seem to have no fear of people and walk right past you, close enough you could touch one."
-        #"You watched them on your walk here as they scrambled to get last minute errands done before the real cold hits."
-        #"Burying food, fetching nesting materials, that sort of thing."
-        #"This one here comes closer and sniffs at the treat in your hand."
-        #"Squirrels like [confectionChoice], right? You break off a piece and set it on the bench."
-        #"He hesitantly comes over and picks it up with its little hands then shoves it into its mouth before skittering off."
-        #"You're welcome."
-
-        
-        
-        
-        #this part now happens after you return from the bakery
         "As you're about to leave the store, a short cat in an orange sweater bursts in."
-
 
         #"The croc sighs and pulls out an electronic cigarette. It lights up as she takes a puff from it."
 
@@ -1855,21 +1830,6 @@ label start:
                 #lori mentions to mae sorry for the short notice, they let us out early for winter break due to the blizzard
                 
                 #lori thanks you and you ask about her movie and sketches
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 
                 
                 
@@ -2399,40 +2359,67 @@ label start:
 
         player "I dunno. She just came in, asked if you were here, then left."
 
-        bea "Huh. Weird. Anyway, I didn't find anything that could help you. Sorry."
+        bea "Huh. Weird.
+        bea "Anyway, is there anything else you needed?"
 
-        player "Oh. That's ok, it was kind of a long shot. Thanks for checking though."
+        player "Hm? Oh, no I was just leaving."
 
-        bea "No problem. Let me know if there's anything else you need."
+        bea "See you around."
 
-        player "Just these."
-
-        "You grab a pack of batteries and set them down on the counter. Never know when you might need some."
-        "She rings you up and you decline a bag in lieu of stuffing your purchase into your coat pocket."
-
-        bea "Alrighty. Have a good one."
-
-        player "You too!"
-
+        player "Later gator."
+        
+        "She bares her teeth at you."
+        "You'll take that as your cue to finally get out of here."
+        
         hide bea with dissolve
 
         stop music fadeout 2.0
 
         scene bg park with fade
+        
+        #if you still have your treat, add the squirrel scene below
+        
+        
+        #"Taking your bag, you leave the store and decide to rest at the park lodged in between the bakery and hardware store."
+        #"You brush aside the snow that has accumulated on one of the stone benches next to some sort of monument."
+        #"Names are carved into a pillar, which houses a statue depicting a soldier carrying a rifle with a bayonet."
+        #"They must have been locals who served in some war a century or so ago."
+        #"You read a few names as you mindlessly open up your bag and pull out your [confectionChoice], but you don't recognize anyone on there."
+        #"You munch on your snack in peace until a particularly curious squirrel hops onto the far edge of the bench, staring at you."
+        #"The animals in this town seem to have no fear of people and walk right past you, close enough you could touch one."
+        #"You watched them on your walk here as they scrambled to get last minute errands done before the real cold hits."
+        #you're sure they were caught off guard by the blizzard like everyone else
+        #"Burying food, fetching nesting materials, that sort of thing."
+        #"This one here comes closer and sniffs at the treat in your hand."
+        #"Squirrels like [confectionChoice], right? You break off a piece and set it on the bench."
+        #"He hesitantly comes over and picks it up with its little hands then shoves it into its mouth before skittering off."
+        #"You're welcome."
 
-        "You walk out the door and take a few aimless steps down the street, mulling over everything."
-        "Well that sure was disappointing."
-        "Not getting any of the parts you need, that is."
-        "But that chat with Mae sure was odd too."
+        scene bg home_interior_night with fade
+        
+        "After the long walk back home, you crashed on the sofa and mulled over everything."
+        #"You walk out the door and take a few aimless steps down the street, mulling over everything."
+        #"Well that sure was disappointing."
+        #"Not getting any of the parts you need, that is."
+        "You're too tired to try fixing your bike, even though you finally got the tool you needed."
+        "Hardly matters anyway since you've got Gregg coming over to fix your bike, and he can probably do it better than you can."
+        if wentWithGregg == True:
+            "That's two favors you owe him now."
+        "Was it you or was he especially friendly with that baker, Angus?"
+        "Maybe he has a crush on him or something."
+        "At least you successfully bartered with that angry goth crocodile."
+        "But then there was that chat with Mae that sure felt strange."
         "Maybe you should stop parading the fact that your dad died. It's probably freaking people out."
         "..."
-        "No, it's definitely freaking people out."
-        "You're internally cringing at yourself when a delightfully sweet smell reaches your nose through the bitterly cold air."
-        "It draws you to the source, a shop called Bear Essentials Bakery."
-        "After the long walk here, you might as well grab a snack for the road."
+        "No, it's definitely freaking people out. You should stop doing that."
+        #"You're internally cringing at yourself when a delightfully sweet smell reaches your nose through the bitterly cold air."
+        #"It draws you to the source, a shop called Bear Essentials Bakery."
+        #"After the long walk here, you might as well grab a snack for the road."
+        
+        
+        #put the scene in the office where you find the computer here
 
         
-        scene bg home_interior_night with fade
 
         "The sun had gone down by the time you made it home."
         "You lazed around and watched a few videos on your phone for a while until you were hungry enough to start dinner, then you continued to laze around until it was time for bed."
