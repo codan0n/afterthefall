@@ -2385,6 +2385,23 @@ label start:
     "..."
     "No, it's definitely freaking people out. You should stop doing that."
     "Lost in thought and exhausted from today's quest, you end up falling asleep right there on the couch."
+    
+    
+    "You crawl under the covers and think about your future here."
+    "You need to get a job at some point. Sooner or later you'll need the income."
+    "You wouldn't mind making some friends too while you're here."
+    "It's been so long since you've hung out with anyone, you can hardly remember what it's like."
+    "At least Gregg is coming over tomorrow. He seems like a nice guy."
+    "You yawn and turn over, clutching your pillow as sleep overtakes you."
+
+    scene bg black with fade
+    
+    # Day 3, friday
+    $ currentDay = 3
+    $ currentDate = "December 3"
+    
+    
+    
     #"You're internally cringing at yourself when a delightfully sweet smell reaches your nose through the bitterly cold air."
     #"It draws you to the source, a shop called Bear Essentials Bakery."
     #"After the long walk here, you might as well grab a snack for the road."
@@ -2395,57 +2412,13 @@ label start:
     
     scene bg home_office_day with dissolve
     
-    "You end up in a home office. A thick layer of dust cakes the various books and binders on the shelf but the desk area remains relatively clean."
+    "You end up in a home office. A thick layer of dust cakes the various books and binders on the shelves but the desk area remains relatively clean."
+    "You poke around the safe and the computer a bit, but you're unable to crack into either of them."
+    "Much like the wifi, the PC is locked behind a password."
+    "Your inheritance paperwork never mentioned any codes or passwords. You try a few random guesses to no avail."
+    #you poke around the safe and then the computer before finding the photo
     
     
-    # next morning you explore the house a bit while waiting for gregg to show up
-    
-
-
-        #"That's odd, the lamp is already on."
-#"The soft glow illuminates the tidy room and all its furnishings."
-#"You had called the utilities companies ahead of time to get things ready for your arrival, but apparently nobody took the time to turn off this one light."
-
-#hint that there's a mark where a book used to lie on the table
-#"Surprisingly this house hasn't been ransacked and vandalized in all the years it was sitting unoccupied, at least not from what you can tell."
-#"You're lucky this house you've inherited hasn't been broken into and vandalized in all the time it was sitting empty."
-#"At the very least the safe appears to be... safe. "
-#"No sign that anybody tried to break into that safe, so whatever it contains is probably... safe."
-#"Interestingly there's a safe built into one of the walls. You wonder what that's all about but there's no way you're getting it open without the combination."
-#maybe gregg can crack it
-#"You'll have to try and crack it later, right now you're more interested in cracking the wifi password."
-#gregg can crack the safe?
-#"You follow the wires coming out of the computer under the desk, which leads you straight to the router."
-#"Jackpot!"
-#"You look all over the box but the default password has faded from the label."
-#"Damn cheap piece of shit ink."
-#"You desperately look around the room for any sticky notes with passwords scrawled on them to no avail."
-#"Even the computer is locked behind a password when you try turning it on."
-#"Why can't phones just come with ethernet ports? You could plug yours in directly and satisfy your internet addiction if people weren't so obsessed with having thin phones."
-#"If only your phone had an ethernet port."
-#"You step away and sigh."
-#"Now what are you gonna do?"
-#"Your inheritance hasn't hit your bank account yet so buying a new computer or router is out of the question."
-#"Especially when you haven't even bought groceries."
-#"Your stomach rumbles."
-#"You better find something to eat soon. Even a small town like Possum Springs must have a place to get breakfast, right? Hopefully some decent coffee too."
-#"That, and a restaurant is bound to have public wifi."
-#"That map of Possum Springs you snagged from the bus station yesterday should point you in the right direction."
-#"You put on a jacket and shoes and ventured out in search of food and internet."
-#"That's all the motivation you need to put on some shoes and head out the door and begin the hunt for food and internet."
-
-    
-    
-    #"Your tour of the house concludes when you find yourself back in the office."
-    #"Your tour of the building took you through different rooms filled with art, furniture, and books."
-    #"Nothing out of the ordinary for a well-off boomer. You noted your father had a taste for antiques."
-    #"But what stood out to you the most was what must have been your father's bedroom."
-    #"Just thinking about it sends a chill up your spine and you're not sure why."
-    #"The room smelled like old stale clothes, and neither of the two windows provided much light. There was nothing in there except a king sized bed, a nightstand, and a wardrobe."
-    #"It didn't feel right to mess with anything so you shut the door and made a note to leave it be, like a tomb."
-    #"Wandering over to the desk, you take a gander at the shelves stuffed with binders and books. They seem to be work related."
-    #"You sit down in the leather chair and slowly spin around."
-    #"It's actually really comfortable. You guess you'd splurge on a nice chair too if you were gonna sit in it for long periods of time."
     #"In your idle spinning, you must have accidentally bumped the mouse, because you hear the computer suddenly turn on."
     #"You try a few common passwords but have no luck getting in."
     #"You'll need to figure out a way to get past the login screen sometime."
@@ -2455,135 +2428,152 @@ label start:
 
     # pause
 
-    #"As you shut the computer down, you notice a photo frame next to the monitor."
-    #"Inside there's a faded picture of you as a kid. You're holding up a fish you caught and your father is kneeling beside you with a proud look on his face."
-    #"You vaguely remember when that photo was taken. It was in early spring, when all the leaves were bright green."
-    #"You got up early and spent the whole day fishing, just you and your dad. Then when the sun started going down you sat on the bank and fed the fish with the remainder of your bait."
-    #"Simpler times, those were. Your parents were still together back then."
-    #"You feel a lump in your throat, but you push it down because adults aren't supposed to cry."
+    "As you shut the computer down, you notice a photo frame next to the monitor."
+    "Inside there's a faded picture of you as a kid. You're holding up a fish you caught and your father is kneeling beside you with a proud look on his face."
+    "You vaguely remember when that photo was taken. It was in early spring, when all the leaves were bright green."
+    "You got up early and spent the whole day fishing, just you and your dad. Then when the sun started going down you sat on the bank and fed the fish with the remainder of your bait."
+    "Simpler times, those were. Your parents were still together back then."
+    "You feel a lump in your throat, but you push it down because adults aren't supposed to cry."
     #"With a heavy sigh, you look back at the monitor."
     #"You half-heartedly try a few random passwords until it locks you out."
-    #might change back to the corrupt hard drive in recovery mode thing, but have to go back and rewrite the first time the player boots it up
+    #might change back to the corrupt hard drive in recovery mode thing
     #"Dang, the disk is saying it's corrupt. It's starting a recovery procedure now."
     #"The estimated finish time is given in... days?!"
     #"Just how big is the hard drive?"
+    #the code for the safe is in the files?
     #"Ugh, you'll deal with this later. You leave the machine running and prepare to head out."
-    #"There's just one more room left to check out."
-
     
+    "The sound of a motor revving in the distance fills the air and gradually gets louder as it approaches."
     
-    
-    
-    
-    
-    
-    
-    
-
-    #"The sun had gone down by the time you made it home."
-    #"You lazed around and watched a few videos on your phone for a while until you were hungry enough to start dinner, then you continued to laze around until it was time for bed."
-    #try tinkering with the bike, go to bed early since gregg is showing up in the morning
-
-
-    scene bg bedroom with fade
-
-    "You crawl under the covers and think about your future here."
-    "You need to get a job at some point. Sooner or later you'll need the income."
-    "You wouldn't mind making some friends too while you're here."
-    "It's been so long since you've hung out with anyone, you can hardly remember what it's like."
-    "At least Gregg is coming over tomorrow. He seems like a nice guy."
-    "You yawn and turn over, clutching your pillow as sleep overtakes you."
-
-    scene bg black with fade
-    
-    
-    stop music fadeout 1.0
-
-    
-
-    # Day 3, friday
-    $ currentDay = 3
-    $ currentDate = "December 3"
-    
-
     play sound "sound/motorbike arriving.mp3"
-    #scene fading in
-
-    "You had managed to get used to the train and its blaring horn passing by several times each night but now your slumber is disturbed by a new sound."
-    "It's the rumbling of a motor approaching, followed by tires digging into the ground just outside the front door."
-    "You quickly become alert once you realize that must be Gregg coming over to fix your bike."
-    "You scramble out of bed but before you can change out of your pajamas he's already knocking on the front door. You have no choice but to answer it like this."
-
-    scene bg home_interior_night with fade
-
-    "It's not even daylight out yet."
-    "You flip on the lights and open the door to find Gregg standing there proudly with an overstuffed backpack in his hand."
-    "He seems oblivious to the fact that you've just woken up."
-
+    
+    "That must be Gregg!"
+    "You pull yourself together and go to the front door to meet him."
+    
+    scene bg home_interior_day with dissolve
+    
+    "*Knock knock knock*"
+    
+    show gregg neutral at center with dissolve
+    
     play music "music/cozycidersipping_loop.mp3" fadein 1.0
-
-    show gregg neutral at left with dissolve:
-        yalign greggheight
-
-    gregg "Morning, [name]! I brought all my tools and a bunch of parts."
-
-    player "Uh, morning Gregg. I didn't expect you so early."
-
+    
+    gregg "Heya!"
+    
+    player "Hey! Glad you could make it!"
+    
     gregg "I only have an hour before I have to be at work."
     gregg "Well? Where's the bike?"
-
+    
     player "Oh uh, right this way."
-
+    
+    "You slip on your shoes and show him to the shed."
+    
     scene bg shed with fade
-
-    "You put on some slippers and lead him to the shed."
+    
     "Gregg's eyes go wide at the sight of the motorcycle as you open the door."
-
-    show gregg neutral at left with dissolve:
+    
+    show gregg neutral at center with dissolve:
+        xzoom -1
         yalign greggheight
-
+        
     gregg "She's beautiful. I love her."
+    
+    #if male do the sex joke bit
+    
+    player "I'd love her more if I could turn her on."
+    
+    gregg "*Snrk*"
+    
+    player "What?"
+    
+    gregg "Nothing ahahaha!"
+    
+    player "I tried getting underneath, but I guess I just didn't have the right tool for the job."
+    
+    gregg "Pffft hahahaha"
+    
+    player "What??"
+    
+    gregg "You're doing that on purpose aren't you?"
+    
+    player "Doing what?"
+    
+    gregg "Ah forget it. Do you have a wrench I can use?"
+    
+    player "Yeah but it just wasn't big enough..."
+    mine wasn't big enough so I had to borrow one from the hardware store
+    
+    #player "Or at least I didn't have one big enough"
+    
+    #something something maybe you just need the right tool
+    #in just the perfect size
+    
+    
+  
+    
+    ###tell gregg about the computer you can't get into, he recommends gettng angus to fix it. he also invites you to hang out and play tabletop games with him angus selma and germ tonight. at the hangout angus mentions you should switch to a phone provider that works here and offers to fix your computer. you can decline and say you'll go to the library to download an iso to fix the computer yourself the next day (does selma comment on that or has she left already?) and that you'll look up a cell provider on the library computers while you're there. before you leave the next day you find an overdue book in your house and take it along with you.
 
-    player "I'd love her more if she didn't leak fuel."
+    #"You had managed to get used to the train and its blaring horn passing by several times each night but now your slumber is disturbed by a new sound."
+    #"It's the rumbling of a motor approaching, followed by tires digging into the ground just outside the front door."
+    #"You quickly become alert once you realize that must be Gregg coming over to fix your bike."
+    #"You scramble out of bed but before you can change out of your pajamas he's already knocking on the front door. You have no choice but to answer it like this."
 
-    "You point at the puddle of gas soaking into the concrete floor."
+    #scene bg home_interior_night with fade
 
-    gregg "Ooh, yeah that's a big problem."
+    #"It's not even daylight out yet."
+    #"You flip on the lights and open the door to find Gregg standing there proudly with an overstuffed backpack in his hand."
+    #"He seems oblivious to the fact that you've just woken up."
 
-    show gregg sad3 flip
 
-    gregg "Hmm."
+    #gregg "Morning, [name]! I brought all my tools and a bunch of parts."
 
-    "He drops to the ground and gets an up close look at the engine."
+    #player "Uh, morning Gregg. I didn't expect you so early."
 
-    show gregg neutral flip
 
-    gregg "You got a towel?"
+    #"You put on some slippers and lead him to the shed."
+    
 
-    "You grab a towel from the workbench and hand it to him."
+    #player "I'd love her more if she didn't leak fuel."
 
-    gregg "Thanks."
+    #"You point at the puddle of gas soaking into the concrete floor."
 
-    "He wipes off some of the grime, then pulls his backpack close and rummages around until he finds a flashlight."
-    "Lighting up the area underneath the bike, he pokes and prods at a few parts then furrows his brow."
+    #gregg "Ooh, yeah that's a big problem."
 
-    gregg "Hrmmm..."
+    #show gregg sad3 flip
 
-    player "What is it?"
+    #gregg "Hmm."
 
-    gregg "Not sure yet."
+    #"He drops to the ground and gets an up close look at the engine."
 
-    player "Can I get you anything? A drink?"
+    #show gregg neutral flip
 
-    gregg "Nah, I'm good."
+    #gregg "You got a towel?"
 
-    "He pulls a wrench from his bag and starts unscrewing nuts and bolts while you stand by, just observing."
-    "You wish you could help, but you're really at a loss at what to do and you don't want to get in his way."
-    "He takes off quite a few bits and pieces, and at times looks like he's confused by what he's working with, but he continues working with confidence."
+    #"You grab a towel from the workbench and hand it to him."
 
-    gregg "Hey how much fuel is in the tank, do you know?"
+    #gregg "Thanks."
 
-    player "Um."
+    #"He wipes off some of the grime, then pulls his backpack close and rummages around until he finds a flashlight."
+    #"Lighting up the area underneath the bike, he pokes and prods at a few parts then furrows his brow."
+
+    #gregg "Hrmmm..."
+
+    #player "What is it?"
+
+    #gregg "Not sure yet."
+
+    #player "Can I get you anything? A drink?"
+
+    #gregg "Nah, I'm good."
+
+    #"He pulls a wrench from his bag and starts unscrewing nuts and bolts while you stand by, just observing."
+    #"You wish you could help, but you're really at a loss at what to do and you don't want to get in his way."
+    #"He takes off quite a few bits and pieces, and at times looks like he's confused by what he's working with, but he continues working with confidence."
+
+    #gregg "Hey how much fuel is in the tank, do you know?"
+
+    #player "Um."
 
     "Suddenly a valve clanks against the floor and the entire gas tank empties itself onto Gregg's sleeve."
     "He recoils in surprise and falls back on his rear."
@@ -2880,7 +2870,82 @@ label start:
     "You drove the bike around the yard a bit to make sure it works and you're fairly confident it can make it to town."
     "You grab your daily carry stuff then head down to the shed."
 
-    scene bg basement1 with dissolve
+
+
+
+        #"That's odd, the lamp is already on."
+    #"The soft glow illuminates the tidy room and all its furnishings."
+    #"You had called the utilities companies ahead of time to get things ready for your arrival, but apparently nobody took the time to turn off this one light."
+
+    #hint that there's a mark where a book used to lie on the table
+    #"Surprisingly this house hasn't been ransacked and vandalized in all the years it was sitting unoccupied, at least not from what you can tell."
+    #"You're lucky this house you've inherited hasn't been broken into and vandalized in all the time it was sitting empty."
+    #"At the very least the safe appears to be... safe. "
+    #"No sign that anybody tried to break into that safe, so whatever it contains is probably... safe."
+    #"Interestingly there's a safe built into one of the walls. You wonder what that's all about but there's no way you're getting it open without the combination."
+    #maybe gregg can crack it
+    #"You'll have to try and crack it later, right now you're more interested in cracking the wifi password."
+    #"You follow the wires coming out of the computer under the desk, which leads you straight to the router."
+    #"Jackpot!"
+    #"You look all over the box but the default password has faded from the label."
+    #"Damn cheap piece of shit ink."
+    #"You desperately look around the room for any sticky notes with passwords scrawled on them to no avail."
+    #"Even the computer is locked behind a password when you try turning it on."
+    #"Why can't phones just come with ethernet ports? You could plug yours in directly and satisfy your internet addiction if people weren't so obsessed with having thin phones."
+    #"If only your phone had an ethernet port."
+    #"You step away and sigh."
+    #"Now what are you gonna do?"
+    #"Your inheritance hasn't hit your bank account yet so buying a new computer or router is out of the question."
+    #"Especially when you haven't even bought groceries."
+    #"Your stomach rumbles."
+    #"You better find something to eat soon. Even a small town like Possum Springs must have a place to get breakfast, right? Hopefully some decent coffee too."
+    #"That, and a restaurant is bound to have public wifi."
+    #"That map of Possum Springs you snagged from the bus station yesterday should point you in the right direction."
+    #"You put on a jacket and shoes and ventured out in search of food and internet."
+    #"That's all the motivation you need to put on some shoes and head out the door and begin the hunt for food and internet."
+
+    
+    
+    #"Your tour of the house concludes when you find yourself back in the office."
+    #"Your tour of the building took you through different rooms filled with art, furniture, and books."
+    #"Nothing out of the ordinary for a well-off boomer. You noted your father had a taste for antiques."
+    #"But what stood out to you the most was what must have been your father's bedroom."
+    #"Just thinking about it sends a chill up your spine and you're not sure why."
+    #"The room smelled like old stale clothes, and neither of the two windows provided much light. There was nothing in there except a king sized bed, a nightstand, and a wardrobe."
+    #"It didn't feel right to mess with anything so you shut the door and made a note to leave it be, like a tomb."
+    #"Wandering over to the desk, you take a gander at the shelves stuffed with binders and books. They seem to be work related."
+    #"You sit down in the leather chair and slowly spin around."
+    #"It's actually really comfortable. You guess you'd splurge on a nice chair too if you were gonna sit in it for long periods of time."
+    
+    #"There's just one more room left to check out."
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    #"The sun had gone down by the time you made it home."
+    #"You lazed around and watched a few videos on your phone for a while until you were hungry enough to start dinner, then you continued to laze around until it was time for bed."
+    #try tinkering with the bike, go to bed early since gregg is showing up in the morning
+
+
+    #scene bg bedroom with fade
+
+    
+    
+    stop music fadeout 1.0
+
+    
+
+
+    
+
+        scene bg basement1 with dissolve
 
     "Gregg had messaged you on Chattrbox a few hours ago asking you to bring over the tools he left behind."
     "You gather his things into the bag then zip it up and sling it over your shoulder."
