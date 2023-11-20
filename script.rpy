@@ -131,7 +131,7 @@ label start:
     "Finally, you made it."
     "A bell on the door chimes as you walk into a cozy little cafe."
     "The sign on the door read:\nPosspresso\nEST. 2020"
-    "The smell of roasted coffee beans guided you from a block away."
+    "The smell of roasted coffee beans guided you here from a block away."
     "You brush the snow off your jacket and take a moment to bask in the warmth."
     "While fairly clean and new looking, the place has a rustic country charm to it."
     #finally a modern cafe in possum springs!
@@ -1087,11 +1087,11 @@ label start:
     "Ah here it is, the Ol' Pickaxe."
     "You ascend the couple of steps leading to the front door and head inside."
 
-    scene bg pickaxe with dissolve
+    scene bg ol pickax with dissolve
 
     play music "music/picknaxe_loop.mp3" fadein 1.0
 
-    "Lots of boxes and miscellaneous items are strewn about like they're in the middle of reorganizing their inventory."
+    "Plenty of boxes and miscellaneous items are strewn about like they're in the middle of reorganizing their inventory."
     "An assortment of nails, screws, tapes, paints, and most importantly tools are on display. It's surprisingly well stocked for a little country bumpkin town."
     "You guess the folk around here rely on building and repairing their own stuff more than people in the city do."
     #"Then again, country folk are more likely to use these sorts of things for repairs and home improvement. You weren't even allowed to put thumbtacks in the walls in your apartment in the city but here"
@@ -1479,7 +1479,7 @@ label start:
     hide angus
     with dissolve
     
-    scene bg olpickax with fade
+    scene bg ol pickax with fade
     
     "You returned to the hardware store to uphold you end of the bargain with the cashier."
     "She's still moving bags of salt around."
@@ -2275,7 +2275,7 @@ label start:
     # restore default music volume
     #$ renpy.music.set_volume(0.7, 0, channel='music')
 
-    scene bg olpickax with fade
+    scene bg ol pickax with fade
 
     #"From there you remember walking through the woods to get to your new home."
 
@@ -2489,9 +2489,9 @@ label start:
     
     gregg "Nothing ahahaha!"
     
-    player "I tried getting underneath, but I guess I just didn't have the right tool for the job."
+    player "I tried fiddling around underneath, but I guess I just didn't have the right tool for the job."
     
-    gregg "Pffft hahahaha"
+    gregg "Pffft hahahaha!"
     
     player "What??"
     
@@ -2501,16 +2501,124 @@ label start:
     
     gregg "Ah forget it. Do you have a wrench I can use?"
     
-    player "Yeah but it just wasn't big enough..."
-    mine wasn't big enough so I had to borrow one from the hardware store
+    #player "Yeah but it just wasn't big enough..."
+    #mine wasn't big enough so I had to borrow one from the hardware store
+    "You pull out the wrench you got from Bea and hand it to him."
+    
+    player "Here. I went through a whole ordeal to borrow this from the hardware store yesterday."
+    player "Because apparently my own equipment wasn't the right size."
     
     #player "Or at least I didn't have one big enough"
     
     #something something maybe you just need the right tool
     #in just the perfect size
     
+    "Gregg busts out laughing hysterically and only then do you realize the inadvertent innuendos you've been saying."
     
+    player "I mean uhh..."
+    
+    #gregg "Hahaha don't worry dude, I'll get her running and you can ride her to your heart's content!"
+    gregg "Hahaha I get what you mean! Don't worry though, I'll get her running and you can ride her to your heart's content!"
   
+    player "You didn't have to say it like that..."
+    
+    gregg "I know, but it's more fun that way."
+    
+    "Gregg gets to work on the engine while you hold a light for him."
+    #"He takes out a few pieces and disconnects some wires"
+    "You can't really see what he's doing but he works pretty fast. He soon has a pile of bolts, wires and random engine parts strewn around him."
+    
+    gregg "There! That should do it!"
+    gregg "Hopefully!"
+    
+    "He just as quickly puts it all back together, turning back to you with a proud grin and an oil stain on his fur."
+    
+    player "You got a little something on your cheek."
+    
+    gregg "Huh? This one?"
+    
+    "He wipes the wrong cheek with his paw."
+    
+    player "Other one."
+    
+    "He manages to wipe his face everywhere except the stain."
+    
+    menu:
+        "Wipe it off for him":
+            player "Here, let me just..."
+            
+            "You grab a nearby towel and rub at the oil, trying not to spread it further."
+            "Gregg freezes like a deer in headlights while you clean his fur in the most awkward way possible."
+            
+            player "There. Sorry if I pulled some whiskers. Just didn't want you going in to work looking like that."
+            
+            gregg "Hahaha thanks? I think?"
+            
+            player "And I guess it was the least I could do since you just fixed my bike."
+            
+            gregg "Correction: probably fixed your bike!"
+            gregg "We still have to test it first!"
+            
+            "You insert the key into the ignition and look to Gregg as you start to turn it, praying it doesn't explode."
+            
+            #engine noises
+            play sound "sound/motorcycle start.mp3"
+            
+            "You're pleasantly surprised when it starts up just fine."
+            
+            gregg "Yes!"
+            
+            ###your reaction should be different depending on your personality points
+            
+            
+            "FROM THIS POINT ON IS VERY OLD AND UNFINISHED STUFF"
+            
+            
+            
+            ###unfinished
+            
+            
+            
+            gregg "I had something similar happen to my bike before so this was a piece of cake!"
+            
+            
+            
+            gregg "And you'll probably wanna take it to a real mechanic sometime."
+
+            player "At least now I can drive it to one."
+
+            gregg "Yup!"
+            gregg "Well, I better get going before I'm late for work."
+
+            player "Ok! Thanks so much for fixing my bike!"
+
+            gregg "No problem! It was more exciting than standing around scanning groceries all day, that's for sure!"
+            gregg "Oh that reminds me, we're having a little get together at the bakery this evening if you wanna come. Me, Angus, and a friend of ours."
+            
+            player "Sure, I'm not doing anything tonight anyway."
+
+    #        gregg "Cool, we're meeting at six."
+
+    #        player "Sounds good. See ya then!"
+            
+            
+            gregg "Alright, see ya later!"
+
+    #        "He jogs over to his own bike and rides off into the sunrise."
+            
+            
+        "Give him a towel":
+            "FROM THIS POINT ON IS VERY OLD AND UNFINISHED STUFF"
+            ###unfinished
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     ###tell gregg about the computer you can't get into, he recommends gettng angus to fix it. he also invites you to hang out and play tabletop games with him angus selma and germ tonight. at the hangout angus mentions you should switch to a phone provider that works here and offers to fix your computer. you can decline and say you'll go to the library to download an iso to fix the computer yourself the next day (does selma comment on that or has she left already?) and that you'll look up a cell provider on the library computers while you're there. before you leave the next day you find an overdue book in your house and take it along with you.
 
@@ -2575,300 +2683,300 @@ label start:
 
     #player "Um."
 
-    "Suddenly a valve clanks against the floor and the entire gas tank empties itself onto Gregg's sleeve."
-    "He recoils in surprise and falls back on his rear."
+    #"Suddenly a valve clanks against the floor and the entire gas tank empties itself onto Gregg's sleeve."
+    #"He recoils in surprise and falls back on his rear."
 
-    gregg "AAAAAAAH!"
+    #gregg "AAAAAAAH!"
 
-    player "Oh shit!"
+    #player "Oh shit!"
 
-    gregg "Haha don't worry, it's fine! Didn't get much on me."
+    #gregg "Haha don't worry, it's fine! Didn't get much on me."
 
-    "Gregg flicks his arm to get the remaining droplets off."
-    "Thankfully most of it had slid off his leather jacket and splattered onto the floor instead of soaking into his fur."
+    #"Gregg flicks his arm to get the remaining droplets off."
+    #"Thankfully most of it had slid off his leather jacket and splattered onto the floor instead of soaking into his fur."
 
-    player "Still..."
+    #player "Still..."
 
-    menu:
-        "Wipe down his jacket":
-            #+1 greggAP
-            #+1 understanding
+    #menu:
+    #    "Wipe down his jacket":
+    #        #+1 greggAP
+    #        #+1 understanding
 
-            "You grab a spare cloth and wipe the excess liquid off his jacket, noticing he got a smudge of oil on his face too."
+    #        "You grab a spare cloth and wipe the excess liquid off his jacket, noticing he got a smudge of oil on his face too."
 
-            player "Hold still."
+    #        player "Hold still."
 
-            gregg "Wha-?"
+    #        gregg "Wha-?"
 
-            "You scrub the oil spot off as gently as you can. He freezes in place as you clean his fluff."
+    #        "You scrub the oil spot off as gently as you can. He freezes in place as you clean his fluff."
 
-            player "There. You had something on your face."
+    #        player "There. You had something on your face."
 
-            gregg "O-oh!"
-            gregg "Haha thanks! I wouldn't wanna show up to work with a big splotch on my face! Hahaha!"
+    #        gregg "O-oh!"
+    #        gregg "Haha thanks! I wouldn't wanna show up to work with a big splotch on my face! Hahaha!"
 
-            "His lighthearted laughter is contagious, at least enough to put a smile on your face."
+    #        "His lighthearted laughter is contagious, at least enough to put a smile on your face."
 
-        "Hand him a clean towel":
-            #+1 cynical
+    #    "Hand him a clean towel":
+    #        #+1 cynical
 
-            player "Sorry, I should have warned you ahead of time..."
+    #        player "Sorry, I should have warned you ahead of time..."
 
-            "You hand him a spare cloth."
+    #        "You hand him a spare cloth."
 
-            gregg "Nah, it's alright."
+    #        gregg "Nah, it's alright."
 
-            "He wipes the excess liquid off his jacket."
+    #        "He wipes the excess liquid off his jacket."
 
-            gregg "See? No harm done."
+    #        gregg "See? No harm done."
 
-            player "You got a bit of oil on your face too. Right there."
+    #        player "You got a bit of oil on your face too. Right there."
 
-            "You point in the general area where the splotch is on his face. He roughly scrubs at the area."
+    #        "You point in the general area where the splotch is on his face. He roughly scrubs at the area."
 
-            gregg "Did I get it?"
+    #        gregg "Did I get it?"
 
-            "Not really..."
+    #        "Not really..."
 
-            player "Yeah."
+    #        player "Yeah."
 
-    gregg "Alright, let me finish working on this. I think I can get her running soon."
+    #gregg "Alright, let me finish working on this. I think I can get her running soon."
 
-    "Gregg goes back to operating on your bike, wiping down gunked up parts, reseating pieces, and duct taping components."
-    "Time flies by as you watch him. He really seems like he's having a good time fixing your bike and making idle chit chat."
-    "Before you know it he stands and claps his paws together."
+    #"Gregg goes back to operating on your bike, wiping down gunked up parts, reseating pieces, and duct taping components."
+    #"Time flies by as you watch him. He really seems like he's having a good time fixing your bike and making idle chit chat."
+    #"Before you know it he stands and claps his paws together."
 
-    gregg "That should do it!"
-    gregg "Hopefully!"
-    gregg "Let's roll her out of here and see if she starts!"
+    #gregg "That should do it!"
+    #gregg "Hopefully!"
+    #gregg "Let's roll her out of here and see if she starts!"
 
-    menu:
-        "I'm so excited!":
-            $ greggAP = greggAP + 1
+    #menu:
+    #    "I'm so excited!":
+    #        $ greggAP = greggAP + 1
 
-            player "I'm so excited!"
+    #        player "I'm so excited!"
 
-            gregg "Come on come on come on let's push her out onto the yard!"
+    #        gregg "Come on come on come on let's push her out onto the yard!"
 
-            "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
-            "Gregg looks at you eagerly as you put the key into the ignition and give it a turn."
+    #        "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
+    #        "Gregg looks at you eagerly as you put the key into the ignition and give it a turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            "Another turn."
+    #        "Another turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            play sound "sound/motorcycle start.mp3"
+    #        play sound "sound/motorcycle start.mp3"
 
-            "Just as you're losing hope, the engine comes to life."
+    #        "Just as you're losing hope, the engine comes to life."
 
-            player "Hahaha yeah!!!"
+    #        player "Hahaha yeah!!!"
 
-            "Gregg looks so relieved. He's flailing his arms and howling."
+    #        "Gregg looks so relieved. He's flailing his arms and howling."
 
-            gregg "AWOOOOOOOOOOOOOOO!"
+    #        gregg "AWOOOOOOOOOOOOOOO!"
 
-            "And then the engine dies."
+    #        "And then the engine dies."
 
-            gregg "Huh?"
-            gregg "Oh yeah, we never replaced the gas!"
+    #        gregg "Huh?"
+    #        gregg "Oh yeah, we never replaced the gas!"
 
-            "You glance at the near-empty gas canister in the garage."
+    #        "You glance at the near-empty gas canister in the garage."
 
-            player "I have a little bit left inside still. It's kinda old though."
+    #        player "I have a little bit left inside still. It's kinda old though."
 
-            gregg "That's fine, just make sure you put some fresh fuel in there soon."
-            gregg "And you'll probably wanna take it to a real mechanic sometime."
+    #        gregg "That's fine, just make sure you put some fresh fuel in there soon."
+    #        gregg "And you'll probably wanna take it to a real mechanic sometime."
 
-            player "At least now I can drive it to one."
+    #        player "At least now I can drive it to one."
 
-            gregg "Yup!"
-            gregg "Well, I better get going before I'm late for work."
+    #        gregg "Yup!"
+    #        gregg "Well, I better get going before I'm late for work."
 
-            player "Ok! Thanks so much for fixing my bike!"
+    #        player "Ok! Thanks so much for fixing my bike!"
 
-            gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
-            gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
+    #        gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
+    #        gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
 
-            player "Sure, that sounds fun! I'm not doing anything tonight anyway."
+    #        player "Sure, that sounds fun! I'm not doing anything tonight anyway."
 
-            gregg "Cool, we're meeting at six. We live on the floor above the bakery."
+    #        gregg "Cool, we're meeting at six. We live on the floor above the bakery."
 
-            player "Sounds good. See ya then!"
+    #        player "Sounds good. See ya then!"
 
-            gregg "Hey do you have Chattrbox? You should add me!"
+    #        gregg "Hey do you have Chattrbox? You should add me!"
 
-            "You haven't used Chattrbox in quite a while."
-            "Regardless, you get his account name and make a note to reinstall the app later."
+    #        "You haven't used Chattrbox in quite a while."
+    #        "Regardless, you get his account name and make a note to reinstall the app later."
 
-            gregg "Alright, see ya later!"
+    #        gregg "Alright, see ya later!"
 
-            "He jogs over to his own bike and rides off as the sun begins to rise."
+    #        "He jogs over to his own bike and rides off as the sun begins to rise."
 
-        "I'll be surprised if this works.":
-            #(-1 Gregg AP, +1 cynicism)
+    #    "I'll be surprised if this works.":
+    #        #(-1 Gregg AP, +1 cynicism)
 
-            player "I'll be surprised if this works."
+    #        player "I'll be surprised if this works."
 
-            "Gregg's ears droop."
+    #        "Gregg's ears droop."
 
-            show gregg sad2 flip
+    #        show gregg sad2 flip
 
-            gregg "Hey man, don't doubt my abilities. At least it can't run *worse* now after all that work I put into it."
+    #        gregg "Hey man, don't doubt my abilities. At least it can't run *worse* now after all that work I put into it."
 
-            "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
-            "Gregg looks at you with anticipation in his eyes as you put the key into the ignition and give it a turn."
+    #        "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
+    #        "Gregg looks at you with anticipation in his eyes as you put the key into the ignition and give it a turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            "Another turn."
+    #        "Another turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            "Just as you thought, he couldn't fix-"
+    #        "Just as you thought, he couldn't fix-"
 
-            play sound "sound/motorcycle start.mp3"
+    #        play sound "sound/motorcycle start.mp3"
 
-            "*VROOOOOM*"
+    #        "*VROOOOOM*"
 
-            "The engine comes to life, much to Gregg's relief."
+    #        "The engine comes to life, much to Gregg's relief."
 
-            show gregg neutral flip
+    #        show gregg neutral flip
 
-            gregg "Yes!"
+    #        gregg "Yes!"
 
-            player "Well this is a pleasant surprise."
+    #        player "Well this is a pleasant surprise."
 
-            "And then the engine dies."
+    #        "And then the engine dies."
 
-            gregg "Huh?"
-            gregg "Oh yeah, we never replaced the gas!"
+    #        gregg "Huh?"
+    #        gregg "Oh yeah, we never replaced the gas!"
 
-            "You glance at the near-empty gas canister in the garage."
+    #        "You glance at the near-empty gas canister in the garage."
 
-            player "I have a little bit left inside still. It's kinda old though."
+    #        player "I have a little bit left inside still. It's kinda old though."
 
-            gregg "That's fine, just make sure you put some fresh fuel in there soon."
-            gregg "And you'll probably wanna take it to a real mechanic sometime."
+    #        gregg "That's fine, just make sure you put some fresh fuel in there soon."
+    #        gregg "And you'll probably wanna take it to a real mechanic sometime."
 
-            player "At least now I can drive it to one."
+    #        player "At least now I can drive it to one."
 
-            gregg "Yup!"
-            gregg "Well, I better get going before I'm late for work."
+    #        gregg "Yup!"
+    #        gregg "Well, I better get going before I'm late for work."
 
-            player "Ok! Thanks for fixing my bike!"
+    #        player "Ok! Thanks for fixing my bike!"
 
-            gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
-            gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
+    #        gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
+    #        gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
 
-            player "Sure, I'm not doing anything tonight anyway."
+    #        player "Sure, I'm not doing anything tonight anyway."
 
-            gregg "Cool, we're meeting at six. We live on the floor above the bakery."
+    #        gregg "Cool, we're meeting at six. We live on the floor above the bakery."
 
-            player "Sounds good. See ya then!"
+    #        player "Sounds good. See ya then!"
 
-            gregg "Hey do you have Chattrbox? You should add me!"
+    #        gregg "Hey do you have Chattrbox? You should add me!"
 
-            "You haven't used Chattrbox in quite a while."
-            "Regardless, you get his account name and make a note to reinstall the app later."
+    #        "You haven't used Chattrbox in quite a while."
+    #        "Regardless, you get his account name and make a note to reinstall the app later."
 
-            gregg "Alright, see ya later!"
+    #        gregg "Alright, see ya later!"
 
-            "He jogs over to his own bike and rides off as the sun begins to rise."
+    #        "He jogs over to his own bike and rides off as the sun begins to rise."
 
-        "What was wrong with it?":
-            #+1 Gregg AP, +1 inquisitive)
+    #    "What was wrong with it?":
+    #        #+1 Gregg AP, +1 inquisitive)
 
-            player "What was wrong with it?"
+    #        player "What was wrong with it?"
 
-            gregg "Not enough duct tape. It's the most important part in making things work."
+    #        gregg "Not enough duct tape. It's the most important part in making things work."
 
-            player "Riiiight..."
-            player "Well, what did you do about the missing gear?"
+    #        player "Riiiight..."
+    #        player "Well, what did you do about the missing gear?"
 
-            gregg "Huh? There was a missing gear?"
-            gregg "Eh, don't worry about it. Now come on, let's see if it works now!"
+    #        gregg "Huh? There was a missing gear?"
+    #        gregg "Eh, don't worry about it. Now come on, let's see if it works now!"
 
-            "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
-            "Gregg looks at you eagerly as you put the key into the ignition and give it a turn."
+    #        "You flip up the kickstand and the both of you wheel the bike through the garage door and out into the snow."
+    #        "Gregg looks at you eagerly as you put the key into the ignition and give it a turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            "Another turn."
+    #        "Another turn."
 
-            play sound "sound/motorcycle fail.mp3"
+    #        play sound "sound/motorcycle fail.mp3"
 
-            "..."
+    #        "..."
 
-            play sound "sound/motorcycle start.mp3"
+    #        play sound "sound/motorcycle start.mp3"
 
-            "Just as you're losing hope, the engine comes to life."
+    #        "Just as you're losing hope, the engine comes to life."
 
-            player "It works!"
+    #        player "It works!"
 
-            "Gregg looks so relieved. He's flailing his arms and howling."
+    #        "Gregg looks so relieved. He's flailing his arms and howling."
 
-            gregg "AWOOOOOOOOOOOOOOO!"
+    #        gregg "AWOOOOOOOOOOOOOOO!"
 
-            "And then the engine dies."
+    #        "And then the engine dies."
 
-            gregg "Huh?"
-            gregg "Oh yeah, we never replaced the gas!"
+    #        gregg "Huh?"
+    #        gregg "Oh yeah, we never replaced the gas!"
 
-            "You glance at the near-empty gas canister in the garage."
+    #        "You glance at the near-empty gas canister in the garage."
 
-            player "I have a little bit left inside still. It's kinda old though."
+    #        player "I have a little bit left inside still. It's kinda old though."
 
-            gregg "That's fine, just make sure you put some fresh fuel in there soon."
-            gregg "And you'll probably wanna take it to a real mechanic sometime."
+    #        gregg "That's fine, just make sure you put some fresh fuel in there soon."
+    #        gregg "And you'll probably wanna take it to a real mechanic sometime."
 
-            player "At least now I can drive it to one."
+    #        player "At least now I can drive it to one."
 
-            gregg "Yup!"
-            gregg "Well, I better get going before I'm late for work."
+    #        gregg "Yup!"
+    #        gregg "Well, I better get going before I'm late for work."
 
-            player "Ok! Thanks so much for fixing my bike!"
+    #        player "Ok! Thanks so much for fixing my bike!"
 
-            gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
-            gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
+    #        gregg "No problem! It beats bagging groceries at the Ham Panther all day!"
+    #        gregg "Oh that reminds me, we're having a little get together this evening if you wanna come. Me, Angus, and a friend of ours."
 
-            player "Sure, that sounds fun! I'm not doing anything tonight anyway."
+    #        player "Sure, that sounds fun! I'm not doing anything tonight anyway."
 
-            gregg "Cool, we're meeting at six. We live on the floor above the bakery."
+    #        gregg "Cool, we're meeting at six. We live on the floor above the bakery."
 
-            player "Sounds good. See ya then!"
+    #        player "Sounds good. See ya then!"
 
-            gregg "Hey do you have Chattrbox? You should add me!"
+    #        gregg "Hey do you have Chattrbox? You should add me!"
 
-            "You haven't used Chattrbox in quite a while."
-            "Regardless, you get his account name and make a note to reinstall the app later."
+    #        "You haven't used Chattrbox in quite a while."
+    #        "Regardless, you get his account name and make a note to reinstall the app later."
 
-            gregg "Alright, see ya later!"
+    #        gregg "Alright, see ya later!"
 
-            "He jogs over to his own bike and rides off as the sun begins to rise."
+    #        "He jogs over to his own bike and rides off as the sun begins to rise."
 
-    hide gregg with dissolve
-    stop music fadeout 2.0
+    #hide gregg with dissolve
+    #stop music fadeout 2.0
 
-    "Now then, time to go back inside and take a hot shower."
+    #"Now then, time to go back inside and take a hot shower."
 
-    scene bg bathroom with fade
+    #scene bg bathroom with fade
 
-    "You somehow managed to put off taking a shower until late afternoon."
-    "It's about time to head to Gregg's place."
-    "You drove the bike around the yard a bit to make sure it works and you're fairly confident it can make it to town."
-    "You grab your daily carry stuff then head down to the shed."
+    #"You somehow managed to put off taking a shower until late afternoon."
+    #"It's about time to head to Gregg's place."
+    #"You drove the bike around the yard a bit to make sure it works and you're fairly confident it can make it to town."
+    #"You grab your daily carry stuff then head down to the shed."
 
 
 
@@ -2938,464 +3046,464 @@ label start:
 
     
     
-    stop music fadeout 1.0
+    #stop music fadeout 1.0
 
     
 
 
     
 
-        scene bg basement1 with dissolve
+    #    scene bg basement1 with dissolve
 
-    "Gregg had messaged you on Chattrbox a few hours ago asking you to bring over the tools he left behind."
-    "You gather his things into the bag then zip it up and sling it over your shoulder."
-    "Oof, this thing's heavy!"
-    "You manage to bear with it and roll your bike outside, stepping into the night."
-    "It's cold and breezy out with soft moonlight coming through the clouds."
-    "Nice night for a ride."
-    "You close the shed door behind you and hop on your bike, revving it a few times before venturing into the darkness."
+    #"Gregg had messaged you on Chattrbox a few hours ago asking you to bring over the tools he left behind."
+    #"You gather his things into the bag then zip it up and sling it over your shoulder."
+    #"Oof, this thing's heavy!"
+    #"You manage to bear with it and roll your bike outside, stepping into the night."
+    #"It's cold and breezy out with soft moonlight coming through the clouds."
+    #"Nice night for a ride."
+    #"You close the shed door behind you and hop on your bike, revving it a few times before venturing into the darkness."
 
-    scene bg parkdark with fade
+    #scene bg parkdark with fade
 
-    "You pull up to the curb next to the Bear Essentials Bakery and check the time on your phone."
-    "You're a little earlier than you expected, thanks to the lack of cops in Possum Springs to deter you from riding fast."
-    "But... the building looks abandoned?"
-    "Lights are off, the sign says closed, and the only apparent entrances are locked."
-    "No response when you bang on the door either."
-    "Does Gregg really live here on the second floor or was he messing with you?"
-    "You can't even text him because the only wifi spots available are password protected."
-    "You have no choice other than to wait and see if Gregg or Angus show up."
-    "Crossing your arms, you lean against the building and sigh."
-    "Your breath is easily visible in this weather, the contrails spiraling upward and being whisked away by the wind."
-    "You remember pretending to be a dragon when you were a child, blowing out \"smoke\" when it was cold out."
-    "You reminisce over moments like those and try spewing fire like you always wanted to."
-    "Nope, still just smoke."
-    "Which is really just hot air."
-    play sound "sound/footsteps.mp3"
-    "Your thoughts are interrupted by the sound of snow crunching behind you."
-    "Footsteps."
-    "They're coming closer."
-    "More than one person."
-    "You risk a glance over your shoulder, more worried that someone saw you acting out your dragon fantasies rather than someone coming to mug you."
-    "You're pleasantly surprised to find Angus walking toward you with a pizza box in his arms."
-    "And he's got a friend in tow."
-    "That must be the guy Gregg was talking about. He's a short birdy fellow with a rucksack on his back."
+    #"You pull up to the curb next to the Bear Essentials Bakery and check the time on your phone."
+    #"You're a little earlier than you expected, thanks to the lack of cops in Possum Springs to deter you from riding fast."
+    #"But... the building looks abandoned?"
+    #"Lights are off, the sign says closed, and the only apparent entrances are locked."
+    #"No response when you bang on the door either."
+    #"Does Gregg really live here on the second floor or was he messing with you?"
+    #"You can't even text him because the only wifi spots available are password protected."
+    #"You have no choice other than to wait and see if Gregg or Angus show up."
+    #"Crossing your arms, you lean against the building and sigh."
+    #"Your breath is easily visible in this weather, the contrails spiraling upward and being whisked away by the wind."
+    #"You remember pretending to be a dragon when you were a child, blowing out \"smoke\" when it was cold out."
+    #"You reminisce over moments like those and try spewing fire like you always wanted to."
+    #"Nope, still just smoke."
+    #"Which is really just hot air."
+    #play sound "sound/footsteps.mp3"
+    #"Your thoughts are interrupted by the sound of snow crunching behind you."
+    #"Footsteps."
+    #"They're coming closer."
+    #"More than one person."
+    #"You risk a glance over your shoulder, more worried that someone saw you acting out your dragon fantasies rather than someone coming to mug you."
+    #"You're pleasantly surprised to find Angus walking toward you with a pizza box in his arms."
+    #"And he's got a friend in tow."
+    #"That must be the guy Gregg was talking about. He's a short birdy fellow with a rucksack on his back."
 
-    show angus neutral flip at left:
-        yalign angusheight
-    show germ neutral at right
-    with dissolve
+    #show angus neutral flip at left:
+    #    yalign angusheight
+    #show germ neutral at right
+    #with dissolve
 
-    angus "Hello, [name]! Gregg hasn't let you inside yet?"
+    #angus "Hello, [name]! Gregg hasn't let you inside yet?"
 
-    player "Hey Angus. Nah, I haven't seen him. The place looks empty."
+    #player "Hey Angus. Nah, I haven't seen him. The place looks empty."
 
-    angus "Hmm. He's probably watching TV in the dark and couldn't hear you."
-    angus "This is Germ by the way. Germ, this is [name]."
+    #angus "Hmm. He's probably watching TV in the dark and couldn't hear you."
+    #angus "This is Germ by the way. Germ, this is [name]."
 
-    germ "Hi [name]! I hope you like video games! I brought some with me."
+    #germ "Hi [name]! I hope you like video games! I brought some with me."
 
-    "He adjusts his bag to emphasize his point."
+    #"He adjusts his bag to emphasize his point."
 
-    menu:
-        "I love video games!":
-            player "Nice to meet you uh... Germ? And yeah, I love video games!"
-        "They're alright.":
-            player "Nice to meet you uh... Germ? And yeah, video games are alright."
+    #menu:
+    #    "I love video games!":
+    #        player "Nice to meet you uh... Germ? And yeah, I love video games!"
+    #    "They're alright.":
+    #        player "Nice to meet you uh... Germ? And yeah, video games are alright."
 
-    "You're not sure if you heard his name right but just smiles and doesn't correct you."
-    "Kind of an odd name but who are you to judge?"
+    #"You're not sure if you heard his name right but just smiles and doesn't correct you."
+    #"Kind of an odd name but who are you to judge?"
 
-    angus "And I bought pizza! I didn't know what kind you liked so I just got cheese."
+    #angus "And I bought pizza! I didn't know what kind you liked so I just got cheese."
 
-    player "Cheese is fine."
-    player "So are we gonna go in or...?"
+    #player "Cheese is fine."
+    #player "So are we gonna go in or...?"
 
-    angus "Oh right. Forgot you guys are probably freezing."
-    angus "Come with me."
+    #angus "Oh right. Forgot you guys are probably freezing."
+    #angus "Come with me."
 
-    hide angus
-    hide germ
-    with dissolve
+    #hide angus
+    #hide germ
+    #with dissolve
 
-    "You and Germ follow Angus to the back of the building."
-    "It feels a bit sketchy, but you doubt a guy carrying a pizza is going to mug you."
-    "He starts up the metal stairway of the emergency exit."
+    #"You and Germ follow Angus to the back of the building."
+    #"It feels a bit sketchy, but you doubt a guy carrying a pizza is going to mug you."
+    #"He starts up the metal stairway of the emergency exit."
 
-    show angus neutral flip at left with dissolve:
-        yalign angusheight
+    #show angus neutral flip at left with dissolve:
+    #    yalign angusheight
 
-    angus "Sooo, fun fact. The stairs inside are broken."
-    angus "They caved in before we bought the place. That's why we have to take the fire escape to get to the second floor."
+    #angus "Sooo, fun fact. The stairs inside are broken."
+    #angus "They caved in before we bought the place. That's why we have to take the fire escape to get to the second floor."
 
-    player "Caved in? How does something like that even happen?"
+    #player "Caved in? How does something like that even happen?"
 
-    "Angus shrugs."
+    #"Angus shrugs."
 
-    angus "This building isn't exactly up to code."
-    angus "I don't think it's even legal for us to live here but it's the cheapest option and nobody's stopped us yet."
+    #angus "This building isn't exactly up to code."
+    #angus "I don't think it's even legal for us to live here but it's the cheapest option and nobody's stopped us yet."
 
-    hide angus with dissolve
+    #hide angus with dissolve
 
-    "You climb up the staircase after Angus with Germ taking up the rear."
-    "When you reach the second floor, you have to crawl through a window to get inside."
+    #"You climb up the staircase after Angus with Germ taking up the rear."
+    #"When you reach the second floor, you have to crawl through a window to get inside."
 
-    scene bg greggapartment with fade
+    #scene bg greggapartment with fade
 
-    play music "music/dissonance_to_chill_to.mp3" fadein 1.5
+    #play music "music/dissonance_to_chill_to.mp3" fadein 1.5
 
-    "Gregg is passed out on a stained couch in front of a TV."
-    "Beer bottles litter the floor around him."
+    #"Gregg is passed out on a stained couch in front of a TV."
+    #"Beer bottles litter the floor around him."
 
-    show angus neutral flip at left with dissolve:
-        yalign angusheight
+    #show angus neutral flip at left with dissolve:
+    #    yalign angusheight
 
-    angus "Honey, I'm home! And I picked up two hitchhikers!"
+    #angus "Honey, I'm home! And I picked up two hitchhikers!"
 
-    "The startled fox rolls off the couch and hits the floor with a thud."
+    #"The startled fox rolls off the couch and hits the floor with a thud."
 
-    show gregg neutral at right with dissolve
+    #show gregg neutral at right with dissolve
 
-    gregg "AAAAAAAAAAHH!"
+    #gregg "AAAAAAAAAAHH!"
 
-    "He quickly regains his composure, acting like nothing had just happened."
+    #"He quickly regains his composure, acting like nothing had just happened."
 
-    gregg "[name]! Germ! What's up?"
+    #gregg "[name]! Germ! What's up?"
 
-    angus "I found Germ wandering around on the way back from the pizza joint, and [name] was just sitting out front."
+    #angus "I found Germ wandering around on the way back from the pizza joint, and [name] was just sitting out front."
 
-    gregg "Oops, that's my fault. I shoulda been waiting out there for ya, [name]."
-    gregg "Please accept Angus's pizza as an apology on my behalf."
+    #gregg "Oops, that's my fault. I shoulda been waiting out there for ya, [name]."
+    #gregg "Please accept Angus's pizza as an apology on my behalf."
 
-    player "Apology accepted."
+    #player "Apology accepted."
 
-    angus "I'm happy I could be of service."
+    #angus "I'm happy I could be of service."
 
-    "Angus slides the pizza onto a table and opens a cabinet to grab some paper plates and plastic cups while Gregg pulls a 2-liter bottle of soda out from a mini fridge in the corner."
-    "Meanwhile Germ sneaks away to the television and unzips his bag."
+    #"Angus slides the pizza onto a table and opens a cabinet to grab some paper plates and plastic cups while Gregg pulls a 2-liter bottle of soda out from a mini fridge in the corner."
+    #"Meanwhile Germ sneaks away to the television and unzips his bag."
 
-    germ "I'm gonna set up the games."
+    #germ "I'm gonna set up the games."
 
-    angus "I'll get you a plate, Germ."
+    #angus "I'll get you a plate, Germ."
 
-    germ "Thanks."
+    #germ "Thanks."
 
-    angus "[name], you can just set your backpack down wherever, you know."
+    #angus "[name], you can just set your backpack down wherever, you know."
 
-    player "Oh right, Gregg left his tools at my place so I brought 'em over."
+    #player "Oh right, Gregg left his tools at my place so I brought 'em over."
 
-    "You take off the backpack and hand it to Gregg."
+    #"You take off the backpack and hand it to Gregg."
 
-    gregg "Aww, thanks for not stealing them!"
+    #gregg "Aww, thanks for not stealing them!"
 
-    "He carelessly tosses it against the wall beside the couch."
+    #"He carelessly tosses it against the wall beside the couch."
 
-    player "Anytime."
+    #player "Anytime."
 
-    "Angus opens up the pizza box and hands you a plate."
+    #"Angus opens up the pizza box and hands you a plate."
 
-    angus "Guests first."
+    #angus "Guests first."
 
-    player "You don't have to tell me twice!"
+    #player "You don't have to tell me twice!"
 
-    "You grin and take a couple slices then move over so Gregg can get some while you pour yourself a drink."
+    #"You grin and take a couple slices then move over so Gregg can get some while you pour yourself a drink."
 
-    gregg "So you rode your motorcycle here right? How's she run?"
+    #gregg "So you rode your motorcycle here right? How's she run?"
 
-    player "Pretty good once I got some fuel in her."
+    #player "Pretty good once I got some fuel in her."
 
-    angus "I'm glad Gregg could help you fix her up."
+    #angus "I'm glad Gregg could help you fix her up."
 
-    gregg "And that she didn't explode."
+    #gregg "And that she didn't explode."
 
-    "Angus fills up a plate for Germ, then takes the remainder of the pizza for himself."
+    #"Angus fills up a plate for Germ, then takes the remainder of the pizza for himself."
 
-    angus "Gregg, could you get drinks for me and Germ?"
+    #angus "Gregg, could you get drinks for me and Germ?"
 
-    gregg "Sure thing!"
+    #gregg "Sure thing!"
 
-    hide angus
-    hide gregg
-    with dissolve
+    #hide angus
+    #hide gregg
+    #with dissolve
 
-    "Gregg pours extra drinks as you and Angus make your way to the couch."
-    "Germ is crouched by the TV hooking up the connectors to the very outdated cube shaped console sitting on the floor."
-    "Angus gives Germ his plate and grabs a controller for you, Gregg, and himself."
+    #"Gregg pours extra drinks as you and Angus make your way to the couch."
+    #"Germ is crouched by the TV hooking up the connectors to the very outdated cube shaped console sitting on the floor."
+    #"Angus gives Germ his plate and grabs a controller for you, Gregg, and himself."
 
-    show angus neutral at right:
-        yalign angusheight
-        xalign 1.1
-    show germ neutral flip at left:
-        yalign germheight
-        xalign -.02
-    with dissolve
+    #show angus neutral at right:
+    #    yalign angusheight
+    #    xalign 1.1
+    #show germ neutral flip at left:
+    #    yalign germheight
+    #    xalign -.02
+    #with dissolve
 
-    angus "Thanks for bringing your console, Germ. I'll take the busted controller this time."
+    #angus "Thanks for bringing your console, Germ. I'll take the busted controller this time."
 
-    germ "If you insist."
+    #germ "If you insist."
 
-    "Gregg comes by shortly after and sets the drinks on a small table then sits on the couch with his plate in his lap."
+    #"Gregg comes by shortly after and sets the drinks on a small table then sits on the couch with his plate in his lap."
 
-    show gregg neutral:
-        yalign greggheight - .5
-        xalign .7
-    with dissolve
+    #show gregg neutral:
+    #    yalign greggheight - .5
+    #    xalign .7
+    #with dissolve
 
-    gregg "Angus and I had to sell our consoles when we moved, [name]. We were very sad."
+    #gregg "Angus and I had to sell our consoles when we moved, [name]. We were very sad."
 
-    angus "I mostly play on PC."
+    #angus "I mostly play on PC."
 
-    gregg "*I* was very sad."
+    #gregg "*I* was very sad."
 
-    player "Where'd you move from?"
+    #player "Where'd you move from?"
 
-    angus "Bright Harbor."
+    #angus "Bright Harbor."
 
-    if newname.upper() == "SCOTT":
-        player "Ah right, you mentioned living in Bright Harbor before."
-    if newname.upper() == "ALEC":
-        player "Ah right, you mentioned living in Bright Harbor before."
-    if newname.upper() == "BETH":
-        player "Ah right, you mentioned living in Bright Harbor before."
-    if newname.upper() == "BETHANY":
-        player "Ah right, you mentioned living in Bright Harbor before."
+    #if newname.upper() == "SCOTT":
+    #    player "Ah right, you mentioned living in Bright Harbor before."
+    #if newname.upper() == "ALEC":
+    #    player "Ah right, you mentioned living in Bright Harbor before."
+    #if newname.upper() == "BETH":
+    #    player "Ah right, you mentioned living in Bright Harbor before."
+    #if newname.upper() == "BETHANY":
+    #    player "Ah right, you mentioned living in Bright Harbor before."
 
-    gregg "We used to live here in Possum Springs, then moved to Bright Harbor, then back here."
+    #gregg "We used to live here in Possum Springs, then moved to Bright Harbor, then back here."
 
-    "Sounds like the two of them have some history going pretty far back."
-    "It just now occurs to you that they might be more than just friends."
+    #"Sounds like the two of them have some history going pretty far back."
+    #"It just now occurs to you that they might be more than just friends."
 
-    player "Sorry if this is a dumb question but are you two... together?"
+    #player "Sorry if this is a dumb question but are you two... together?"
 
-    "Gregg snuggles up to Angus, who leans his head on him."
+    #"Gregg snuggles up to Angus, who leans his head on him."
 
-    gregg "Yup! "
+    #gregg "Yup! "
 
-    angus "I can barely remember a time when I wasn't with Gregg."
+    #angus "I can barely remember a time when I wasn't with Gregg."
 
-    germ "*Ahem*"
+    #germ "*Ahem*"
 
-    "Germ turns to you with two game cases in his hands."
+    #"Germ turns to you with two game cases in his hands."
 
-    germ "What game should we play?"
+    #germ "What game should we play?"
 
-    gregg "You decide, [name]."
+    #gregg "You decide, [name]."
 
-    menu:
-        "The platformer fighting game.":
-            $ gameChoice = "fighting"
-            "You point at the fighting game."
-        "The board-based party game.":
-            $ gameChoice = "party"
-            "You point at the party game."
-    player "That one."
+    #menu:
+    #    "The platformer fighting game.":
+    #        $ gameChoice = "fighting"
+    #        "You point at the fighting game."
+    #    "The board-based party game.":
+    #        $ gameChoice = "party"
+    #        "You point at the party game."
+    #player "That one."
 
-    germ "K."
+    #germ "K."
 
-    "He takes the undersized disc and pops it into the console."
-    "Germ opts to stay sitting on the floor, while you, Gregg, and Angus fill up the couch. You all enjoy a few bites of pizza while the intro video plays."
+    #"He takes the undersized disc and pops it into the console."
+    #"Germ opts to stay sitting on the floor, while you, Gregg, and Angus fill up the couch. You all enjoy a few bites of pizza while the intro video plays."
 
-    germ "This is the like, newest game I have."
+    #germ "This is the like, newest game I have."
 
-    gregg "Isn't this game 20 years old?"
+    #gregg "Isn't this game 20 years old?"
 
-    germ "Yup!"
+    #germ "Yup!"
 
-    "Germ hits start and sets up the game."
+    #"Germ hits start and sets up the game."
 
-    angus "Ugh, I hate getting grease on the controller."
+    #angus "Ugh, I hate getting grease on the controller."
 
-    gregg "That's what pants are for."
+    #gregg "That's what pants are for."
 
-    "Gregg wipes his paws on his pants."
+    #"Gregg wipes his paws on his pants."
 
-    angus "Be right back, I'm gonna grab some napkins."
+    #angus "Be right back, I'm gonna grab some napkins."
 
-    "Angus gets up and steps over the wires on the way to the table."
-    "He comes back with a stack of napkins and hands them out to everyone before sitting back down."
+    #"Angus gets up and steps over the wires on the way to the table."
+    #"He comes back with a stack of napkins and hands them out to everyone before sitting back down."
 
-    gregg "Ready?"
+    #gregg "Ready?"
 
-    angus "Yeah."
+    #angus "Yeah."
 
-    "You all pick a character and begin a round."
+    #"You all pick a character and begin a round."
 
-    if gameChoice == "fighting":
+    #if gameChoice == "fighting":
 
-        "Germ is surprisingly good at this game. His inputs are efficient and he punishes with grace."
-        "Despite that, he gives you and the others a fair chance by leaving his defenses open."
-        "Gregg's aggressive plays allow him to take a couple of lives, at the cost of his character getting killed as well more often than not."
-        "Angus seems to be trying to get used to the controls, which only adds to the hilarity when he accidentally knocks someone off the stage."
-        "You just try to survive as long as you can and land a few hits whenever you can."
-        "Unsurprisingly Germ wins the round."
+    #    "Germ is surprisingly good at this game. His inputs are efficient and he punishes with grace."
+    #    "Despite that, he gives you and the others a fair chance by leaving his defenses open."
+    #    "Gregg's aggressive plays allow him to take a couple of lives, at the cost of his character getting killed as well more often #than not."
+    #    "Angus seems to be trying to get used to the controls, which only adds to the hilarity when he accidentally knocks someone off #the stage."
+    #    "You just try to survive as long as you can and land a few hits whenever you can."
+    #    "Unsurprisingly Germ wins the round."#
 
-        gregg "Angus. You press X to jump."
+    #    gregg "Angus. You press X to jump."
 
-        "Gregg points to the button on Angus's controller."
+    #    "Gregg points to the button on Angus's controller."
 
-        angus "Well I wish you would have told me before I died a million times!"
+    #    angus "Well I wish you would have told me before I died a million times!"
 
-        "Germ unassumingly eats his pizza while waiting for the next round to start. Everyone chooses a new character and you go to a random stage."
-        "As soon as it loads, Gregg immediately jumps off and dies."
+    #    "Germ unassumingly eats his pizza while waiting for the next round to start. Everyone chooses a new character and you go to a random stage."
+    #    "As soon as it loads, Gregg immediately jumps off and dies."
 
-        gregg "Wait I thought I was the other guy! Restart!"
+    #    gregg "Wait I thought I was the other guy! Restart!"
 
-        germ "No redoes."
+    #    germ "No redoes."
 
-        "Against your better judgement, you decide to taunt Gregg, both in real life and in the game."
+    #    "Against your better judgement, you decide to taunt Gregg, both in real life and in the game."
 
-        player "Yeah, no redoes."
+    #    player "Yeah, no redoes."
 
-        "You blow a raspberry at the fox as your character dances on screen."
-        "Your in-game taunt ends up getting you killed but thankfully Gregg restrains himself from doing the same to you in reality."
-        "Angus fares a little better this time."
-        "You all go easy on him and avoid targeting him unless he engages first. Gregg however is out for blood, doing whatever it takes to get you off the stage."
-        "Usually Germ ends up finishing both of you off."
-        "Eventually it's just Germ and Angus left standing. You eat your pizza and watch while Gregg coaches Angus."
-        "It all comes to an anticlimactic conclusion when Angus misses an easy punish and slowly falls off the bottom of the stage."
+    #    "You blow a raspberry at the fox as your character dances on screen."
+    #    "Your in-game taunt ends up getting you killed but thankfully Gregg restrains himself from doing the same to you in reality."
+    #    "Angus fares a little better this time."
+    #    "You all go easy on him and avoid targeting him unless he engages first. Gregg however is out for blood, doing whatever it takes to get you off the stage."
+    #    "Usually Germ ends up finishing both of you off."
+    #    "Eventually it's just Germ and Angus left standing. You eat your pizza and watch while Gregg coaches Angus."
+    #    "It all comes to an anticlimactic conclusion when Angus misses an easy punish and slowly falls off the bottom of the stage."
 
-        gregg "Angus! You have to press B and up at the same time to recover!"
+    #    gregg "Angus! You have to press B and up at the same time to recover!"
 
-        angus "I was doing that!"
+    #    angus "I was doing that!"
 
-        gregg "No like, you have to slam the stick like this."
+    #    gregg "No like, you have to slam the stick like this."
 
-        "Gregg demonstrates."
+    #    "Gregg demonstrates."
 
-        angus "Hrm."
+    #    angus "Hrm."
 
-        "You start up another round. This time you all have the same idea to gang up on Germ."
-        "He doesn't seem to mind, and he methodically takes you all on simultaneously."
-        "You and Gregg manage to get a few combos off on him but once again the match ends with a showdown between Angus and Germ."
-        "Germ shields against Angus's special then completely whiffs his own attack, giving Angus a chance to launch him off stage."
+    #    "You start up another round. This time you all have the same idea to gang up on Germ."
+    #    "He doesn't seem to mind, and he methodically takes you all on simultaneously."
+    #    "You and Gregg manage to get a few combos off on him but once again the match ends with a showdown between Angus and Germ."
+    #    "Germ shields against Angus's special then completely whiffs his own attack, giving Angus a chance to launch him off stage."
 
-        gregg "OOOOOOOOOOOOOOH! GOT HIM!"
+    #    gregg "OOOOOOOOOOOOOOH! GOT HIM!"
 
-        "You all have a laugh at the outcome, especially after Gregg's reaction to it."
+    #    "You all have a laugh at the outcome, especially after Gregg's reaction to it."
 
 
-    elif gameChoice == "party":
+    #elif gameChoice == "party":
 
-        "You decide on a board then your characters all roll a die and move forward however many spaces."
-        "Each space you land on has a different effect, whether it's gaining or losing money, acquiring an item, teleporting to a different spot on the board, or a variety of other events."
-        "And at the end of each turn, you have to play a minigame. Sometimes it's a free-for-all, sometimes it's 2 vs. 2 or 1 vs. 3 with randomly selected teams."
-        "The game is designed to be impossible to play seriously no matter how hard you try, with all its randomness and janky controls."
-        "As frustrating as it can be to lose everything because the game felt like it, it's difficult to stay mad when you get your points swapped with the guy in first place on the next turn."
-        "There's a lot of downtime between minigames since you just have to press a button to roll the die and watch the game play out, giving you ample time to munch on your pizza."
-        "Germ is such a pro at this game he eats his while playing the minigames."
-        "Gregg's aggressive plays are counterbalanced by his incredibly bad luck throughout the round, landing him in last place."
-        "Angus on the other hand plays safely. Perhaps a bit too safely, since he usually ends up missing chances to get points."
-        "It all culminates in a last minute exchange where Germ risks everything on a duel between you and him. Of course the minigame you have to play for the championship is entirely based on chance."
-        "Basically you have to jump onto one of the colored quadrants of a carousel and hope it's not the wrong one."
-        "It spins around for a while and when it stops a monster chained to the wall eats whoever is on the space closest to it."
-        "If no one is on that spot, you choose another one and it takes another spin. This goes on indefinitely until one of you dies."
-        "Germ goes first, picking red. You jump on yellow and you both go for a spin."
-        "When it starts to slow down it looks like Germ is about to lose but he ends up just out of the monster's range when it stops. Death narrowly avoids you as well."
-        "Now you both hop off and choose a quadrant again."
-        "You both last a shockingly large number of turns. A statistically improbable amount. But sooner or later one of you has to die."
-        "The tension is rising. Will you outlast your opponent? Or does he have lady luck on his side tonight? Who will be the one to get eaten?"
+    #    "You decide on a board then your characters all roll a die and move forward however many spaces."
+    #    "Each space you land on has a different effect, whether it's gaining or losing money, acquiring an item, teleporting to a different spot on the board, or a variety of other events."
+    #    "And at the end of each turn, you have to play a minigame. Sometimes it's a free-for-all, sometimes it's 2 vs. 2 or 1 vs. 3 with randomly selected teams."
+    #    "The game is designed to be impossible to play seriously no matter how hard you try, with all its randomness and janky controls."
+    #    "As frustrating as it can be to lose everything because the game felt like it, it's difficult to stay mad when you get your points swapped with the guy in first place on the next turn."
+    #    "There's a lot of downtime between minigames since you just have to press a button to roll the die and watch the game play out, giving you ample time to munch on your pizza."
+    #    "Germ is such a pro at this game he eats his while playing the minigames."
+    #    "Gregg's aggressive plays are counterbalanced by his incredibly bad luck throughout the round, landing him in last place."
+    #    "Angus on the other hand plays safely. Perhaps a bit too safely, since he usually ends up missing chances to get points."
+    #    "It all culminates in a last minute exchange where Germ risks everything on a duel between you and him. Of course the minigame you have to play for the championship is entirely based on chance."
+    #    "Basically you have to jump onto one of the colored quadrants of a carousel and hope it's not the wrong one."
+    #    "It spins around for a while and when it stops a monster chained to the wall eats whoever is on the space closest to it."
+    #    "If no one is on that spot, you choose another one and it takes another spin. This goes on indefinitely until one of you dies."
+    #    "Germ goes first, picking red. You jump on yellow and you both go for a spin."
+    #    "When it starts to slow down it looks like Germ is about to lose but he ends up just out of the monster's range when it stops. Death narrowly avoids you as well."
+    #    "Now you both hop off and choose a quadrant again."
+    #    "You both last a shockingly large number of turns. A statistically improbable amount. But sooner or later one of you has to die."
+    #    "The tension is rising. Will you outlast your opponent? Or does he have lady luck on his side tonight? Who will be the one to get eaten?"
 
-        gregg "Oh my god, I can't watch."
+    #    gregg "Oh my god, I can't watch."
 
-        "Gregg covers his eyes. Germ jumps on the yellow spot. You're up next."
+    #    "Gregg covers his eyes. Germ jumps on the yellow spot. You're up next."
 
-        player "Aaah I can't decide!"
+    #    player "Aaah I can't decide!"
 
-        "Gregg takes a quick peek to offer his coaching."
+    #    "Gregg takes a quick peek to offer his coaching."
 
-        gregg "Red!"
+    #    gregg "Red!"
 
-        angus "Green."
+    #    angus "Green."
 
-        germ "Anything but blue."
+    #    germ "Anything but blue."
 
-        "It's all random anyway so you just press A and jump onto whatever space. You end up on blue."
-        "The merry-go-round spins up and the monster approaches with a hungry look in its eyes."
-        "As you come to a crawl, Germ coasts right past the kill area. Green and red go by and then finally it stops on blue."
-        "Your character gets gobbled up and all your points are taken away, just like that."
+    #    "It's all random anyway so you just press A and jump onto whatever space. You end up on blue."
+    #    "The merry-go-round spins up and the monster approaches with a hungry look in its eyes."
+    #    "As you come to a crawl, Germ coasts right past the kill area. Green and red go by and then finally it stops on blue."
+    #    "Your character gets gobbled up and all your points are taken away, just like that."
 
-        angus "Ooh!"
+    #    angus "Ooh!"
 
-        "Gregg uncovers his eyes while the next scene loads."
+    #    "Gregg uncovers his eyes while the next scene loads."
 
-        gregg "What happened? Who lost?"
+    #    gregg "What happened? Who lost?"
 
-        angus "[name] got eaten!"
+    #    angus "[name] got eaten!"
 
-        gregg "OOOOOH! GERM IS THE MASTER OF LUCK!"
-        gregg "AWOOOOOOOOOO!"
+    #    gregg "OOOOOH! GERM IS THE MASTER OF LUCK!"
+    #    gregg "AWOOOOOOOOOO!"
 
-        "Gregg sure seems happier about this outcome than Germ does. The final results screen pops up, showing Germ on top and you on bottom."
-        "Angus got second place and Gregg got third."
+    #    "Gregg sure seems happier about this outcome than Germ does. The final results screen pops up, showing Germ on top and you on bottom."
+    #    "Angus got second place and Gregg got third."
 
-        player "How did you know it was gonna be blue?"
+    #    player "How did you know it was gonna be blue?"
 
-        "Germ shrugs."
+    #    "Germ shrugs."
 
-        germ "I had a feelin.'"
+    #    germ "I had a feelin.'"
 
 
     #fade to black and back
 
-    hide gregg
-    hide germ
-    hide angus
-    with dissolve
+    #hide gregg
+    #hide germ
+    #hide angus
+    #with dissolve
 
-    stop music fadeout 1.5
+    #stop music fadeout 1.5
 
-    "The night goes on with the four of you having a good time playing games until Germ says he has to go back home."
-    "At that point you were tired and getting ready to call it quits anyway. You coil up your controller's wire and help Germ pack away his system."
-    "Zipping up his bag, he stands up and waves to you."
+    #"The night goes on with the four of you having a good time playing games until Germ says he has to go back home."
+    #"At that point you were tired and getting ready to call it quits anyway. You coil up your controller's wire and help Germ pack away his system."
+    #"Zipping up his bag, he stands up and waves to you."
 
-    show germ neutral flip at left:
-        yalign germheight
-    with dissolve
+    #show germ neutral flip at left:
+    #    yalign germheight
+    #with dissolve
 
-    germ "See ya!"
+    #germ "See ya!"
 
-    hide germ with dissolve
+    #hide germ with dissolve
 
-    "That's all he says before going to leave through the window."
-    "He's certainly an odd guy, but he's very friendly."
-    "Gregg and Angus finish cleaning up the plates and napkins and come up to you."
+    #"That's all he says before going to leave through the window."
+    #"He's certainly an odd guy, but he's very friendly."
+    #"Gregg and Angus finish cleaning up the plates and napkins and come up to you."
 
-    show gregg neutral flip at left:
-        yalign greggheight
-    show angus neutral at right:
-        yalign angusheight
-    with dissolve
+    #show gregg neutral flip at left:
+    #    yalign greggheight
+    #show angus neutral at right:
+    #    yalign angusheight
+    #with dissolve
 
-    gregg "Whew, that was fun."
+    #gregg "Whew, that was fun."
 
-    angus "It sure was."
+    #angus "It sure was."
 
-    player "Yeah."
+    #player "Yeah."
 
-    "There's an uncomfortable silence as nobody is sure what to say and everyone just wants to hurry this up and go to bed."
+    #"There's an uncomfortable silence as nobody is sure what to say and everyone just wants to hurry this up and go to bed."
 
-    gregg "So Angus, what do you think? Dragons and Dungeons next week?"
+    #gregg "So Angus, what do you think? Dragons and Dungeons next week?"
 
-    angus "Sure, that sounds good. Perhaps our new friend would like to join us?"
+    #angus "Sure, that sounds good. Perhaps our new friend would like to join us?"
 
-    player "I'd be down for that. Just have to check my schedule first."
+    #player "I'd be down for that. Just have to check my schedule first."
 
-    angus "Ah, the persistent problem of finding a time where everyone is available."
+    #angus "Ah, the persistent problem of finding a time where everyone is available."
 
-    gregg "No problem dude, just let us know when you're free and we'll work something out."
+    #gregg "No problem dude, just let us know when you're free and we'll work something out."
 
-    angus "Do you use Chattrbox by any chance? We could coordinate a date on there."
+    #angus "Do you use Chattrbox by any chance? We could coordinate a date on there."
 
-    player "Yeah, hold on."
+    #player "Yeah, hold on."
 
-    "You pull out your phone and exchange contact info with Angus."
-    "From there, you thank him and Gregg for the pizza and say your goodbyes before climbing out the window and going down the fire escape."
+    #"You pull out your phone and exchange contact info with Angus."
+    #"From there, you thank him and Gregg for the pizza and say your goodbyes before climbing out the window and going down the fire escape."
 
-    hide gregg
-    hide angus
-    with dissolve
+    #hide gregg
+    #hide angus
+    #with dissolve
 
-    scene bg parkdark with dissolve
+    #scene bg parkdark with dissolve
 
     "It was refreshing to hang out with a group again."
     "Gregg's upbeat personality is fun to be around, and Angus is a really sweet guy."
